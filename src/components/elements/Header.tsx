@@ -5,11 +5,25 @@ import { FaMoon } from "react-icons/fa";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {}, [darkMode]);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
   };
 
   const navigationLinks = [
@@ -23,8 +37,12 @@ const Header = () => {
   ];
 
   return (
-    <header className={`w-full bg-white pb-4 ${darkMode ? "dark-mode" : ""}`}>
-      <div className="container flex   justify-between">
+    <header
+      className={`fixed top-0 h-[auto] w-full border-b-[1.5px] border-[#8080806b] transition-all duration-300 ${
+        darkMode ? "dark-mode" : ""
+      } ${scrolled ? "bg-gray-500" : "bg-transparent"}`}
+    >
+      <div className="flex items-center justify-between px-10">
         <div className="flex items-center">
           {" "}
           <div className="logo ml-4">
@@ -33,20 +51,19 @@ const Header = () => {
                 <img
                   src="/images/logo.jpg"
                   alt="Your Logo"
-                  className="h-14 w-auto"
+                  className="h-24 w-auto"
                 />
               </span>
             </Link>
           </div>
         </div>
-        <div className="flex  items-center justify-end">
+        <div className="mr-4  flex items-center justify-end">
           <nav className="nav">
-            <ul className="flex space-x-4">
-              {" "}
+            <ul className="flex space-x-8 font-semibold">
               {navigationLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.to}>
-                    <span className="text-blue-500 transition duration-300 hover:text-blue-700">
+                    <span className="text-black hover:text-blue-700">
                       {link.text}
                     </span>
                   </Link>
@@ -57,7 +74,7 @@ const Header = () => {
                   onClick={toggleDarkMode}
                   className="text-gray-600 dark:text-gray-300"
                 >
-                  {darkMode ? <MdLightMode size={24} /> : <FaMoon size={24} />}
+                  {darkMode ? <MdLightMode size={22} /> : <FaMoon size={22} />}
                 </button>
               </div>
             </ul>
