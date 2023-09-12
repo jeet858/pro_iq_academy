@@ -1,10 +1,17 @@
 import React from "react";
 import Header from "./elements/Header";
 
-const MainPageTemplate: React.FunctionComponent = () => {
+interface MainPageTemplateProps {
+  children?: JSX.Element[] | JSX.Element;
+}
+
+const MainPageTemplate: React.FunctionComponent<MainPageTemplateProps> = (
+  props,
+) => {
   return (
-    <div>
+    <div className="flex flex-col overflow-y-auto overflow-x-hidden">
       <Header />
+      {props.children}
     </div>
   );
 };

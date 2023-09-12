@@ -1,5 +1,9 @@
 import Head from "next/head";
 import MainPageTemplate from "~/components/MainPageTemplate";
+import Carousel from "~/components/elements/Carousel";
+import SkillSection from "~/components/elements/SkillSection";
+import Banner from "~/components/elements/Banner";
+import Footer from "~/components/elements/footer";
 export default function Home() {
   return (
     <>
@@ -9,7 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <MainPageTemplate />
+        <MainPageTemplate>
+          <Carousel />
+          <SkillSection />
+          <Banner />
+          <Footer />
+        </MainPageTemplate>
       </main>
     </>
   );
