@@ -84,7 +84,13 @@ const Carouselbody: React.FC = () => {
   const sliderRef = React.createRef<Slider>();
 
   return (
-    <div className="relative h-[25rem] bg-gray-200">
+    <div className="relative h-[30rem] bg-gray-200">
+      <h3 className="flex items-center  justify-center text-xl text-gray-800">
+        Our testimonials
+      </h3>
+      <h1 className="flex items-center justify-center text-3xl text-blue-500">
+        What they saying?
+      </h1>
       <Slider {...settings} ref={sliderRef}>
         {slidesData.map((slide) => (
           <div key={slide.id} className="carousel-item p-16">
