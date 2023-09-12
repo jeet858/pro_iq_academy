@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
@@ -18,8 +18,6 @@ const Carouselbody: React.FC = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
   };
 
   const slidesData: SlideData[] = [
@@ -50,38 +48,19 @@ const Carouselbody: React.FC = () => {
     },
   ];
 
-  function NextArrow({ onClick }: { onClick: () => void }) {
-    return (
-      <div
-        className="absolute right-4 top-1/2 -translate-y-1/2 transform cursor-pointer rounded-full bg-gray-600 p-2"
-        onClick={onClick}
-      >
-        <AiOutlineArrowRight className="text-white" />
-      </div>
-    );
-  }
+  const sliderRef = useRef<Slider | null>(null);
 
-  function PrevArrow({
-    onClick,
-    sliderRef,
-  }: {
-    onClick: () => void;
-    sliderRef: React.RefObject<Slider>;
-  }) {
-    return (
-      <div
-        className="absolute left-4 top-1/2 -translate-y-1/2 transform cursor-pointer rounded-full bg-gray-600 p-2"
-        onClick={() => {
-          sliderRef.current?.slickPrev();
-          onClick();
-        }}
-      >
-        <AiOutlineArrowLeft className="text-white" />
-      </div>
-    );
-  }
+  const goToPrevSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
 
-  const sliderRef = React.createRef<Slider>();
+  const goToNextSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
 
   return (
     <div className="relative h-[30rem] bg-gray-200">
@@ -96,17 +75,31 @@ const Carouselbody: React.FC = () => {
           <div key={slide.id} className="carousel-item p-16">
             <div className="rounded-lg bg-white p-16">
               <div className="flex items-center justify-start  ">
-                <img
-                  src={slide.photo}
-                  alt={`Photo ${slide.id}`}
-                  className="max-w-32 flex max-h-32 justify-between rounded-full border-[9px] border-white hover:border-blue-400"
-                />{" "}
+                <div className="rounded-[14rem] border-[9px] border-white hover:border-blue-800">
+                  <img
+                    src={slide.photo}
+                    alt={`Photo ${slide.id}`}
+                    className="max-w-32 flex max-h-32 justify-between rounded-[14rem] border-[9px] border-transparent "
+                  />{" "}
+                </div>
                 <p className="text-lg">{slide.content}</p>
               </div>
             </div>
           </div>
         ))}
       </Slider>
+      <div
+        className="absolute left-4 top-1/2 -translate-y-1/2 transform cursor-pointer rounded-full bg-blue-600 p-4"
+        onClick={goToPrevSlide}
+      >
+        <AiOutlineArrowLeft className=" text-white" />
+      </div>
+      <div
+        className="absolute right-4 top-1/2 -translate-y-1/2 transform cursor-pointer rounded-full bg-blue-600 p-4"
+        onClick={goToNextSlide}
+      >
+        <AiOutlineArrowRight className="text-white" />
+      </div>
     </div>
   );
 };

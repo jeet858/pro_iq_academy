@@ -5,6 +5,7 @@ import SkillSection from "~/components/elements/SkillSection";
 import Banner from "~/components/elements/Banner";
 import Footer from "~/components/elements/footer";
 import Carouselbody from "~/components/elements/Carouselbody";
+
 export default function Home() {
   return (
     <>
