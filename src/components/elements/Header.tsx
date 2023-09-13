@@ -28,7 +28,7 @@ const Header = () => {
 
   const navigationLinks = [
     { text: "HOME", to: "/#" },
-    { text: "ABOUT US", to: "/#" },
+    { text: "ABOUT US", to: "/About" },
     { text: "WHY PROIQ", to: "/#" },
     { text: "OUR COURSES", to: "/#" },
     { text: "FRANCHISING", to: "/#" },
