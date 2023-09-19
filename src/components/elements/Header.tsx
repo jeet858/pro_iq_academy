@@ -33,7 +33,7 @@ const Header = () => {
     { text: "OUR COURSES", to: "/#" },
     { text: "FRANCHISING", to: "/#" },
     { text: "GALLERY", to: "/#" },
-    { text: "CONTACT US", to: "/#" },
+    { text: "CONTACT US", to: "/Contact" },
   ];
 
   return (
