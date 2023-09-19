@@ -5,8 +5,8 @@ module.exports = {
     extend: {},
     darkSelector: ".dark-mode", // Define the class that triggers dark mode
     screens: {
-      sm: "480px",
-      md: "768px",
+      sm: "370px",
+      md: "760px",
       lg: "976px",
       xl: "1440px",
     },

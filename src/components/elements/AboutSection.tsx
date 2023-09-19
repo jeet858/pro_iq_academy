@@ -1,55 +1,38 @@
 import React from "react";
-import Image from "next/image"; // Import the next/image component
+import Image from "next/image";
 import Strength from "./Strength";
 import { FiSend } from "react-icons/fi";
+import img1 from "../../../public/images/bi.jpg";
 const AboutSection = () => {
   return (
     <div>
       <div className="h-fit">
         <div className="relative h-80 bg-cover bg-center bg-no-repeat">
-          <Image
-            src="/images/bi.jpg"
-            alt="About Us"
-            layout="fill"
-            objectFit="cover"
-          />
+          <div>
+            <Image
+              src="/images/bi.jpg"
+              alt="About Us"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <p className="relative ml-32 pt-32 text-2xl font-bold text-white">
             About Us
           </p>
         </div>
       </div>
-      <div className="flex h-[40rem] flex-col sm:flex-row md:flex-col">
-        <div className="mx-32 mt-6 flex h-fit gap-4 space-x-4">
-          <div className="relative h-64 w-full rounded-xl bg-cover bg-center bg-no-repeat">
-            <Image
-              src="/images/bi.jpg"
-              alt="Image 1"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-xl"
-            />
-          </div>
-          <div className="relative h-64 w-full rounded-xl bg-cover bg-center ">
-            <Image
-              src="/images/bi.jpg"
-              alt="Image 2"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-xl"
-            />
-          </div>
-        </div>
-        <div className="mx-32 mt-8 grid w-fit grid-cols-2 gap-2">
+      <div className="flex items-center sm:h-fit sm:flex-col md:h-[34rem] md:flex-col lg:h-[28rem] lg:flex-row">
+        <div className="flex flex-col items-center space-y-1">
           <div className="flex flex-col space-y-1">
-            <span className="font-mono text-lg text-[#4D5FE3]">
+            <span className="font-mono text-xl text-[#4D5FE3]">
               About Company
             </span>
-            <span className="font-sans text-4xl font-semibold">
+            <span className="font-sans text-5xl font-semibold">
               The Best Global Expert
             </span>
           </div>
-          <div className="flex flex-col space-y-1">
-            <span className="text-gray-500">
+          <div className="flex flex-col items-center space-y-1 text-center">
+            <span className=" text-lg text-gray-500">
               There are many variations of passages of lorem ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour words which don’t look even slightly believable.
@@ -60,6 +43,16 @@ const AboutSection = () => {
                 DISCOVER MORE
               </button>
             </span>
+          </div>
+        </div>
+
+        <div className="flex h-fit gap-4 space-x-4">
+          <div className="relative h-64 rounded-xl bg-cover bg-center bg-no-repeat md:w-[20rem] lg:w-full">
+            <Image
+              src={img1}
+              alt=""
+              className="h-64 w-fit  resize rounded-xl"
+            />
           </div>
         </div>
       </div>
