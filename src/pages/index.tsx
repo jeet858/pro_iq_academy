@@ -1,12 +1,16 @@
 import Head from "next/head";
 import MainPageTemplate from "~/components/MainPageTemplate";
+import BackgroundSection from "~/components/elements/BackgroundSection";
 import Carousel from "~/components/elements/Carousel";
+import ContectSection from "~/components/elements/ContectSection";
 import SkillSection from "~/components/elements/SkillSection";
-import Banner from "~/components/elements/Banner";
-import Footer from "~/components/elements/footer";
-import Carouselbody from "~/components/elements/Carouselbody";
+import Strength from "~/components/elements/Strength";
+import StudentCommunity from "~/components/elements/StudentCommunity";
+import WelcomeSection from "~/components/elements/WelcomeSection";
 
-export default function Home() {
+import Footer from "~/components/elements/footer";
+
+export default function Home({ darkMode, toggleDarkMode }) {
   return (
     <>
       <Head>
@@ -18,8 +22,11 @@ export default function Home() {
         <MainPageTemplate>
           <Carousel />
           <SkillSection />
-          <Banner />
-          <Carouselbody />
+          <WelcomeSection darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <BackgroundSection />
+          <Strength />
+          <StudentCommunity />
+          <ContectSection />
           <Footer />
         </MainPageTemplate>
       </main>

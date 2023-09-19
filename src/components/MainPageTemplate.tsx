@@ -9,10 +9,12 @@ const MainPageTemplate: React.FunctionComponent<MainPageTemplateProps> = (
   props,
 ) => {
   return (
-    <div className="flex flex-col overflow-y-auto overflow-x-hidden">
-      <Header />
-      {props.children}
-    </div>
+    <>
+      <div className="flex flex-col overflow-y-auto overflow-x-hidden">
+        <Header />
+        {props.children}
+      </div>
+    </>
   );
 };
 
