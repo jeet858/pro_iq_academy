@@ -57,7 +57,7 @@ const Header = () => {
     { text: "OUR COURSES", to: "/#" },
     { text: "FRANCHISING", to: "/#" },
     { text: "GALLERY", to: "/#" },
-    { text: "CONTACT US", to: "/#" },
+    { text: "CONTACT US", to: "/Contact" },
   ];
 
   return (
@@ -77,11 +77,7 @@ const Header = () => {
             className={`flex items-center justify-between px-4 py-2 md:px-10 ${
               scrolled ? "h-[80px] w-full" : "h-[100px] w-full"
             } ${
-              darkMode
-                ? "bg-gray-800 "
-                : scrolled
-                ? "bg-white"
-                : "bg-transparent"
+              darkMode ? "bg-gray-800 " : scrolled ? "bg-white" : "bg-white"
             }`}
           >
             <div className="flex items-center">
