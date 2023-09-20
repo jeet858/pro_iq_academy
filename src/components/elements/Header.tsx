@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-
 import { FiMenu } from "react-icons/fi";
 import TopNav from "./TopNav";
 import DarkModeToggle from "./DarkModeToggle";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const router = useRouter();
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -50,13 +50,15 @@ const Header = () => {
     }
   };
 
+  const isActiveLink = (href: string) => router.pathname === href;
+
   const navigationLinks = [
     { text: "HOME", to: "/#" },
     { text: "ABOUT US", to: "/About" },
-    { text: "WHY PROIQ", to: "/#" },
-    { text: "OUR COURSES", to: "/#" },
-    { text: "FRANCHISING", to: "/#" },
-    { text: "GALLERY", to: "/#" },
+    { text: "WHY PROIQ", to: "/why-proiq" },
+    { text: "OUR COURSES", to: "/our-courses" },
+    { text: "FRANCHISING", to: "/Franchising" },
+    { text: "GALLERY", to: "/Gallery" },
     { text: "CONTACT US", to: "/Contact" },
   ];
 
@@ -65,7 +67,9 @@ const Header = () => {
       className={`flex flex-col justify-between ${darkMode ? "dark-mode" : ""}`}
     >
       <div className="flex flex-col">
-        <TopNav />
+        <div className="hidden md:flex md:space-x-4">
+          <TopNav />
+        </div>
       </div>
       <div>
         <header
@@ -115,7 +119,11 @@ const Header = () => {
                         <span
                           className={`font-bold ${
                             darkMode
-                              ? "text-white hover:text-[#FF6E65]"
+                              ? isActiveLink(link.to)
+                                ? "text-[#FF6E65]"
+                                : "text-white hover:text-[#FF6E65]"
+                              : isActiveLink(link.to)
+                              ? "text-[#FF6E65]"
                               : "text-black hover:text-[#FF6E65]"
                           }`}
                           onClick={closeMenu}

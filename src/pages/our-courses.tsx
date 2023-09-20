@@ -1,15 +1,15 @@
 import React from "react";
 import MainPageTemplate from "~/components/MainPageTemplate";
-import ContactSection from "~/components/elements/ContactUsSection";
+import OurCoursesSection from "~/components/elements/OurCoursesSection";
 
 import Footer from "~/components/elements/footer";
 
-const Contact = () => {
+const OurCourses = () => {
   return (
     <div>
       <MainPageTemplate>
         <div className="pt-[100px]">
-          <ContactSection />
+          <OurCoursesSection />
         </div>
         <Footer />
       </MainPageTemplate>
@@ -17,4 +17,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default OurCourses;

@@ -63,25 +63,28 @@ const AboutSection = () => {
         <div className="absolute inset-0 bg-slate-600  opacity-50"></div>
         <Strength />
       </div>
-      <div className="container flex w-full items-center justify-around p-10 sm:h-fit sm:flex-col lg:h-[30rem] lg:flex-row">
-        <h1 className="mb-4 text-5xl font-semibold">
+      <div
+        className="flex w-full items-center justify-around p-10 sm:h-fit sm:flex-col lg:h-[28rem] lg:flex-row"
+        style={{ backgroundImage: 'url("./images/23.jpg")' }}
+      >
+        <h1 className="mb-4 text-5xl font-semibold text-white">
           Subscribe to Our Newsletter to Get Daily Content!
         </h1>
 
         <div className="relative flex w-full flex-col items-center">
-          <div>
+          <div className="bg-transparent">
             <input
               type="email"
               id="email"
               name="email"
               placeholder="your.email@example.com"
-              className="w-[35rem] border-b-2 border-black pr-12"
+              className="w-[35rem] border-b-2 border-black bg-transparent pr-12"
             />
             <button className="absolute">
-              <FiSend className="text-2xl" />
+              <FiSend className="text-2xl text-white hover:text-[#FF6E65]" />
             </button>
           </div>
-          <button className=" bg-transparent px-4 py-2 text-blue-800 hover:text-black focus:outline-none">
+          <button className=" bg-transparent px-4 py-2 text-blue-100 hover:text-[#FF6E65] focus:outline-none">
             Sign up now for weekly news and updates
           </button>
         </div>

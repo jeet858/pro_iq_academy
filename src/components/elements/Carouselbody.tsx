@@ -1,14 +1,22 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-
+import {
+  AiOutlineArrowLeft,
+  AiOutlineArrowRight,
+  AiOutlineHome,
+  AiFillCamera,
+} from "react-icons/ai";
+import { GiPhotoCamera } from "react-icons/gi";
+import { FaReact } from "react-icons/fa";
+import { IoLogoPython } from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 interface SlideData {
   id: number;
   content: string;
-  photo: string;
+  icon: React.ReactElement;
+  time: string;
 }
 
 const Carouselbody: React.FC = () => {
@@ -16,35 +24,66 @@ const Carouselbody: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 5,
     slidesToScroll: 1,
   };
 
   const slidesData: SlideData[] = [
     {
       id: 1,
-      content: "This is the first paragraph",
-      photo: "/images/image-3.jpg",
+      content: "Photography",
+      icon: (
+        <GiPhotoCamera className="text-6xl text-blue-500 hover:text-8xl hover:text-blue-800" />
+      ),
+      time: "46 hours course time",
     },
     {
       id: 2,
-      content: "This is the second paragraph",
-      photo: "/images/image-3.jpg",
+      content: "Business",
+      icon: (
+        <IoLogoPython className="text-6xl text-blue-500 hover:text-8xl hover:text-blue-800" />
+      ),
+      time: "46 hours course time",
     },
     {
       id: 3,
-      content: "This is the third paragraph",
-      photo: "/images/image-3.jpg",
+      content: "Art & design",
+      icon: <AiOutlineHome className="text-4xl text-red-500" />,
+      time: "46 hours course time",
     },
     {
       id: 4,
-      content: "This is the fourth paragraph",
-      photo: "/images/image-3.jpg",
+      content: "marketing",
+      icon: <AiOutlineHome className="text-4xl text-red-500" />,
+      time: "46 hours course time",
     },
     {
       id: 5,
-      content: "This is the fifth paragraph",
-      photo: "/images/image-3.jpg",
+      content: "Lifestyle",
+      icon: <AiOutlineHome className="text-4xl text-red-500" />,
+      time: "46 hours course time",
+    },
+    {
+      id: 6,
+      content: "React",
+      icon: (
+        <FaReact className="text-6xl text-blue-500 hover:text-8xl hover:text-blue-800" />
+      ),
+      time: "46 hours course time",
+    },
+    {
+      id: 7,
+      content: "App development",
+      icon: <AiOutlineHome className="text-4xl text-red-500" />,
+      time: "46 hours course time",
+    },
+    {
+      id: 8,
+      content: "Python",
+      icon: (
+        <IoLogoPython className="text-6xl text-blue-500 hover:text-8xl hover:text-blue-800" />
+      ),
+      time: "46 hours course time",
     },
   ];
 
@@ -64,25 +103,22 @@ const Carouselbody: React.FC = () => {
 
   return (
     <div className="relative h-[30rem] bg-gray-200">
-      <h3 className="flex items-center  justify-center text-xl text-gray-800">
-        Our testimonials
+      <h3 className="flex h-fit items-center  justify-center text-6xl text-gray-800">
+        Our Courses
       </h3>
-      <h1 className="flex items-center justify-center text-3xl text-blue-500">
-        What they saying?
-      </h1>
-      <Slider {...settings} ref={sliderRef}>
+
+      <Slider {...settings} ref={sliderRef} className="flex justify-around">
         {slidesData.map((slide) => (
-          <div key={slide.id} className="carousel-item p-16">
-            <div className="rounded-lg bg-white p-16">
-              <div className="flex items-center justify-start  ">
-                <div className="rounded-[14rem] border-[9px] border-white hover:border-blue-800">
-                  <img
-                    src={slide.photo}
-                    alt={`Photo ${slide.id}`}
-                    className="max-w-32 flex max-h-32 justify-between rounded-[14rem] border-[9px] border-transparent "
-                  />{" "}
+          <div key={slide.id} className="flex  p-16">
+            <div className="flex h-[18rem] w-[12rem] items-center justify-center rounded-lg bg-white ">
+              <div className="flex h-fit flex-col items-center">
+                <div className="mb-8 flex h-[7rem] w-[7rem] items-center justify-center rounded-[14rem] border bg-slate-300 hover:bg-gray-500 ">
+                  {slide.icon}
                 </div>
-                <p className="text-lg">{slide.content}</p>
+                <p className="text-lg font-semibold text-[#FF6E65]">
+                  {slide.content}
+                </p>
+                <p className="text-sm">{slide.time}</p>
               </div>
             </div>
           </div>

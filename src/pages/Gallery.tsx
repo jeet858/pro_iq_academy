@@ -1,20 +1,19 @@
 import React from "react";
 import MainPageTemplate from "~/components/MainPageTemplate";
-import ContactSection from "~/components/elements/ContactUsSection";
+import GallerySection from "~/components/elements/GallerySection";
 
 import Footer from "~/components/elements/footer";
 
-const Contact = () => {
+const Gallery = () => {
   return (
     <div>
       <MainPageTemplate>
         <div className="pt-[100px]">
-          <ContactSection />
+          <GallerySection />
         </div>
         <Footer />
       </MainPageTemplate>
     </div>
   );
 };
-
-export default Contact;
+export default Gallery;

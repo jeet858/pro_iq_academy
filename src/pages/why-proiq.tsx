@@ -1,15 +1,15 @@
 import React from "react";
 import MainPageTemplate from "~/components/MainPageTemplate";
-import ContactSection from "~/components/elements/ContactUsSection";
+import WhyProiqSection from "~/components/elements/WhyProiqSection";
 
 import Footer from "~/components/elements/footer";
 
-const Contact = () => {
+const WhyProiq = () => {
   return (
     <div>
       <MainPageTemplate>
         <div className="pt-[100px]">
-          <ContactSection />
+          <WhyProiqSection />
         </div>
         <Footer />
       </MainPageTemplate>
@@ -17,4 +17,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default WhyProiq;
