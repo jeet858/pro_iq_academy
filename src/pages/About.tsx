@@ -8,9 +8,7 @@ const About = () => {
   return (
     <div>
       <MainPageTemplate>
-        <div className="pt-[100px]">
-          <AboutSection />
-        </div>
+        <AboutSection />
         <Footer />
       </MainPageTemplate>
     </div>

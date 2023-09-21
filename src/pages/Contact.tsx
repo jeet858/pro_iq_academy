@@ -8,9 +8,7 @@ const Contact = () => {
   return (
     <div>
         <MainPageTemplate>
-          <div className="pt-[100px]">
-            <ContactSection />
-          </div>
+          <ContactSection />
           <Footer />
         </MainPageTemplate>
     </div>
