@@ -2,17 +2,11 @@ import React from "react";
 import { PiWechatLogoLight } from "react-icons/pi";
 import { BiMailSend } from "react-icons/bi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
+import BannerSection from "./BannerSection";
 const ContactSection = () => {
   return (
     <div className="h-fit">
-      <div
-        className="h-80 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("./images/bi.jpg")' }}
-      >
-        <div className="ml-32 pt-32 text-2xl font-bold text-white">
-          Contact Us
-        </div>
-      </div>
+      <BannerSection paragraphText="Contect Us" />
       <div className=" flex h-fit w-full items-center justify-center gap-4 sm:flex-col sm:space-y-4 sm:p-8 md:flex-col md:space-y-4 md:p-16 lg:flex-row lg:space-x-4">
         <div className="flex h-fit basis-1/3 justify-evenly rounded-lg shadow-2xl hover:border-[1px] hover:border-blue-900 sm:w-full sm:flex-col sm:items-center sm:p-8 md:w-full md:flex-col md:p-8 lg:w-fit lg:flex-row">
           <div className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full bg-slate-200">

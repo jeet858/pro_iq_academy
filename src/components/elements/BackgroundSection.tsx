@@ -11,7 +11,7 @@ import BoxComponent from "./BoxComponent";
 const BackgroundSection: React.FC = () => {
   return (
     <section
-      className="relative flex h-fit flex-col items-center justify-center bg-center sm:h-fit xl:h-[600px] "
+      className="relative flex h-fit flex-col items-center justify-center bg-center bg-no-repeat sm:h-fit xl:h-[600px] "
       style={{ backgroundImage: 'url("./images/8.jpg")' }}
     >
       <div className="relative flex flex-col justify-around p-12 text-center">
