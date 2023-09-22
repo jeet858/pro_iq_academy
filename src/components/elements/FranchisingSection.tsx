@@ -2,22 +2,12 @@ import React from "react";
 import Image from "next/image";
 import img from "../../../public/images/banner 25.jpg";
 import img1 from "../../../public/images/busy-female-teenager-reads-book-uses-table-lamp.jpg";
+import BannerSection from "./BannerSection";
+import DiscoverSection from "./DiscoverSection";
 const FranchisingSection = () => {
   return (
     <div className="h-fit">
-      <div className="relative h-80 bg-cover bg-center bg-no-repeat">
-        <div>
-          <Image
-            src="/images/22.jpg"
-            alt="About Us"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-        <p className="relative ml-32 pt-32 font-[Prata] text-6xl text-white">
-          Franchising
-        </p>
-      </div>
+      <BannerSection paragraphText="Franchising" />
       <div className="sm:p-10 lg:p-20 ">
         <p className="font-[Prata] sm:text-lg lg:text-2xl">
           Franchising Opportunities with ProIQ Academy: At ProIQ Academy, we are
@@ -89,6 +79,7 @@ const FranchisingSection = () => {
           </div>
         </div>
       </div>
+      <DiscoverSection />
     </div>
   );
 };

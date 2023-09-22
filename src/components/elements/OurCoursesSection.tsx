@@ -5,23 +5,16 @@ import img2 from "../../../public/images/medium-shot-graduate-student.jpg";
 
 import OurCoursesSkill from "./OurCoursesSkill";
 import { BiSolidCircle } from "react-icons/bi";
+import BannerSection from "./BannerSection";
+import DiscoverSection from "./DiscoverSection";
 
 const OurCoursesSection = () => {
   return (
     <div className="h-fit">
-      <div className="relative h-[25rem] bg-cover bg-center bg-no-repeat">
-        <div>
-          <Image
-            src="/images/22.jpg"
-            alt="About Us"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-        <p className="relative ml-32 pt-32 text-4xl font-bold text-[#FF6E65]">
-          Our Courses
-        </p>
-      </div>
+      <BannerSection
+        paragraphText="OUR COURSES
+"
+      />
       <div className="h-fit w-full p-8">
         <h1 className="flex flex-col  items-center justify-center font-bold text-[#233D63] sm:text-lg md:text-2xl">
           <span>Start one of our highest quality</span>
@@ -99,6 +92,7 @@ const OurCoursesSection = () => {
         </p>
       </div>
       <OurCoursesSkill />
+      <DiscoverSection />
     </div>
   );
 };

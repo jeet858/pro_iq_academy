@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
     darkSelector: ".dark-mode",
     screens: {
-      sm: "320px",
+      sm: "280px",
       md: "760px",
       lg: "976px",
       xl: "1440px",
