@@ -9,6 +9,7 @@ import icon2 from "../../../public/images/webinar.png";
 import icon3 from "../../../public/images/award.png";
 import icon4 from "../../../public/images/teacher.png";
 import icon5 from "../../../public/images/share.png";
+import DiscoverSection from "./DiscoverSection";
 const AboutSection = () => {
   return (
     <div>
@@ -300,6 +301,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+      <DiscoverSection />
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import img from "../../../public/images/banner 25.jpg";
-import img1 from "../../../public/images/busy-female-teenager-reads-book-uses-table-lamp.jpg";
+import img1 from "../../../public/images/guy-lesson.jpg";
+import img2 from "../../../public/images/medium-shot-smiley-woman-wearing-headphones.jpg";
 import BannerSection from "./BannerSection";
 import DiscoverSection from "./DiscoverSection";
 const FranchisingSection = () => {
@@ -73,7 +74,7 @@ const FranchisingSection = () => {
           <div className="h-fit w-fit">
             <Image
               alt=""
-              src={img1}
+              src={img2}
               className="md:h-[266px] md:w-[380px] lg:h-[466px] lg:w-[580px]"
             />
           </div>
