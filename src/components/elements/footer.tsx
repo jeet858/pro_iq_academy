@@ -14,8 +14,8 @@ import {
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="flex h-fit w-full justify-center bg-[#060e1f] text-white  lg:h-[25rem]">
-        <div className=" container flex flex-wrap justify-center p-4 lg:p-36">
+      <footer className="flex h-fit w-full justify-center bg-[#060e1f] text-white ">
+        <div className=" container flex flex-wrap justify-center p-4 lg:p-24">
           <div className="mb-8 w-full items-baseline lg:w-1/2 xl:w-1/4">
             <h2 className="mb-2 border-b-[1px] border-[#17365866] text-lg font-semibold">
               Quick Links

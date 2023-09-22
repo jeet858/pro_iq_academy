@@ -67,15 +67,15 @@ const Header = () => {
       className={`flex flex-col justify-between ${darkMode ? "dark-mode" : ""}`}
     >
       <div className="flex flex-col">
-        <div className="hidden md:flex md:space-x-4">
+        <div className="hidden lg:flex lg:space-x-4">
           <TopNav />
         </div>
       </div>
       <div>
         <header
-          className={`fixed left-0 right-0 z-10 w-full transition-all duration-300 ${
+          className={`fixed z-10 w-full duration-300 lg:left-0 lg:right-0 lg:transition-all ${
             scrolled ? "top-0" : ""
-          } ${menuOpen ? "h-fit" : "h-[100px]"}`}
+          } ${menuOpen ? "h-[300px]" : "h-[100px]"}`}
         >
           <div
             className={`flex items-center justify-between px-4 py-2 md:px-10 ${
@@ -99,19 +99,21 @@ const Header = () => {
             </div>
             <div className="mr-4 flex items-center justify-end">
               <nav
-                className={`md:flex md:space-x-8 md:font-semibold`}
+                className={`lg:flex lg:space-x-8 lg:font-semibold`}
                 ref={menuRef}
               >
                 <button
                   onClick={toggleMenu}
-                  className={`ml-4 text-gray-600 dark:text-gray-300 md:hidden`}
+                  className={`ml-4 text-gray-600 dark:text-gray-300 lg:hidden`}
                 >
                   <FiMenu size={22} />
                 </button>
                 <ul
-                  className={`md:flex md:space-x-8 ${
-                    menuOpen ? "block" : "hidden"
-                  } md:items-center md:space-y-0`}
+                  className={`lg:flex lg:space-x-8 ${
+                    menuOpen
+                      ? " flex  flex-col items-center justify-center "
+                      : "hidden"
+                  } lg:items-center lg:space-y-0`}
                 >
                   {navigationLinks.map((link, index) => (
                     <li key={index}>
