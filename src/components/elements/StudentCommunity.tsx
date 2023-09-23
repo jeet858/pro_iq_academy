@@ -4,11 +4,11 @@ import StudentBox from "./StudentBox";
 
 const StudentCommunity: React.FC = () => {
   return (
-    <div className="h-[130rem] max-w-full items-center justify-center p-32 sm:h-fit md:h-fit lg:h-[55rem]">
+    <div className="h-[130rem] w-full items-center justify-center sm:h-fit sm:p-8 md:h-fit md:p-8 lg:h-[55rem] lg:p-32">
       <div className="h-44">
         <SectionHeader title="Student Community" subtitle="Feedback" />
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
         <StudentBox
           name="Mohan Singh"
           role="Parent"

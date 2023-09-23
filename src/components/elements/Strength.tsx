@@ -70,7 +70,7 @@ const CountCard: React.FC<CountCardProps> = ({
   }, [started]);
 
   return (
-    <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 md:w-1/4">
+    <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
       <CountUp
         start={started ? start : undefined}
         end={end}

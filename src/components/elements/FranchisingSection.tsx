@@ -8,7 +8,7 @@ import DiscoverSection from "./DiscoverSection";
 const FranchisingSection = () => {
   return (
     <div className="h-fit">
-      <BannerSection paragraphText="Franchising" />
+      <BannerSection paragraphText="Franchising" imageSrc="/images/36.jpg" />
       <div className="sm:p-10 lg:p-20 ">
         <p className="font-[Prata] sm:text-lg lg:text-2xl">
           Franchising Opportunities with ProIQ Academy: At ProIQ Academy, we are
@@ -32,7 +32,7 @@ const FranchisingSection = () => {
               className="md:h-[266px] md:w-[380px] lg:h-[466px] lg:w-[580px]"
             />
           </div>
-          <div className="flex flex-col items-center justify-center sm:w-full lg:w-1/2">
+          <div className="flex flex-col items-center justify-center sm:w-full md:p-4 lg:w-1/2 lg:p-0">
             <h1 className="font-[Prata] font-semibold text-[#233D63] md:text-xl lg:text-3xl">
               Established Brand and Reputation:
             </h1>
@@ -45,7 +45,7 @@ const FranchisingSection = () => {
           </div>
         </div>
         <div className="flex w-full flex-row items-center justify-between sm:flex-col-reverse md:flex-row">
-          <div className="flex flex-col gap-8 sm:w-full lg:w-1/2">
+          <div className="flex flex-col gap-8 sm:w-full md:p-4 lg:w-1/2 lg:p-0">
             <div className="flex  flex-col items-center justify-center gap-4 ">
               <h1 className="font-[Prata] font-semibold text-[#233D63] md:text-xl lg:text-3xl">
                 Comprehensive Support and Training:

@@ -15,7 +15,7 @@ import DiscoverSection from "./DiscoverSection";
 const WhyProiqSection = () => {
   return (
     <div className="h-fit">
-      <BannerSection paragraphText="Why ProIQ" />
+      <BannerSection paragraphText="Why ProIQ" imageSrc="/images/37.jpg" />
       <div className="flex justify-between sm:flex-col sm:p-6 md:p-16 lg:flex-row lg:space-x-10">
         <div>
           <div className="font-['Prompt'] text-[100px]">4.6</div>

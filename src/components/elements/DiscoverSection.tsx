@@ -4,10 +4,10 @@ const DiscoverSection = () => {
   return (
     <div>
       <div
-        className="flex w-full items-center justify-around p-10 sm:h-fit sm:flex-col lg:h-[20rem] lg:flex-row"
+        className="flex w-full items-center justify-around bg-cover p-10 sm:h-fit sm:flex-col lg:h-[22rem] lg:flex-row"
         style={{ backgroundImage: 'url("./images/23.jpg")' }}
       >
-        <h1 className="flex flex-col text-5xl font-semibold">
+        <h1 className="flex flex-col text-5xl font-semibold text-white">
           <span>Start Your Education Career</span>
           <span>With proIQ</span>
         </h1>

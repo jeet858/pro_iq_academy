@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   FaAngleDoubleRight,
@@ -23,19 +24,19 @@ const Footer: React.FC = () => {
             <ul>
               <li className="mb-2 flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                Home
+                <Link href={"/#"}>Home</Link>
               </li>
               <li className="mb-2 flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                About
+                <Link href={"/About"}>About</Link>
               </li>
               <li className="mb-2 flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                Courses
+                <Link href={"/our-courses"}>Courses</Link>
               </li>
               <li className="mb-2 flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                Contact
+                <Link href={"/Contact"}>Contact</Link>
               </li>
             </ul>
           </div>
@@ -47,15 +48,15 @@ const Footer: React.FC = () => {
             <ul>
               <li className="flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                Gallery
+                <Link href={"/Gallery"}>Gallery</Link>
               </li>
               <li className="flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                Why ProIQ
+                <Link href={"/why-proiq"}>Why ProIQ</Link>
               </li>
               <li className="flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                Franchising
+                <Link href={"/Franchising"}>Franchising</Link>
               </li>
             </ul>
           </div>

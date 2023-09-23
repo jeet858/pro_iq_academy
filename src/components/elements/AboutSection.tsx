@@ -14,7 +14,7 @@ const AboutSection = () => {
   return (
     <div>
       <div className="h-fit">
-        <BannerSection paragraphText="About Us" />
+        <BannerSection paragraphText="About Us" imageSrc="/images/22.jpg" />
       </div>
       <div className="flex h-fit w-full flex-col justify-center self-center  sm:p-8 md:space-y-16 md:p-8 lg:p-16 ">
         <div className="flex w-full justify-evenly sm:flex-col md:flex-row  ">
@@ -143,8 +143,8 @@ const AboutSection = () => {
         </div>
         <div className="container relative top-[] flex h-full w-full min-w-full items-center justify-center self-center">
           <div className="grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center gap-y-4 p-4 shadow-lg">
-              <div>
+            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center  p-4 shadow-lg">
+              <div className="flex h-[5rem] flex-row items-start justify-start">
                 <svg
                   width="98"
                   height="19"
@@ -181,8 +181,8 @@ const AboutSection = () => {
                 Affordable fees and online/offline classes make it convenient.
               </p>
             </div>
-            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center gap-y-4 p-4 shadow-lg ">
-              <div>
+            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center  p-4 shadow-lg ">
+              <div className="flex h-[5rem] flex-row items-start justify-start">
                 <svg
                   width="98"
                   height="19"
@@ -219,8 +219,8 @@ const AboutSection = () => {
                 skilled and the evaluations are fun and engaging.
               </p>
             </div>
-            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center gap-y-4 p-4 shadow-lg ">
-              <div>
+            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center  p-4 shadow-lg ">
+              <div className="flex h-[5rem] flex-row items-start justify-start">
                 <svg
                   width="98"
                   height="19"
@@ -258,8 +258,8 @@ const AboutSection = () => {
                 Highly recommended!
               </p>
             </div>
-            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center gap-y-4 p-4 shadow-lg">
-              <div>
+            <div className="flex h-[18rem] w-[18rem] flex-col  justify-center  p-4 shadow-lg">
+              <div className="flex h-[5rem] flex-row items-start justify-start">
                 <svg
                   width="98"
                   height="19"
