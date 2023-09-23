@@ -49,6 +49,25 @@ const Header = () => {
       closeMenu();
     }
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check window.innerWidth when the component mounts
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 820);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Initial check
+    handleResize();
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const isActiveLink = (href: string) => router.pathname === href;
 
@@ -62,6 +81,39 @@ const Header = () => {
     { text: "CONTACT US", to: "/Contact" },
   ];
 
+  if (isMobile) {
+    return (
+      <div className="flex flex-col">
+        <div className="fixed z-10 flex h-14 w-full items-center justify-between bg-white px-2">
+          <Link href="/">
+            <span>
+              <img
+                src="/images/logo.jpg"
+                alt="Your Logo"
+                className="h-12 w-auto self-center"
+              />
+            </span>
+          </Link>
+          <FiMenu className="h-6 w-6" onClick={toggleMenu} />
+        </div>
+        <div className="flex w-full justify-end">
+          {menuOpen ? (
+            <div className="fixed top-[3.5rem] z-10 h-fit w-[80%] self-end bg-blue-600">
+              {navigationLinks.map((link, index) => (
+                <ul key={index} className="w-full border-b-2 px-2 py-4">
+                  <Link href={link.to}>
+                    <span className="" onClick={closeMenu}>
+                      {link.text}
+                    </span>
+                  </Link>
+                </ul>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    );
+  }
   return (
     <div
       className={`flex flex-col justify-between ${darkMode ? "dark-mode" : ""}`}

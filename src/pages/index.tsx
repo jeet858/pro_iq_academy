@@ -10,7 +10,7 @@ import WelcomeSection from "~/components/elements/WelcomeSection";
 
 import Footer from "~/components/elements/footer";
 
-export default function Home({ darkMode, toggleDarkMode }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -22,7 +22,7 @@ export default function Home({ darkMode, toggleDarkMode }) {
         <MainPageTemplate>
           <Carousel />
           <SkillSection />
-          <WelcomeSection darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <WelcomeSection />
           <BackgroundSection />
           <Strength />
           <StudentCommunity />
