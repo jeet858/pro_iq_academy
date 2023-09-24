@@ -6,7 +6,7 @@ import BannerSection from "./BannerSection";
 const GallerySection = () => {
   return (
     <div className="h-fit">
-      <BannerSection paragraphText="Gallery" imageSrc="/images/34.jpg" />
+      <BannerSection paragraphText="Gallery" imageSrc="/images/38.jpg" />
       <div className="h-fit w-full py-24 ">
         <div className="flex w-full flex-col space-y-4 sm:h-[35rem] md:px-32 lg:h-[60rem] xl:h-[100rem]">
           <div className="flex basis-2/3 flex-row space-x-4">

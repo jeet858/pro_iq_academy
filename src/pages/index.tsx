@@ -3,6 +3,7 @@ import MainPageTemplate from "~/components/MainPageTemplate";
 import BackgroundSection from "~/components/elements/BackgroundSection";
 import Carousel from "~/components/elements/Carousel";
 import ContectSection from "~/components/elements/ContectSection";
+import ReviewSection from "~/components/elements/ReviewSection";
 import SkillSection from "~/components/elements/SkillSection";
 import Strength from "~/components/elements/Strength";
 import StudentCommunity from "~/components/elements/StudentCommunity";
@@ -27,6 +28,7 @@ export default function Home() {
           <Strength />
           <StudentCommunity />
           <ContectSection />
+          <ReviewSection />
           <Footer />
         </MainPageTemplate>
       </main>

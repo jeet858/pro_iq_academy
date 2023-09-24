@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from "../../../public/images/18.jpg";
-import img3 from "../../../public/images/19.jpg";
+import img1 from "../../../public/images/41.jpg";
+import img3 from "../../../public/images/42.jpg";
 import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
 function Carousel() {

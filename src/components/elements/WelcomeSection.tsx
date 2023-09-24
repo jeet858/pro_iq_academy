@@ -2,13 +2,9 @@ import React from "react";
 import { FaGraduationCap, FaUsers, FaBook } from "react-icons/fa";
 import SectionHeader from "./SectionHeader";
 
-type WelcomeSectionProps = {
-  darkMode: boolean;
-};
-
 const WelcomeSection: React.FC = () => {
   return (
-    <div className="h-[130rem] max-w-full items-center justify-center bg-white p-32 shadow-md sm:h-fit md:h-fit lg:h-[30rem]">
+    <div className="h-[130rem] max-w-full items-center justify-center bg-white p-32 shadow-md sm:h-fit md:h-fit lg:h-[40rem]">
       <SectionHeader title="Welcome to" subtitle="ProIQ Academy" />
 
       <div className="flex flex-wrap justify-between lg:flex-nowrap">

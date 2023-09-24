@@ -141,7 +141,7 @@ const Header = () => {
                 <Link href="/">
                   <span>
                     <img
-                      src="/images/logo.jpg"
+                      src="/images/logo.png"
                       alt="Your Logo"
                       className={` ${scrolled ? "h-16 w-auto" : "h-20 w-auto"}`}
                     />
