@@ -62,8 +62,8 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-fit w-full sm:p-8 md:p-16">
-        <p className="font-[Abhaya Libre SemiBold] sm:text-md md:text-xl lg:text-2xl">
+      <div className="flex h-fit w-full bg-[#004E65] sm:p-8 md:p-16">
+        <p className="sm:text-md font-[Gilroy-Regular] text-white md:text-xl lg:text-2xl">
           Pro IQ Academy is a renowned institute dedicated to fostering the
           self-skill development of children. With a team of dynamic and
           experienced professionals, we are committed to providing value-based,
