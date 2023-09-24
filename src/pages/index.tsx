@@ -1,9 +1,16 @@
 import Head from "next/head";
 import MainPageTemplate from "~/components/MainPageTemplate";
+import BackgroundSection from "~/components/elements/BackgroundSection";
 import Carousel from "~/components/elements/Carousel";
+import ContectSection from "~/components/elements/ContectSection";
+import ReviewSection from "~/components/elements/ReviewSection";
 import SkillSection from "~/components/elements/SkillSection";
-import Banner from "~/components/elements/Banner";
+import Strength from "~/components/elements/Strength";
+import StudentCommunity from "~/components/elements/StudentCommunity";
+import WelcomeSection from "~/components/elements/WelcomeSection";
+
 import Footer from "~/components/elements/footer";
+
 export default function Home() {
   return (
     <>
@@ -16,7 +23,12 @@ export default function Home() {
         <MainPageTemplate>
           <Carousel />
           <SkillSection />
-          <Banner />
+          <WelcomeSection />
+          <BackgroundSection />
+          <Strength />
+          <StudentCommunity />
+          <ContectSection />
+          <ReviewSection />
           <Footer />
         </MainPageTemplate>
       </main>
