@@ -10,7 +10,7 @@ const Strength: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-[60rem] max-w-full items-center justify-center p-12 sm:h-fit md:h-fit lg:h-[20rem]">
+    <div className=" h-fit max-w-full items-center justify-center p-12">
       <SectionHeader title="Strength in" subtitle="Numbers" />
       <div className="mt-8 flex flex-wrap justify-center">
         <CountCard

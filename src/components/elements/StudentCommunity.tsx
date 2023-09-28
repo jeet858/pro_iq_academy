@@ -4,7 +4,10 @@ import StudentBox from "./StudentBox";
 
 const StudentCommunity: React.FC = () => {
   return (
-    <div className="h-[130rem] w-full items-center justify-center sm:h-fit sm:p-8 md:h-fit md:p-8 lg:h-[55rem] lg:p-32">
+    <div
+      className=" w-full items-center justify-center bg-[length:100%_100%]   bg-no-repeat sm:h-fit sm:p-8 md:h-fit md:p-8 lg:h-full lg:p-32"
+      style={{ backgroundImage: 'url("./images/community_background.png") ' }}
+    >
       <div className="h-44">
         <SectionHeader title="Student Community" subtitle="Feedback" />
       </div>
@@ -27,7 +30,6 @@ const StudentCommunity: React.FC = () => {
           imageSrc="/images/image-3.jpg"
           description="PRO IQ Academy offers an excellent learning experience. My child's numerical ability and critical thinking skills have improved significantly. The academy's emphasis on clean handwriting and English communication has boosted confidence. Highly recommended!."
         />
-        {/* Add more StudentBox components as needed */}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { PiWechatLogoLight } from "react-icons/pi";
 import { BiMailSend } from "react-icons/bi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
 import BannerSection from "./BannerSection";
-const ContactSection = () => {
+const ContactUsSection = () => {
   return (
     <div className="h-fit">
       <BannerSection paragraphText="Contect Us" imageSrc="/images/32.jpg" />
@@ -95,4 +95,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default ContactUsSection;

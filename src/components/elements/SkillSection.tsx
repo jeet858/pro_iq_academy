@@ -6,14 +6,14 @@ const SkillSection: React.FC = () => {
     <section className="flex w-[80%] flex-col justify-center self-center">
       <div className="container relative top-[] flex h-full w-full min-w-full items-center justify-center self-center">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col items-center rounded-[27px] bg-[#037ef3] shadow-lg sm:p-10 md:h-[200px]  md:w-[200px] md:p-5 lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] xl:p-10">
+          <div className="flex flex-col items-center rounded-[27px] bg-[#037EF3] shadow-lg sm:p-10 md:h-[200px]  md:w-[200px] md:p-5 lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] xl:p-10">
             <FaCogs className=" text-6xl text-white md:mb-[1rem] xl:mb-[1.5rem]" />
             <h2 className="text-center text-2xl font-semibold text-white md:text-lg lg:text-2xl">
               Mental Math and Advanced Skill Development
             </h2>
           </div>
 
-          <div className="flex flex-col items-center rounded-[27px] bg-[#FFC949] shadow-lg sm:p-10 md:h-[200px]  md:w-[200px] md:p-5 lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] xl:p-10">
+          <div className="flex flex-col items-center rounded-[27px] bg-[#FF8A00] shadow-lg sm:p-10 md:h-[200px]  md:w-[200px] md:p-5 lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] xl:p-10">
             <svg
               width="62"
               height="67"
@@ -75,7 +75,7 @@ const SkillSection: React.FC = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col items-center rounded-[27px] bg-[#2ba071] shadow-lg sm:p-10 md:h-[200px]  md:w-[200px] md:p-5 lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] xl:p-10">
+          <div className="flex flex-col items-center rounded-[27px] bg-[#06965D] shadow-lg sm:p-10 md:h-[200px]  md:w-[200px] md:p-5 lg:h-[250px] lg:w-[250px] xl:h-[280px] xl:w-[280px] xl:p-10">
             <svg
               width="58"
               height="71"

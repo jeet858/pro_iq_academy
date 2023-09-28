@@ -14,8 +14,8 @@ const OurCoursesSkill = () => {
         <span>Skills</span>
       </h1>
       <div className="flex flex-col space-y-16">
-        <div className=" flex h-fit w-full items-center justify-evenly   sm:flex-col   md:flex-col  lg:flex-row ">
-          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+        <div className=" flex h-fit w-full items-center justify-center gap-6   sm:flex-col   md:flex-col  lg:flex-row ">
+          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF72C6] p-6 lg:h-fit  ">
             <div className="flex ">
               <Image src={icon1} alt="" className="h-fit w-fit " />
             </div>
@@ -26,16 +26,14 @@ const OurCoursesSkill = () => {
               <span className="font-[Palanquin] text-sm text-[#485261] ">
                 Learn in- demand skills that prepare you for an entry level job.
               </span>
-              <div className="flex justify-between">
-                <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
-                  READ MORE
-                  <BsArrowRight />
-                </button>
-                <p>$60</p>
-              </div>
+
+              <h1 className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+                READ MORE
+                <BsArrowRight />
+              </h1>
             </div>
           </div>
-          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]   ">
+          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#C9F175] p-6 lg:h-fit ">
             <div className="flex ">
               <Image src={icon2} alt="" className="h-fit w-fit " />
             </div>
@@ -51,11 +49,10 @@ const OurCoursesSkill = () => {
                   READ MORE
                   <BsArrowRight />
                 </button>
-                <p>$60</p>
               </div>
             </div>
           </div>
-          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#8EE9F5] p-6 lg:h-fit ">
             <div className="flex ">
               <Image src={icon3} alt="" className="h-fit w-fit " />
             </div>
@@ -72,14 +69,13 @@ const OurCoursesSkill = () => {
                   READ MORE
                   <BsArrowRight />
                 </button>
-                <p>$60</p>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <div className=" flex h-fit w-full items-center justify-evenly  sm:flex-col  md:flex-col  lg:flex-row ">
-            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+          <div className=" flex h-fit w-full items-center justify-center gap-6  sm:flex-col  md:flex-col  lg:flex-row ">
+            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#F2EC5B] p-6 lg:h-fit  ">
               <div className="flex ">
                 <Image src={icon4} alt="" className="h-fit w-fit " />
               </div>
@@ -95,11 +91,10 @@ const OurCoursesSkill = () => {
                     READ MORE
                     <BsArrowRight />
                   </button>
-                  <p>$60</p>
                 </div>
               </div>
             </div>
-            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#A1A5FA] p-6 lg:h-fit ">
               <div className="flex ">
                 <Image src={icon5} alt="" className="h-fit w-fit " />
               </div>
@@ -115,11 +110,10 @@ const OurCoursesSkill = () => {
                     READ MORE
                     <BsArrowRight />
                   </button>
-                  <p>$60</p>
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#EEB764] p-6 lg:h-fit ">
               <div className="flex ">
                 <Image src={icon6} alt="" className="h-fit w-fit " />
               </div>
@@ -136,7 +130,6 @@ const OurCoursesSkill = () => {
                     READ MORE
                     <BsArrowRight />
                   </button>
-                  <p>$60</p>
                 </div>
               </div>
             </div>

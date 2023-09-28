@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "./Carousel";
-import img1 from "../../../public/images/Banner3_about.jpg";
-import img2 from "../../../public/images/Banner3_why.png";
-import Strength from "./Strength";
-const WhyProiqSection = () => {
+import img1 from "../../../public/images/Banner3_home.png";
+import img2 from "../../../public/images/Banner4_home.png";
+
+function HomeCarousel() {
   const slides = [
     {
       imageSrc: img1,
@@ -16,13 +16,12 @@ const WhyProiqSection = () => {
       buttonText: "Know More",
     },
   ];
+
   return (
-    <div className="h-fit">
+    <div>
       <Carousel slides={slides} />
-      <div className="mt-16">
-        <Strength />
-      </div>
     </div>
   );
-};
-export default WhyProiqSection;
+}
+
+export default HomeCarousel;

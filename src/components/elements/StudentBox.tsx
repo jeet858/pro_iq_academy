@@ -15,11 +15,11 @@ const StudentBox: React.FC<StudentBoxProps> = ({
 }) => {
   return (
     <div className="relative mt-8 flex flex-col justify-around rounded-2xl border bg-white shadow-[2px_2px_2px_2px_#00000040] sm:h-[300px] sm:w-[320px] lg:h-[360px] lg:w-[310px]  lg:p-4 xl:h-[392px] xl:w-[366px] ">
-      <div className="absolute -top-20 left-24 h-[146px] w-[146px]  overflow-visible ">
+      <div className="absolute -top-20 left-24 h-[146px] w-[146px] overflow-visible rounded-full outline  outline-[#FF6E65] ">
         <img
           src={imageSrc}
           alt={`${name}'s portrait`}
-          className="mx-auto rounded-full "
+          className="h-[146px] w-[146px] rounded-full "
         />
       </div>
       <div className="">

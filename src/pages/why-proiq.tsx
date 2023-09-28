@@ -8,7 +8,7 @@ const WhyProiq = () => {
   return (
     <div>
       <MainPageTemplate>
-        <div className="pt-[100px]">
+        <div className="">
           <WhyProiqSection />
         </div>
         <Footer />

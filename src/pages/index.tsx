@@ -1,8 +1,9 @@
 import Head from "next/head";
 import MainPageTemplate from "~/components/MainPageTemplate";
 import BackgroundSection from "~/components/elements/BackgroundSection";
-import Carousel from "~/components/elements/Carousel";
+
 import ContectSection from "~/components/elements/ContectSection";
+import HomeCarousel from "~/components/elements/HomeCarousel";
 import ReviewSection from "~/components/elements/ReviewSection";
 import SkillSection from "~/components/elements/SkillSection";
 import Strength from "~/components/elements/Strength";
@@ -21,7 +22,7 @@ export default function Home() {
       </Head>
       <main>
         <MainPageTemplate>
-          <Carousel />
+          <HomeCarousel />
           <SkillSection />
           <WelcomeSection />
           <BackgroundSection />
