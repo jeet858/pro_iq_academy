@@ -22,3 +22,46 @@
 .dark-mode {
   background-color: black;
 }
+/* global.css */
+
+@keyframes moveOutward {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px); /* Adjust this value as needed */
+  }
+}
+
+@keyframes moveInward {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px); /* Adjust this value as needed */
+  }
+}
+
+.box1.outward {
+  animation: moveOutward 1s linear forwards;
+}
+
+.box1.inward {
+  animation: moveInward 1s linear forwards 1s;
+}
+
+.box2.outward {
+  animation: moveInward 1s linear forwards;
+}
+
+.box2.inward {
+  animation: moveOutward 1s linear forwards 1s;
+}
+@keyframes moveContinuous {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%); /* Move the full width of the container */
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../../../public/images/pp.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContactSection = () => {
   return (
@@ -17,9 +18,11 @@ const ContactSection = () => {
           <h2 className="text-5xl font-semibold text-black">
             Contact Now, We will Help you
           </h2>
-          <button className="mt-8 flex h-[55px] w-[180px] items-center justify-center rounded-[20px] bg-[#FF6E65] text-xl text-white hover:bg-[#0d369f]">
-            Contact Us
-          </button>
+          <Link href={"/Contact"}>
+            <button className="mt-8 flex h-[55px] w-[180px] items-center justify-center rounded-[20px] bg-[#FF6E65] text-xl text-white hover:bg-[#0d369f]">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
     </div>

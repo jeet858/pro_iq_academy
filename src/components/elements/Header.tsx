@@ -72,7 +72,7 @@ const Header = () => {
   const isActiveLink = (href: string) => router.pathname === href;
 
   const navigationLinks = [
-    { text: "HOME", to: "/#" },
+    { text: "HOME", to: "/" },
     { text: "ABOUT US", to: "/About" },
     { text: "WHY PROIQ", to: "/why-proiq" },
     { text: "OUR COURSES", to: "/our-courses" },
