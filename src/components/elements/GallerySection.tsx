@@ -14,7 +14,7 @@ const GallerySection = () => {
               className="basis-1/3 bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage:
-                  'url("./images/woman-attending-online-class.jpg")',
+                  'url("./images/IMG20221112083744 3.png")',
               }}
             ></div>
             <div className="flex basis-2/3 flex-col space-y-4">
@@ -23,13 +23,13 @@ const GallerySection = () => {
                   className="basis-1/2 bg-cover bg-center bg-no-repeat"
                   style={{
                     backgroundImage:
-                      'url("./images/teacher-talking-with-her-students-online.jpg")',
+                      'url("./images/IMG-20230605-WA0004 2.png")',
                   }}
                 ></div>
                 <div
                   className="basis-1/2 bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: 'url("./images/close-up-woman-class.jpg")',
+                    backgroundImage: 'url("./images/20230906_175553 1.png")',
                   }}
                 ></div>
               </div>
@@ -37,7 +37,7 @@ const GallerySection = () => {
                 className="basis-1/2 bg-cover bg-center bg-no-repeat"
                 style={{
                   backgroundImage:
-                    'url("./images/medium-shot-woman-working-desk.jpg")',
+                    'url("./images/IMG-20230907-WA0008 2.png")',
                 }}
               ></div>
             </div>
@@ -47,14 +47,14 @@ const GallerySection = () => {
               className="basis-2/3 bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage:
-                  'url("./images/english-teacher-doing-her-class-with-whiteboard.jpg")',
+                  'url("./images/IMG_20221220_192721 1.png")',
               }}
             ></div>
             <div
               className="basis-1/3 bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage:
-                  'url("./images/young-female-student-listening-her-english-teacher.jpg")',
+                  'url("./images/IMG-20230605-WA0001 1.png")',
               }}
             ></div>
           </div>
