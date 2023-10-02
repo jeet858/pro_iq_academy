@@ -7,6 +7,7 @@ import icon5 from "../../../public/images/listening skill.jpg";
 import icon6 from "../../../public/images/confidence.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 const OurCoursesSkill = () => {
   return (
     <div className="h-fit w-full p-8">
@@ -26,11 +27,12 @@ const OurCoursesSkill = () => {
               <span className="font-[Palanquin] text-sm text-[#485261] ">
                 Learn in- demand skills that prepare you for an entry level job.
               </span>
-
-              <h1 className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
-                READ MORE
-                <BsArrowRight />
-              </h1>
+              <Link href={"/Abacus"}>
+                <h1 className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
+                  READ MORE
+                  <BsArrowRight />
+                </h1>
+              </Link>
             </div>
           </div>
           <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#C9F175] p-6 transition-transform hover:scale-105 lg:h-fit ">

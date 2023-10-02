@@ -11,7 +11,10 @@ import DiscoverSection from "./DiscoverSection";
 const OurCoursesSection = () => {
   return (
     <div className="h-fit">
-      <BannerSection paragraphText="OUR COURSES" imageSrc="/images/31.jpg" />
+      <BannerSection
+        paragraphText="OUR COURSES"
+        imageSrc="/images/banner.jpg"
+      />
       <div className="h-fit w-full p-8">
         <h1 className="flex flex-col  items-center justify-center font-bold text-[#233D63] sm:text-lg md:text-2xl">
           <span>Start one of our highest quality</span>
