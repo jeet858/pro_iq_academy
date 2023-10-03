@@ -2,7 +2,7 @@ import React from "react";
 import MainPageTemplate from "~/components/MainPageTemplate";
 import AboutSection from "~/components/elements/AboutSection";
 import Carousel from "~/components/elements/Carousel";
-import img1 from "../../public/images/Banner3_about.jpg";
+import img1 from "../../public/images/Banner3.jpg";
 import img2 from "../../public/images/Banner3_why.png";
 import Footer from "~/components/elements/footer";
 

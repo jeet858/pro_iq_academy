@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import BannerSection from "./BannerSection";
 import ImageCarousel from "./ImageCarousel";
+import ContactSection from "./ContectSection";
 
 const GallerySection = () => {
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
@@ -84,10 +85,11 @@ const GallerySection = () => {
       </div>
 
       {isCarouselOpen && (
-        <div className="fixed left-0 top-0 z-50 h-full w-full bg-white">
+        <div className="fixed left-0  top-0 z-50 flex h-full w-full items-center justify-center overflow-scroll bg-white">
           <ImageCarousel onClose={closeCarousel} />
         </div>
       )}
+      <ContactSection />
     </div>
   );
 };

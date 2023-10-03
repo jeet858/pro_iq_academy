@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
-import img1 from "../../../public/images/Banner3_about.jpg";
+import img1 from "../../../public/images/Banner3.jpg";
 import img2 from "../../../public/images/Banner3_why.png";
 import img3 from "../../../public/images/about_thumb_2.png";
 

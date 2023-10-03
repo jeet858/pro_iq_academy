@@ -4,8 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Link from "next/link";
 
-function Carousel({ slides }) {
+interface Slide {
+  imageSrc: any;
+  title: string;
+  buttonText: string;
+}
+
+interface CarouselProps {
+  slides: Slide[];
+}
+
+function Carousel({ slides }: CarouselProps) {
   const settings = {
     infinite: true,
     speed: 1000,
@@ -30,9 +41,11 @@ function Carousel({ slides }) {
               <p style={{ WebkitTextStroke: "1.5px #FAF8FFE3" }}>
                 {slide.title}
               </p>
-              <button className="mt-8 flex items-center justify-center rounded-[10px] bg-[#FF4F81] text-xl  text-white hover:bg-[#FF6E65] sm:h-[40px] sm:w-[150px]  md:h-[50px] md:w-[170px]">
-                {slide.buttonText} <AiOutlineArrowRight />
-              </button>
+              <Link href={"/our-courses"}>
+                <button className="hover-bg-[#FF6E65] mt-8 flex items-center justify-center rounded-[10px] bg-[#FF4F81]  text-xl text-white sm:h-[40px] sm:w-[150px]  md:h-[50px] md:w-[170px]">
+                  {slide.buttonText} <AiOutlineArrowRight />
+                </button>
+              </Link>
             </div>
           </div>
         ))}

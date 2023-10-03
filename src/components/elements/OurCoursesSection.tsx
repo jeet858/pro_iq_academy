@@ -7,6 +7,7 @@ import OurCoursesSkill from "./OurCoursesSkill";
 import { BiSolidCircle } from "react-icons/bi";
 import BannerSection from "./BannerSection";
 import DiscoverSection from "./DiscoverSection";
+import ContactSection from "./ContectSection";
 
 const OurCoursesSection = () => {
   return (
@@ -105,7 +106,7 @@ const OurCoursesSection = () => {
         </div>
       </div>
       <OurCoursesSkill />
-      <DiscoverSection />
+      <ContactSection />
     </div>
   );
 };

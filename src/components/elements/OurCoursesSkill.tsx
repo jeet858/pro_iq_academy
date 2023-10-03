@@ -28,10 +28,10 @@ const OurCoursesSkill = () => {
                 Learn in- demand skills that prepare you for an entry level job.
               </span>
               <Link href={"/Abacus"}>
-                <h1 className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
+                <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                   READ MORE
-                  <BsArrowRight />
-                </h1>
+                  <BsArrowRight className="ml-3 mt-1" />
+                </button>
               </Link>
             </div>
           </div>
@@ -46,12 +46,12 @@ const OurCoursesSkill = () => {
               <span className="font-[Palanquin] text-sm text-[#485261] ">
                 It is the best way to make progress towards human-level AI.
               </span>
-              <div className="flex justify-between">
+              <Link href={"/Abacus"}>
                 <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                   READ MORE
-                  <BsArrowRight />
+                  <BsArrowRight className="ml-3 mt-1" />
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#8EE9F5] p-6 transition-transform hover:scale-105 lg:h-fit ">
@@ -66,12 +66,12 @@ const OurCoursesSkill = () => {
                 Learn Python programming online with courses like Python for
                 everybody.
               </span>
-              <div className="flex justify-between">
+              <Link href={"/Abacus"}>
                 <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                   READ MORE
-                  <BsArrowRight />
+                  <BsArrowRight className="ml-3 mt-1" />
                 </button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -88,12 +88,12 @@ const OurCoursesSkill = () => {
                 <span className="font-[Palanquin] text-sm text-[#485261] ">
                   Gain the job ready skills for an entry-level data analyst.
                 </span>
-                <div className="flex justify-between">
+                <Link href={"/Abacus"}>
                   <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                     READ MORE
-                    <BsArrowRight />
+                    <BsArrowRight className="ml-3 mt-1" />
                   </button>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#A1A5FA] p-6 transition-transform hover:scale-105 lg:h-fit ">
@@ -107,12 +107,12 @@ const OurCoursesSkill = () => {
                 <span className="font-[Palanquin] text-sm text-[#485261] ">
                   The Deep learning Specialization provides a pathway.
                 </span>
-                <div className="flex justify-between">
+                <Link href={"/Abacus"}>
                   <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                     READ MORE
-                    <BsArrowRight />
+                    <BsArrowRight className="ml-3 mt-1" />
                   </button>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#EEB764] p-6 transition-transform hover:scale-105 lg:h-fit ">
@@ -127,12 +127,12 @@ const OurCoursesSkill = () => {
                   Data Science courses or pay to earn a course or Specialization
                   Certificate.
                 </span>
-                <div className="flex justify-between">
+                <Link href={"/Abacus"}>
                   <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                     READ MORE
-                    <BsArrowRight />
+                    <BsArrowRight className="ml-3 mt-1" />
                   </button>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

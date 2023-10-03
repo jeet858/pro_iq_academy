@@ -17,7 +17,7 @@ const BackgroundSection: React.FC<BackgroundSectionProps> = ({ title }) => {
       style={{ backgroundImage: 'url("./images/45.jpg")' }}
     >
       <div className="relative flex h-fit flex-col items-center justify-center bg-[#D9D9D9BD] sm:h-fit xl:h-[600px]">
-        <div className="flex h-16 items-center justify-center text-3xl font-semibold text-[#06965D]">
+        <div className="mt-8 flex h-16 items-center justify-center text-3xl font-semibold text-black">
           {title}
         </div>
         <div className="relative flex flex-col justify-around p-12 text-center">
