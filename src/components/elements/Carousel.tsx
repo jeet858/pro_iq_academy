@@ -2,12 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 
 interface Slide {
-  imageSrc: any;
+  imageSrc: StaticImageData;
   title: string;
   buttonText: string;
 }
