@@ -10,8 +10,8 @@ const WelcomeSection: React.FC = () => {
       <div className="flex flex-wrap justify-between lg:flex-nowrap">
         <div className="group flex h-full w-full flex-col items-center p-4 lg:w-1/3">
           <div
-            className="mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[#037EF3] shadow-lg
-shadow-[#00000040]"
+            className="mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[#037EF3] shadow-lg shadow-[#00000040] transition-transform
+hover:scale-105"
           >
             <svg
               width="70"
@@ -28,7 +28,7 @@ shadow-[#00000040]"
               />
             </svg>
           </div>
-          <h2 className="mb-4 flex justify-center text-center font-[Montserrat] text-3xl font-semibold hover:text-[#FF6E65]">
+          <h2 className="mb-4 flex justify-center text-center font-[Montserrat] text-3xl font-semibold transition-transform hover:scale-105 hover:text-[#FF6E65]">
             Trending Courses
           </h2>
           <p className="flex justify-center text-center font-[Montserrat] text-lg text-gray-600">
@@ -36,7 +36,7 @@ shadow-[#00000040]"
           </p>
         </div>
         <div className="group flex h-full w-full flex-col items-center p-4 lg:w-1/3">
-          <div className="mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[#FF4F81] shadow-lg shadow-[#00000040]">
+          <div className="mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[#FF4F81] shadow-lg shadow-[#00000040] transition-transform hover:scale-105">
             <svg
               width="76"
               height="51"
@@ -53,7 +53,7 @@ shadow-[#00000040]"
               />
             </svg>
           </div>
-          <h2 className="mb-4 flex justify-center text-center font-[Montserrat] text-3xl font-semibold hover:text-[#FF6E65]">
+          <h2 className="mb-4 flex justify-center text-center font-[Montserrat] text-3xl font-semibold transition-transform hover:scale-105 hover:text-[#FF6E65]">
             Certified Teachers
           </h2>
           <p className="flex justify-center text-center font-[Montserrat] text-lg text-gray-600">
@@ -62,7 +62,7 @@ shadow-[#00000040]"
           </p>
         </div>
         <div className="group flex h-full w-full flex-col items-center p-4 lg:w-1/3">
-          <div className="mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[#FF8A00] shadow-lg shadow-[#00000040]">
+          <div className="mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[#FF8A00] shadow-lg shadow-[#00000040] transition-transform hover:scale-105">
             <svg
               width="56"
               height="59"
@@ -79,7 +79,7 @@ shadow-[#00000040]"
               />
             </svg>
           </div>
-          <h2 className="mb-4 flex justify-center text-center font-[Montserrat] text-3xl font-semibold hover:text-[#FF6E65]">
+          <h2 className="mb-4 flex justify-center text-center font-[Montserrat] text-3xl font-semibold transition-transform hover:scale-105 hover:text-[#FF6E65]">
             Books & Library
           </h2>
           <p className="flex justify-center text-center font-[Montserrat] text-lg text-gray-600">

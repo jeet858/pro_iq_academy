@@ -23,7 +23,7 @@ const BackgroundSection: React.FC<BackgroundSectionProps> = ({ title }) => {
         <div className="relative flex flex-col justify-around p-12 text-center">
           <div className="flex flex-wrap  justify-center">
             <div
-              className={`m-4 flex  flex-row items-center rounded-2xl   bg-[#037EF3]  p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+              className={`m-4 flex flex-row items-center  rounded-2xl bg-[#037EF3] p-10   shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
             >
               <div className="mr-4 flex items-center justify-center rounded-full bg-[#DEEEFE]  shadow-xl shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-40">
                 <FaAmericanSignLanguageInterpreting className="text-4xl text-[#037EF3]" />
@@ -38,7 +38,7 @@ const BackgroundSection: React.FC<BackgroundSectionProps> = ({ title }) => {
               </div>
             </div>
             <div
-              className={`m-4 flex  flex-row items-center   rounded-2xl bg-[#FF8A00]  p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+              className={`m-4 flex  flex-row items-center rounded-2xl bg-[#FF8A00]   p-10 shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
             >
               <div className="mr-4 flex items-center justify-center rounded-full  bg-[#DEEEFE] shadow-xl  shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-36">
                 <BsDownload className="text-4xl text-[#FF8A00]" />
@@ -57,7 +57,7 @@ const BackgroundSection: React.FC<BackgroundSectionProps> = ({ title }) => {
           <div className="relative text-center">
             <div className="flex flex-wrap justify-center">
               <div
-                className={`m-4 flex  flex-row items-center   rounded-2xl bg-[#FF4F81]  p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+                className={`m-4 flex  flex-row items-center rounded-2xl bg-[#FF4F81]   p-10 shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
               >
                 <div className="mr-4 flex items-center justify-center  rounded-full bg-[#DEEEFE]  shadow-xl shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-36">
                   <FaHeadphones className="text-4xl text-[#FF4F81]" />
@@ -71,7 +71,7 @@ const BackgroundSection: React.FC<BackgroundSectionProps> = ({ title }) => {
               </div>
 
               <div
-                className={`m-4 flex  flex-row items-center rounded-2xl  bg-[#06965D]  p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+                className={`m-4 flex  flex-row items-center rounded-2xl bg-[#06965D] p-10  shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
               >
                 <div className="mr-4 flex items-center justify-center  rounded-full  bg-[#DEEEFE] shadow-xl shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-36">
                   <FiPlayCircle className="text-4xl text-[#06965D]" />

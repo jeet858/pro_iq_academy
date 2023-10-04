@@ -3,6 +3,7 @@ import { PiWechatLogoLight } from "react-icons/pi";
 import { BiMailSend } from "react-icons/bi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
 import BannerSection from "./BannerSection";
+import Link from "next/link";
 const ContactUsSection = () => {
   return (
     <div className="h-fit">
@@ -12,15 +13,18 @@ const ContactUsSection = () => {
           <div className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full bg-[#DEEEFE] shadow-xl shadow-[#00000040]">
             <PiWechatLogoLight className="text-5xl text-[#06965D]" />
           </div>
-          <div className="flex flex-col ">
-            <span className="text-xl font-semibold text-black">
-              +917477879008
-            </span>
-            <span className="text-md font-semibold text-black">
-              Call Anytime
-            </span>
-          </div>
+          <Link href="https://api.whatsapp.com/send?phone=9547441876">
+            <div className="flex flex-col ">
+              <span className="text-xl font-semibold text-black">
+                +917477879008
+              </span>
+              <span className="text-md font-semibold text-black">
+                Call Anytime
+              </span>
+            </div>
+          </Link>
         </div>
+
         <div className="flex h-fit basis-1/3 scale-100 transform justify-evenly rounded-lg bg-[#FF6E65F7] shadow-2xl transition-transform hover:scale-105 hover:border-[1px] hover:border-blue-900 sm:w-full sm:flex-col sm:items-center sm:p-8 md:w-full md:flex-col md:p-8 lg:w-fit lg:flex-row">
           <div className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full bg-[#DEEEFE] shadow-xl shadow-[#00000040]">
             <BiMailSend className="text-5xl text-[#FF6E65F7]" />
