@@ -89,7 +89,7 @@ const ReviewSection = () => {
             type="button"
             value="Submit"
             className="flex h-[55px] w-[180px] items-center justify-center rounded-[20px] bg-[#FF6E65] text-xl text-white hover:bg-[#0d369f]"
-            onClick={async () => {
+            onClick={() => {
               console.log(reviewData);
               create();
             }}

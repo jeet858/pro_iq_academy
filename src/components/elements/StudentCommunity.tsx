@@ -44,6 +44,7 @@ const StudentCommunity: React.FC = () => {
         {reviews.map((review, index) => {
           return (
             <StudentBox
+              key={index}
               name={review.name}
               email={review.email}
               imageSrc="/images/image-3.jpg"
