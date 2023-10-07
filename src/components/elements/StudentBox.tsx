@@ -2,14 +2,14 @@ import React from "react";
 import { BsQuote } from "react-icons/bs";
 interface StudentBoxProps {
   name: string;
-  role: string;
+  email: string;
   imageSrc: string;
   description: string;
 }
 
 const StudentBox: React.FC<StudentBoxProps> = ({
   name,
-  role,
+  email,
   imageSrc,
   description,
 }) => {
@@ -26,7 +26,7 @@ const StudentBox: React.FC<StudentBoxProps> = ({
         <h3 className="mt-4 flex items-center justify-center text-xl  font-bold text-[#0D369F]">
           {name}
         </h3>
-        <p className="flex justify-center text-gray-600">{role}</p>
+        <p className="flex justify-center text-gray-600">{email}</p>
         <div className="flex flex-row justify-center">
           <div className="text-2xl text-[#0D369F]">
             <BsQuote />

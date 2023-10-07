@@ -13,7 +13,10 @@ const ContactUsSection = () => {
           <div className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full bg-[#DEEEFE] shadow-xl shadow-[#00000040]">
             <PiWechatLogoLight className="text-5xl text-[#06965D]" />
           </div>
-          <Link href="https://api.whatsapp.com/send?phone=9547441876">
+          <a
+            href="https://api.whatsapp.com/send?phone=8617741681"
+            target="_blank"
+          >
             <div className="flex flex-col ">
               <span className="text-xl font-semibold text-black">
                 +917477879008
@@ -22,7 +25,7 @@ const ContactUsSection = () => {
                 Call Anytime
               </span>
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="flex h-fit basis-1/3 scale-100 transform justify-evenly rounded-lg bg-[#FF6E65F7] shadow-2xl transition-transform hover:scale-105 hover:border-[1px] hover:border-blue-900 sm:w-full sm:flex-col sm:items-center sm:p-8 md:w-full md:flex-col md:p-8 lg:w-fit lg:flex-row">
