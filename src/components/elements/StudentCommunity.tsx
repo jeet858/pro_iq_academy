@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionHeader from "./SectionHeader";
 import StudentBox from "./StudentBox";
+import { api } from "~/utils/api";
 
 const StudentCommunity: React.FC = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -28,50 +29,7 @@ const StudentCommunity: React.FC = () => {
     };
   }, []);
 
-  const studentData = [
-    {
-      name: "Mohan Singh",
-      role: "Parent",
-      imageSrc: "/images/image-3.jpg",
-      description:
-        "PRO IQ Academy has transformed my child's abilities with their mental math and skill development program. The instructors are experienced, and the small batches ensure personalized attention. Affordable fees and online/offline classes make it convenient.",
-    },
-    {
-      name: "Shalini Sharma",
-      role: "Parent",
-      imageSrc: "/images/image-3.jpg",
-      description:
-        "Choosing PRO IQ Academy was the best decision for my child's education. Their focus on reading, writing, and observation skills has improved overall intelligence. The instructors are skilled, and the evaluations are fun and engaging.",
-    },
-    {
-      name: "Tarun Shrivastava",
-      role: "Parent",
-      imageSrc: "/images/image-3.jpg",
-      description:
-        "PRO IQ Academy offers an excellent learning experience. My child's numerical ability and critical thinking skills have improved significantly. The academy's emphasis on clean handwriting and English communication has boosted confidence. Highly recommended!.",
-    },
-    {
-      name: "Mohan Singh",
-      role: "Parent",
-      imageSrc: "/images/image-3.jpg",
-      description:
-        "PRO IQ Academy has transformed my child's abilities with their mental math and skill development program. The instructors are experienced, and the small batches ensure personalized attention. Affordable fees and online/offline classes make it convenient.",
-    },
-    {
-      name: "Shalini Sharma",
-      role: "Parent",
-      imageSrc: "/images/image-3.jpg",
-      description:
-        "Choosing PRO IQ Academy was the best decision for my child's education. Their focus on reading, writing, and observation skills has improved overall intelligence. The instructors are skilled, and the evaluations are fun and engaging.",
-    },
-    {
-      name: "Tarun Shrivastava",
-      role: "Parent",
-      imageSrc: "/images/image-3.jpg",
-      description:
-        "PRO IQ Academy offers an excellent learning experience. My child's numerical ability and critical thinking skills have improved significantly. The academy's emphasis on clean handwriting and English communication has boosted confidence. Highly recommended!.",
-    },
-  ];
+  const { data: reviws, isError, isLoading } = api.review.all.useQuery();
 
   const sliderSettings = {
     dots: true,
@@ -83,6 +41,33 @@ const StudentCommunity: React.FC = () => {
     autoplaySpeed: 3000,
     pauseOnHover: false,
   };
+  if (isLoading) {
+    return (
+      <div
+        className="w-full items-center justify-center bg-[length:100%_100%] bg-no-repeat sm:h-fit sm:p-8 md:h-fit md:p-8 lg:h-full lg:p-32"
+        style={{ backgroundImage: 'url("./images/community_background.png")' }}
+      >
+        <div className="h-36">
+          <SectionHeader title="Student Community" subtitle="Feedback" />
+        </div>
+        <div className="grid grid-cols-1 gap-4"></div>
+      </div>
+    );
+  }
+  if (isError) {
+    return (
+      <div
+        className="w-full items-center justify-center bg-[length:100%_100%] bg-no-repeat sm:h-fit sm:p-8 md:h-fit md:p-8 lg:h-full lg:p-32"
+        style={{ backgroundImage: 'url("./images/community_background.png")' }}
+      >
+        <div className="h-36">
+          <SectionHeader title="Student Community" subtitle="Feedback" />
+        </div>
+        <div className="grid grid-cols-1 gap-4"></div>
+      </div>
+    );
+  }
+  console.log(reviws);
 
   return (
     <div
@@ -94,13 +79,14 @@ const StudentCommunity: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 gap-4">
         <Slider {...sliderSettings}>
-          {studentData.map((student, index) => (
-            <div key={index} className="mt-12">
+          {reviws.map((review, index) => (
+            <div key={index} className="mt-12 !flex justify-center">
               <StudentBox
-                name={student.name}
-                email={student.role}
-                imageSrc={student.imageSrc}
-                description={student.description}
+                key={index}
+                name={review.name}
+                email={review.email}
+                imageSrc="/images/image-3.jpg"
+                description={review.review}
               />
             </div>
           ))}
