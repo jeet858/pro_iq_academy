@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
 import img1 from "../../../public/images/Banner3_home.png";
-import img2 from "../../../public/images/Banner4_home.png";
+import img2 from "../../../public/images/banner4_home.png";
 
 function HomeCarousel() {
   const slides = [
