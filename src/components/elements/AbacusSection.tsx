@@ -9,8 +9,8 @@ import { useRouter } from "next/router";
 const AbacusSection = () => {
   const router = useRouter();
 
-  const scrollToReviewSection = () => {
-    router.push("/HomePage#review-section");
+  const scrollToReviewSection = async () => {
+    await router.push("/HomePage#review-section");
   };
   return (
     <div className="h-fit">
