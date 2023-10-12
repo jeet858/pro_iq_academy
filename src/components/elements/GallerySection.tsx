@@ -23,6 +23,7 @@ const GallerySection = () => {
       <BannerSection
         paragraphText="Gallery"
         imageSrc="/images/banner_gallery.png"
+        color="white"
       />
       <div className="h-fit w-full py-24">
         <div className="flex w-full flex-col space-y-4 sm:h-[35rem] md:px-32 lg:h-[60rem] xl:h-[100rem]">

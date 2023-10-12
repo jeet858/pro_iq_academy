@@ -8,7 +8,7 @@ import Link from "next/link";
 const ContactUsSection = () => {
   return (
     <div className="h-fit">
-      <BannerSection paragraphText="" imageSrc="/images/32.jpg" />
+      <BannerSection paragraphText="" imageSrc="/images/32.jpg" color="white" />
       <div className=" flex h-fit w-full items-center justify-center gap-4 sm:flex-col  sm:p-8 md:flex-col  md:p-16 lg:flex-row">
         <div className="flex h-fit basis-1/3 scale-100 transform justify-evenly rounded-lg bg-[#06965D] shadow-2xl transition-transform hover:scale-105 hover:border-[1px] hover:border-blue-900 sm:w-full sm:flex-col sm:items-center sm:p-8 md:w-full md:flex-col md:p-8 lg:w-fit lg:flex-row">
           <div className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full bg-[#DEEEFE] shadow-xl shadow-[#00000040]">

@@ -12,6 +12,7 @@ const FranchisingSection = () => {
       <BannerSection
         paragraphText="Franchising"
         imageSrc="/images/franchising_banner.png"
+        color="white"
       />
       <div className="sm:p-10 lg:p-20 ">
         <p className="font-[Prata] sm:text-lg lg:text-2xl">

@@ -15,6 +15,7 @@ const OurCoursesSection = () => {
       <BannerSection
         paragraphText="Our Courses"
         imageSrc="/images/banner_our course (1).jpg"
+        color="#012360"
       />
       <div className="h-fit w-full p-8">
         <h1 className="flex flex-col  items-center justify-center font-bold text-[#233D63] sm:text-lg md:text-2xl">

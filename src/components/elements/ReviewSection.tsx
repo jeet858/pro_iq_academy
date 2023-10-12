@@ -40,7 +40,10 @@ const ReviewSection = () => {
   };
 
   return (
-    <div className="flex w-full p-16 sm:flex-col md:flex-row">
+    <div
+      id="review-section"
+      className="flex w-full p-16 sm:flex-col md:flex-row"
+    >
       <div className=" flex w-full flex-col md:basis-1/2">
         <div className="w-full">
           <span className="text-6xl text-[#FF6E65]">WE NEED YOUR FEEDBACK</span>

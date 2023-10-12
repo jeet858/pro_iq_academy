@@ -5,12 +5,19 @@ import img from "../../../public/images/Mask group.png";
 import { AiOutlineStar } from "react-icons/ai";
 import { BiSolidCircle, BiSolidDownload } from "react-icons/bi";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const AbacusSection = () => {
+  const router = useRouter();
+
+  const scrollToReviewSection = () => {
+    router.push("/HomePage#review-section");
+  };
   return (
     <div className="h-fit">
       <BannerSection
         paragraphText="Abacus"
         imageSrc="/images/banner_test.jpg"
+        color="#012360"
       />
       <div className="h-fit w-full ">
         <div className="flex w-full justify-between sm:flex-col sm:p-8 md:flex-row md:gap-5 lg:gap-10 lg:p-16">
@@ -89,11 +96,12 @@ const AbacusSection = () => {
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Review
               </span>
-              <Link href={"/HomePage"}>
-                <span className="font-[Montserrat] text-lg">
-                  Give Your Feedback
-                </span>
-              </Link>
+              <span
+                className="cursor-pointer font-[Montserrat] text-lg"
+                onClick={scrollToReviewSection}
+              >
+                Give Your Feedback
+              </span>
             </div>
           </div>
         </div>
