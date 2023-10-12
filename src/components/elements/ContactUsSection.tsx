@@ -53,7 +53,7 @@ const ContactUsSection = () => {
           </span>
         </div>
       </div>
-      <div className=" flex h-fit w-full gap-4 p-16 sm:flex-col sm:space-y-4 md:flex-col md:space-y-4 lg:flex-row lg:space-x-4">
+      <div className="flex h-fit w-full flex-col gap-4 p-16 sm:flex-col sm:space-y-4 md:flex-col md:space-y-4 lg:space-x-4">
         <div className="h-24 w-full basis-1/3 flex-col gap-4 space-y-6">
           <div className="text-xl text-[#4D5FE3]">Send a message</div>
           <div className="text-6xl font-bold text-black">
@@ -64,41 +64,15 @@ const ContactUsSection = () => {
             praesentium.
           </div>
         </div>
-        <form className="flex h-fit w-full flex-col gap-4 space-y-1">
-          <div className="flex sm:flex-col md:flex-row">
-            <input
-              type="text"
-              placeholder="Name"
-              className="m-4 h-16 rounded-lg bg-[#F1F2F6] p-4 sm:w-full md:w-1/2"
-            />
-            <input
-              type="text"
-              placeholder="Email"
-              className="m-4 h-16 rounded-lg bg-[#F1F2F6] p-4 sm:w-full md:w-1/2"
-            />
-          </div>
-          <div className="flex sm:flex-col md:flex-row">
-            <input
-              type="text"
-              placeholder="Phone no."
-              className="m-4 h-16 rounded-lg bg-[#F1F2F6] p-4 sm:w-full md:w-1/2"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="m-4 h-16 rounded-lg bg-[#F1F2F6] p-4 sm:w-full md:w-1/2"
-            />
-          </div>
-          <div className="flex">
-            <textarea
-              placeholder="Write a message"
-              className="m-4 max-h-40 min-h-[10rem] w-full rounded-lg bg-[#F1F2F6] p-4"
-            />
-          </div>
-          <button className="m-4 h-14  w-48 rounded-lg bg-[#4D5FE3] font-bold text-white">
-            SEND A MESSAGE
-          </button>
-        </form>
+        <div className="flex w-full p-8">
+          <iframe
+            className="w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14720.455053765292!2d88.46836988771574!3d22.724012574867118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a20ecaef28a9%3A0x14cbcf7132dfb3b4!2sBarasat!5e0!3m2!1sen!2sin!4v1697138655081!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
