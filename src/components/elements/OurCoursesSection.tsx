@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../public/images/courses_thumb_1.png";
+import img1 from "../../../public/images/course_thumbnail.png";
 import img2 from "../../../public/images/team_2.png";
 
 import OurCoursesSkill from "./OurCoursesSkill";
@@ -13,8 +13,8 @@ const OurCoursesSection = () => {
   return (
     <div className="h-fit">
       <BannerSection
-        paragraphText="OUR COURSES"
-        imageSrc="/images/banner.jpg"
+        paragraphText="Our Courses"
+        imageSrc="/images/banner_our course (1).jpg"
       />
       <div className="h-fit w-full p-8">
         <h1 className="flex flex-col  items-center justify-center font-bold text-[#233D63] sm:text-lg md:text-2xl">
@@ -23,22 +23,49 @@ const OurCoursesSection = () => {
         </h1>
         <div className="flex h-fit w-full items-center justify-center gap-12 space-x-4 p-8 sm:flex-col md:flex-row">
           <div className="flex items-end gap-12  space-y-4 sm:h-1/2 sm:flex-col-reverse md:w-1/2 md:flex-col">
-            <h1 className="flex h-fit w-fit flex-col gap-4 font-[Prata] text-[#233D63] lg:pl-36">
-              <span className="flex gap-4 text-[#3172D0] sm:text-lg md:text-xl lg:text-3xl">
-                <div className="mt-2 flex items-start justify-center text-center text-xl text-[#3172D0]">
+            <h1 className="flex h-fit w-fit flex-col gap-4 font-[Prata] text-[#3C3C3C] lg:pl-36">
+              <h1 className="flex flex-col gap-4 font-semibold text-black sm:text-xl md:text-2xl lg:text-5xl">
+                Abacus
+                <div className="flex ">
+                  <div className="">
+                    <svg
+                      width="85"
+                      height="1"
+                      viewBox="0 0 85 1"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line y1="0.5" x2="85" y2="0.5" stroke="black" />
+                    </svg>
+                  </div>
+                  <div className="mt-2">
+                    <svg
+                      width="85"
+                      height="4"
+                      viewBox="0 0 85 1"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line y1="0.5" x2="85" y2="0.5" stroke="black" />
+                    </svg>
+                  </div>
+                </div>
+              </h1>
+              <span className="flex gap-4 text-[#3C3C3C] sm:text-lg md:text-xl lg:text-3xl">
+                <div className="mt-2 flex items-start justify-center text-center text-xl text-[#3C3C3C]">
                   <BiSolidCircle />
                 </div>
                 Course is designed for 16 weeks per level on an average
               </span>
 
-              <span className="flex gap-4  text-[#3172D0] sm:text-lg md:text-xl lg:text-3xl">
-                <div className="mt-2 flex items-start justify-center text-center text-xl text-[#3172D0]">
+              <span className="flex gap-4  text-[#3C3C3C] sm:text-lg md:text-xl lg:text-3xl">
+                <div className="mt-2 flex items-start justify-center text-center text-xl text-[#3C3C3C]">
                   <BiSolidCircle />
                 </div>
                 Weekly 2 hrs. class
               </span>
-              <span className="flex gap-4  text-[#3172D0] sm:text-lg md:text-xl lg:text-3xl">
-                <div className="mt-2 flex items-start justify-center text-center text-xl text-[#3172D0]">
+              <span className="flex gap-4  text-[#3C3C3C] sm:text-lg md:text-xl lg:text-3xl">
+                <div className="mt-2 flex items-start justify-center text-center text-xl text-[#3C3C3C]">
                   <BiSolidCircle />
                 </div>
                 Teacher Student ratio 1:10

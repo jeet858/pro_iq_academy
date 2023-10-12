@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ContactSection = () => {
   return (
-    <div className="flex h-fit max-w-full items-center justify-center sm:h-full ">
+    <div className="flex h-fit max-w-full items-center justify-center p-8 sm:h-full ">
       <div className="w-full lg:flex lg:flex-row lg:items-center lg:justify-around">
         <div className="h-[350px] w-[390px]">
           <Image src={img1} alt="" className="h-full w-full" />

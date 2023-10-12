@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 
+.custom-font {
+  font-family: "Gloria Hallelujah", cursive;
+}
 .carousel-container {
   display: flex;
   overflow: hidden;

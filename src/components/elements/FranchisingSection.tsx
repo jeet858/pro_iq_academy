@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import img from "../../../public/images/franchising_ban_2.png";
-import img1 from "../../../public/images/franchising_thumb_1.png";
-import img2 from "../../../public/images/franchising_thumb_2.png";
+import img1 from "../../../public/images/joyful-schoolboy-with-heavy-backpack.jpg";
+import img2 from "../../../public/images/perfect-prepare-lesson.jpg";
 import BannerSection from "./BannerSection";
 import DiscoverSection from "./DiscoverSection";
 import ContactSection from "./ContectSection";
@@ -16,8 +16,8 @@ const FranchisingSection = () => {
       <div className="sm:p-10 lg:p-20 ">
         <p className="font-[Prata] sm:text-lg lg:text-2xl">
           Franchising Opportunities with ProIQ Academy: At ProIQ Academy, we are
-          excited to offer franchising opportunities forindividuals who are
-          passionate about education andwant to make a positive impact in their
+          excited to offer franchising opportunities for individuals who are
+          passionate about education and want to make a positive impact in their
           community. Joining our franchise network allows you to become a part
           of our mission to provide high-quality education and shape the future
           of learning. Here's why franchising with ProIQ Academy is a rewarding
@@ -33,7 +33,7 @@ const FranchisingSection = () => {
             <Image
               alt=""
               src={img1}
-              className="md:h-[266px] md:w-[380px] lg:h-[466px] lg:w-[500px]"
+              className="md:h-[266px] md:w-[380px] lg:h-[466px] lg:w-[550px]"
             />
           </div>
           <div className="flex flex-col items-center justify-center sm:w-full md:p-4 lg:w-1/2 lg:p-0">

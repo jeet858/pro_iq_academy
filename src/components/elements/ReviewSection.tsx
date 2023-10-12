@@ -46,12 +46,18 @@ const ReviewSection = () => {
           <span className="text-6xl text-[#FF6E65]">WE NEED YOUR FEEDBACK</span>
         </div>
         <div className="pt-12 text-start">
-          Thank you for choosing our course-selling app, where knowledge meets
+          Thank you for choosing pro iq academy, where knowledge meets
           opportunity. Your feedback is invaluable in helping us enhance your
           learning experience. Please share your thoughts and suggestions with
           us, so we can continue to provide top-notch courses and services
           tailored to your needs. Together, we're building a brighter, more
-          educated future. Start learning, start thriving
+          educated future.
+        </div>
+        <div className="m-auto flex items-center justify-center gap-4 font-semibold sm:text-xl md:text-5xl">
+          <span className=" custom-font text-[#037EF3]">Start</span>
+          <span className="custom-font text-[#FF8A00]">Learning,</span>
+          <span className="custom-font text-[#FF4F81]">Start</span>
+          <span className="custom-font text-[#06965D]"> Thriving</span>
         </div>
       </div>
       <form className="w-full basis-1/2">

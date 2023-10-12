@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
-import img1 from "../../../public/images/Banner3.jpg";
+import img1 from "../../../public/images/Banner3_why.jpg";
 import img2 from "../../../public/images/Banner3_why.png";
 import img3 from "../../../public/images/about_thumb_2.png";
 
@@ -15,11 +15,6 @@ const WhyProiqSection = () => {
     {
       imageSrc: img1,
       title: "Master the Skills to Drive your Career",
-      buttonText: "Know More",
-    },
-    {
-      imageSrc: img2,
-      title: "ProIQ Academy is the best choice for everyone",
       buttonText: "Know More",
     },
   ];
@@ -114,7 +109,15 @@ const WhyProiqSection = () => {
             </div>
           </div>
         </div>
-        <BackgroundSection title="ProIQ Abacus improves your child's performance 5times better*" />
+        <div className="mb-4 flex flex-col items-center justify-center gap-y-4 text-[#06965D]">
+          <span className="text-3xl font-semibold">
+            ProIQ Abacus improves your child's performance 5times better*
+          </span>
+          <span className="text-lg text-gray-400">
+            * Terms & Conditions Applied
+          </span>
+        </div>
+        <BackgroundSection title="" />
         <Instructor />
         <ContactSection />
       </div>

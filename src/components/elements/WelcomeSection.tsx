@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 const WelcomeSection: React.FC = () => {
   return (
-    <div className="h-[130rem] max-w-full items-center justify-center bg-white p-32 shadow-md sm:h-fit md:h-fit lg:h-[40rem]">
+    <div className="h-[130rem] max-w-full items-center justify-center bg-white shadow-md sm:h-fit sm:p-8 md:h-fit lg:h-[40rem] lg:p-32">
       <SectionHeader title="Welcome to" subtitle="ProIQ Academy" />
 
       <div className="flex flex-wrap justify-between lg:flex-nowrap">

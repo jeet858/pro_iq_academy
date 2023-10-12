@@ -65,16 +65,25 @@ const Footer: React.FC = () => {
             <h2 className="mb-2 border-b-[1px] border-[#17365866] text-lg font-semibold">
               CONTACT
             </h2>
-            <div className="flex items-center">
-              <FaEnvelope className="mr-2" />
-              info@proiqacademy.com
-            </div>
-            <div className="flex items-center">
-              <FaPhoneAlt className="mr-2" />
-              +91 7477879008
-            </div>
-            <div className="flex items-center">
-              <FaMapMarkerAlt className="mr-2" />
+            <div className="flex flex-col gap-y-4">
+              <div className="flex items-center">
+                <FaEnvelope className="mr-2" />
+                proiqacademy@gmail.com
+              </div>
+              <div className="flex items-center">
+                <FaPhoneAlt className="mr-2" />
+                +91 7477879008
+              </div>
+              <div className="flex ">
+                <span>
+                  <FaMapMarkerAlt className="mr-2" />
+                </span>
+                <span>
+                  {" "}
+                  Raghubati ,Brahmanpara , Haripal , Hooghly -712405
+                  Nearestlocation : 19 no. Rail Gate ,Haripal
+                </span>
+              </div>
             </div>
           </div>
 

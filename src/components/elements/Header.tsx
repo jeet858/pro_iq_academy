@@ -52,18 +52,14 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check window.innerWidth when the component mounts
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 820);
     };
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Initial check
     handleResize();
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };

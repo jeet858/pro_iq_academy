@@ -3,7 +3,8 @@ import BannerSection from "./BannerSection";
 import Image from "next/image";
 import img from "../../../public/images/Mask group.png";
 import { AiOutlineStar } from "react-icons/ai";
-import { BiSolidDownload } from "react-icons/bi";
+import { BiSolidCircle, BiSolidDownload } from "react-icons/bi";
+import Link from "next/link";
 const AbacusSection = () => {
   return (
     <div className="h-fit">
@@ -15,21 +16,44 @@ const AbacusSection = () => {
         <div className="flex w-full justify-between sm:flex-col sm:p-8 md:flex-row md:gap-5 lg:gap-10 lg:p-16">
           <div className="flex flex-col gap-y-5">
             <p className="font-[Montserrat] text-xl">
-              Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas
-              erat dignissim. Sed quis rutrum tellus, sit amet viverra felis.
-              Cras sagittis sem sit amet urna feugiat rutrum.
+              Pro IQ Abacus improves your child’s Concentration, Memory
+              Retention , Recalling Ability , Observation Power , Listening
+              Skill , Writing Skills with Speed & Accuracy and  Confidence
             </p>
             <div>
-              <Image src={img} alt="" className="h-fit w-fit" />
+              <Image src={img} alt="" className="h-fit w-full" />
             </div>
-            <div className="flex justify-between sm:flex-col lg:flex-row">
-              <div className="flex flex-col gap-y-5">
-                <h1 className="font-[Montserrat] text-6xl">Teacher</h1>
-                <h1 className="font-[Montserrat] text-xl">Name Surname</h1>
-              </div>
-              <div className="flex flex-col gap-y-5">
-                <h1 className="font-[Montserrat] text-6xl">Course Fee</h1>
-                <h1 className="font-[Montserrat] text-xl">INR 1200 / month</h1>
+
+            <div className="flex w-full flex-col gap-y-5">
+              <h1 className="font-[Montserrat] text-6xl">Teacher</h1>
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Susmita Dey
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Sunipa Das
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Sayantika Halder
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle /> Mousumi Chakraborty
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Payel Dey
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Mousumi Halder 
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Sathi Das
+                </h1>
               </div>
             </div>
           </div>
@@ -38,48 +62,38 @@ const AbacusSection = () => {
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Start Date
               </span>
-              <span className="font-[Montserrat] text-lg">Jan 12, 2024</span>
+              <Link href={"/Contact"}>
+                <span className="font-[Montserrat] text-lg">Contact Now</span>
+              </Link>
             </div>
             <div className="flex flex-col gap-y-2 border-b sm:p-7 md:p-4 lg:p-7">
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Age Group
               </span>
-              <span className="font-[Montserrat] text-lg">2 - 12 Years</span>
+              <span className="font-[Montserrat] text-lg">5 - 12 Years</span>
             </div>
             <div className="flex flex-col gap-y-2 border-b sm:p-7 md:p-4 lg:p-7">
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Class Size
               </span>
-              <span className="font-[Montserrat] text-lg">30</span>
+              <span className="font-[Montserrat] text-lg">12-15 Students</span>
             </div>
             <div className="flex flex-col gap-y-2 border-b sm:p-7 md:p-4 lg:p-7">
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Class Duration
               </span>
-              <span className="font-[Montserrat] text-lg">9 am - 11 am</span>
+              <span className="font-[Montserrat] text-lg">2 hours</span>
             </div>
-            <div className="flex justify-between border-b sm:p-7 md:p-4 lg:p-7">
-              <div className="flex flex-col gap-y-2 ">
-                <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
-                  Curriculum
-                </span>
-                <span className="font-[Montserrat] text-lg">Download File</span>
-              </div>
-              <div className="flex items-center justify-center md:text-xl lg:text-3xl">
-                <BiSolidDownload />
-              </div>
-            </div>
+
             <div className="flex flex-col gap-y-4 sm:p-7 md:p-4 lg:p-7">
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Review
               </span>
-              <span className="flex gap-2 text-xl">
-                <AiOutlineStar />
-                <AiOutlineStar />
-                <AiOutlineStar />
-                <AiOutlineStar />
-                <AiOutlineStar />
-              </span>
+              <Link href={"/HomePage"}>
+                <span className="font-[Montserrat] text-lg">
+                  Give Your Feedback
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,25 +103,31 @@ const AbacusSection = () => {
               Course Description
             </span>
             <span className="font-[Montserrat] text-xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              Pro IQ Abacus is designed for children between 5 and 14 years of
+              age.  
             </span>
+            <span className="font-[Montserrat] text-xl">
+              Pro IQ Academy has incorporated best advanced skill- based Abacus
+              curriculums and training methods year after year . Pro IQ Abacus
+              offers four modules of Abacus learning.
+            </span>
+            <div className="flex gap-8 font-[Montserrat] text-xl font-semibold">
+              <span>1.Junior Module</span>
+              <span>2.Basic Module</span>
+              <span>3.Advance Module</span>
+              <span>4.Expert Module</span>
+            </div>
           </div>
           <div className="flex flex-col gap-y-3 ">
             <span className="font-[Montserrat] text-4xl font-semibold">
               Certificate
             </span>
             <span className="font-[Montserrat] text-xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              Level wise Performance Certificates are awarded after successful
+              completion of each level
+            </span>
+            <span className="font-[Montserrat] text-4xl">
+              100% Achievers are awarded with special prize
             </span>
           </div>
         </div>

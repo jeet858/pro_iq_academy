@@ -11,7 +11,7 @@ function BannerSection({ paragraphText, imageSrc }: BannerSectionProps) {
       <div>
         <Image src={imageSrc} alt="About Us" layout="fill" objectFit="cover" />
       </div>
-      <p className="relative ml-32 font-[Prata] text-4xl text-white sm:pt-32 md:pt-64">
+      <p className="relative ml-32 font-[Prata] text-4xl text-[#012360] sm:pt-32 md:pt-64">
         {paragraphText}
       </p>
     </div>

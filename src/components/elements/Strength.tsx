@@ -27,13 +27,13 @@ const Strength: React.FC = () => {
           <CountUp
             className="text-5xl font-bold"
             start={0}
-            end={638}
+            end={10}
             duration={10}
             enableScrollSpy
           />
-          <div className="text-xl font-semibold">TOTAL COURSES</div>
+          <div className="text-xl font-semibold">YEARS</div>
         </div>
-        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
+        <div className="flex w-full flex-col gap-3  p-4 text-center sm:w-1/2  md:w-1/4 ">
           <CountUp
             className="text-5xl font-bold"
             start={0}
@@ -42,16 +42,6 @@ const Strength: React.FC = () => {
             enableScrollSpy
           />
           <div className="text-xl font-semibold">SUCCESSFUL STUDENTS</div>
-        </div>
-        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
-          <CountUp
-            className="text-5xl font-bold"
-            start={0}
-            end={36}
-            duration={10}
-            enableScrollSpy
-          />
-          <div className="text-xl font-semibold">LANGUAGES</div>
         </div>
       </div>
     </div>

@@ -2,8 +2,8 @@ import React from "react";
 import MainPageTemplate from "~/components/MainPageTemplate";
 import AboutSection from "~/components/elements/AboutSection";
 import Carousel from "~/components/elements/Carousel";
-import img1 from "../../public/images/Banner3.jpg";
-import img2 from "../../public/images/Banner3_why.png";
+import img1 from "../../public/images/Banner-about us.jpg";
+
 import Footer from "~/components/elements/footer";
 
 const About = () => {
@@ -11,11 +11,6 @@ const About = () => {
     {
       imageSrc: img1,
       title: "Master the Skills to Drive your Career",
-      buttonText: "Know More",
-    },
-    {
-      imageSrc: img2,
-      title: "ProIQ Academy is the best choice for everyone",
       buttonText: "Know More",
     },
   ];
