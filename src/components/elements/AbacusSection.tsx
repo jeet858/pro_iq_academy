@@ -92,17 +92,17 @@ const AbacusSection = () => {
               <span className="font-[Montserrat] text-lg">2 hours</span>
             </div>
 
-            <div className="flex flex-col gap-y-4 sm:p-7 md:p-4 lg:p-7">
+            <button
+              className="flex flex-col gap-y-4 sm:p-7 md:p-4 lg:p-7"
+              onClick={scrollToReviewSection}
+            >
               <span className="font-[Montserrat] font-semibold md:text-xl lg:text-3xl">
                 Review
               </span>
-              <span
-                className="cursor-pointer font-[Montserrat] text-lg"
-                onClick={scrollToReviewSection}
-              >
+              <span className="cursor-pointer font-[Montserrat] text-lg">
                 Give Your Feedback
               </span>
-            </div>
+            </button>
           </div>
         </div>
         <div className="flex flex-col gap-y-10 p-16">
