@@ -7,12 +7,12 @@ import Image from "next/image";
 const Instructor = () => {
   return (
     <div className="h-fit w-full p-8">
-      <div className="flex w-full flex-col items-center justify-center font-bold sm:text-3xl md:space-x-2 md:text-5xl lg:flex-row">
+      <div className="flex w-full flex-col items-center justify-center font-bold sm:text-xl md:space-x-2 md:text-5xl lg:flex-row">
         <span className="text-black md:flex-shrink-0">
           Our Team Of Professionals
         </span>
       </div>
-      <div className="mb-[1rem] flex justify-center">
+      <div className="mb-[1rem] flex items-center justify-center">
         <div className="mt-2">
           <svg
             width="85"

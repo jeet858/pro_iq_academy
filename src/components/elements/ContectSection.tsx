@@ -12,10 +12,10 @@ const ContactSection = () => {
         </div>
 
         <div className="">
-          <h2 className="text-5xl font-semibold text-black">
+          <h2 className="font-semibold text-black sm:text-2xl md:text-5xl">
             Not Sure Where to Begin?
           </h2>
-          <h2 className="text-5xl font-semibold text-black">
+          <h2 className="font-semibold text-black sm:text-2xl md:text-5xl">
             Contact Now, We will Help you
           </h2>
           <Link href={"/Contact"}>

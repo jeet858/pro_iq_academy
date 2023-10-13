@@ -118,7 +118,7 @@ const OurCoursesSection = () => {
         className="relative bg-[length:100%_100%]   bg-no-repeat"
         style={{ backgroundImage: 'url("./images/45.jpg")' }}
       >
-        <div className="flex h-fit w-full flex-col bg-[#ff80807a] p-20">
+        <div className="flex h-fit w-full flex-col bg-[#ff80807a] sm:p-10 lg:p-20">
           <h1 className="font-[Prata] text-white sm:text-2xl  lg:text-4xl">
             BENEFITS OF PROIQ ABACUS
           </h1>

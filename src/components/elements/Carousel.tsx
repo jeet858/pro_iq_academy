@@ -38,9 +38,7 @@ function Carousel({ slides }: CarouselProps) {
               className="w-full resize sm:h-[400px] md:h-[700px]"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-opacity-75 stroke-white stroke-2 p-16 font-[Montserrat] font-bold text-[#07096E]  sm:text-3xl md:w-full md:text-7xl lg:w-1/2">
-              <p style={{ WebkitTextStroke: "1.5px #FAF8FFE3" }}>
-                {slide.title}
-              </p>
+              <p className="custom-text-stroke">{slide.title}</p>
               <Link href={"/our-courses"}>
                 <button className="hover-bg-[#FF6E65] mt-8 flex items-center justify-center rounded-[10px] bg-[#FF4F81]  text-xl text-white sm:h-[40px] sm:w-[150px]  md:h-[50px] md:w-[170px]">
                   {slide.buttonText} <AiOutlineArrowRight />

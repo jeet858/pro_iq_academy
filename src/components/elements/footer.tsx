@@ -80,8 +80,8 @@ const Footer: React.FC = () => {
                 </span>
                 <span>
                   {" "}
-                  Raghubati ,Brahmanpara , Haripal , Hooghly -712405
-                  Nearestlocation : 19 no. Rail Gate ,Haripal
+                  Raghubati ,Brahmanpara , Haripal , Hooghly -712405 Nearest
+                  location : 19 no. Rail Gate ,Haripal
                 </span>
               </div>
             </div>
@@ -109,6 +109,9 @@ const Footer: React.FC = () => {
       </footer>
       <footer className="bg-[#040a17] py-4 text-center text-[#a0a0a0]">
         <p>@2023 ProIQ Academy. All rights reserved.</p>
+        <p className="text-xs">
+          Designed & Developed By Mindstar Technology Solutions Pvt. Ltd
+        </p>
       </footer>
     </>
   );

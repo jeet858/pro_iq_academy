@@ -8,13 +8,13 @@ import ContactSection from "./ContectSection";
 const AboutSection = () => {
   return (
     <div className="">
-      <div className=" custom-font mt-36 flex items-center justify-center gap-4 text-5xl font-semibold">
+      <div className=" custom-font mt-36 flex items-center justify-center font-semibold sm:gap-1 sm:text-sm md:gap-4 md:text-2xl xl:text-5xl">
         <span className=" text-[#037EF3]">Our Endeavour</span>
         <span className="text-[#FF8A00]">is -To Combine</span>
         <span className="text-[#FF4F81]">skills with</span>
         <span className="text-[#06965D]">education.</span>
       </div>
-      <div className="mt-16 flex h-fit w-full justify-between  sm:flex-col sm:p-12 md:flex-row lg:p-16">
+      <div className=" flex h-fit w-full justify-between  sm:flex-col sm:p-12 md:flex-row lg:p-16">
         <div className="flex flex-col gap-y-4 sm:w-full lg:w-1/2">
           <p className="font-[Montserrat] font-semibold text-[#FF8A00]">
             About Us
@@ -73,7 +73,7 @@ const AboutSection = () => {
           <Image
             src={img1}
             alt=""
-            className=" relative z-10 sm:h-fit sm:w-[314px] lg:ml-16 lg:h-[402px] lg:w-[464px]"
+            className=" relative z-10 sm:h-fit sm:w-[290px] lg:ml-16 lg:h-[402px] lg:w-[464px]"
           />
         </div>
       </div>
@@ -84,11 +84,11 @@ const AboutSection = () => {
         }}
       >
         <div className="flex h-fit bg-[#d9d9d9c3]  sm:flex-col sm:gap-y-8 sm:p-8 md:gap-8 md:p-12  lg:flex-row lg:gap-32">
-          <div className="  outline-dashed outline-offset-[12px] outline-[#06965D] sm:h-[300px] sm:w-[360px] md:h-[383px] md:w-[453px]">
+          <div className="  outline-dashed outline-offset-[12px] outline-[#06965D] sm:h-[260px] sm:w-[300px] md:h-[383px] md:w-[453px]">
             <Image
               src={img2}
               alt=""
-              className="sm:h-[300px] sm:w-[360px] md:h-[383px] md:w-[453px] "
+              className="sm:h-[260px] sm:w-[300px] md:h-[383px] md:w-[453px] "
             />
           </div>
           <div className="flex basis-1/2 flex-col gap-y-6">
