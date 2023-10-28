@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../public/images/course_thumbnail.png";
-import img2 from "../../../public/images/team_2.png";
+import img1 from "../../../public/images/Untitled-1 (1).jpg";
+import img2 from "../../../public/images/team_1.png";
 
 import OurCoursesSkill from "./OurCoursesSkill";
 import { BiSolidCircle } from "react-icons/bi";

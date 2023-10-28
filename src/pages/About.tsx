@@ -11,7 +11,7 @@ const About = () => {
   const slides = [
     {
       imageSrc: img1,
-      title: "Master the Skills to Drive your Career",
+      title: "Master the Skills to Drive your Education",
       buttonText: "Know More",
     },
   ];

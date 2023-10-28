@@ -2,7 +2,7 @@ import React from "react";
 import BannerSection from "./BannerSection";
 import Image from "next/image";
 import img from "../../../public/images/Mask group.png";
-import { AiOutlineStar } from "react-icons/ai";
+
 import { BiSolidCircle, BiSolidDownload } from "react-icons/bi";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -36,30 +36,7 @@ const AbacusSection = () => {
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
                   <BiSolidCircle />
-                  Susmita Dey
-                </h1>
-                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
-                  <BiSolidCircle />
-                  Sunipa Das
-                </h1>
-                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
-                  <BiSolidCircle />
-                  Sayantika Halder
-                </h1>
-                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
-                  <BiSolidCircle /> Mousumi Chakraborty
-                </h1>
-                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
-                  <BiSolidCircle />
-                  Payel Dey
-                </h1>
-                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
-                  <BiSolidCircle />
-                  Mousumi Halder 
-                </h1>
-                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
-                  <BiSolidCircle />
-                  Sathi Das
+                  Payel Das
                 </h1>
               </div>
             </div>

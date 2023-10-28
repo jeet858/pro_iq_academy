@@ -1,11 +1,11 @@
 import React from "react";
-import icon1 from "../../../public/images/concentration.jpg";
-import icon2 from "../../../public/images/memory.jpg";
-import icon3 from "../../../public/images/recalling.jpg";
-import icon4 from "../../../public/images/observation.png";
-import icon5 from "../../../public/images/listening skill.jpg";
-import icon6 from "../../../public/images/confidence.jpg";
-import icon7 from "../../../public/images/side-view-teacher-explaining-chalkboard.jpg";
+import icon1 from "../../../public/images/DSC_2386(1).jpg";
+import icon2 from "../../../public/images/a (10).jpg";
+import icon3 from "../../../public/images/a (6).jpg";
+import icon4 from "../../../public/images/a (2).jpg";
+import icon5 from "../../../public/images/ready-back-school (1).jpg";
+import icon6 from "../../../public/images/a (1).jpg";
+import icon7 from "../../../public/images/a (12).jpg";
 import icon8 from "../../../public/images/high-angle-girl-playing-home.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
@@ -18,9 +18,9 @@ const OurCoursesSkill = () => {
       </h1>
       <div className="flex flex-col space-y-16">
         <div className=" flex h-fit w-full items-center justify-center gap-6   sm:flex-col   md:flex-col  lg:flex-row ">
-          <div className="flex w-[20rem] scale-100 transform flex-col items-center  justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF72C6] p-6 transition-transform hover:scale-105  lg:h-fit  ">
+          <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col  items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF72C6] p-6 transition-transform  hover:scale-105  ">
             <div className="flex ">
-              <Image src={icon1} alt="" className="h-fit w-fit " />
+              <Image src={icon1} alt="" className="h-[12rem] w-[18rem] " />
             </div>
             <div className="flex flex-col space-y-2">
               <span className="font-[Palanquin Dark] text-lg font-bold text-black">
@@ -35,9 +35,9 @@ const OurCoursesSkill = () => {
               </Link>
             </div>
           </div>
-          <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#C9F175] p-6 transition-transform hover:scale-105 lg:h-fit ">
+          <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#C9F175] p-6 transition-transform hover:scale-105 ">
             <div className="flex ">
-              <Image src={icon2} alt="" className="h-fit w-fit " />
+              <Image src={icon2} alt="" className="h-[12rem] w-[18rem]" />
             </div>
             <div className="flex flex-col space-y-2">
               <span className="font-[Palanquin Dark] text-lg font-bold text-black">
@@ -52,9 +52,9 @@ const OurCoursesSkill = () => {
               </Link>
             </div>
           </div>
-          <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#8EE9F5] p-6 transition-transform hover:scale-105 lg:h-fit ">
+          <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#8EE9F5] p-6 transition-transform hover:scale-105 ">
             <div className="flex ">
-              <Image src={icon3} alt="" className="h-fit w-fit " />
+              <Image src={icon3} alt="" className="h-[12rem] w-[18rem] " />
             </div>
             <div className="flex flex-col space-y-2">
               <span className="font-[Palanquin Dark] text-lg font-bold text-black">
@@ -72,9 +72,9 @@ const OurCoursesSkill = () => {
         </div>
         <div>
           <div className=" flex h-fit w-full items-center justify-center gap-6  sm:flex-col  md:flex-col  lg:flex-row ">
-            <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#F2EC5B] p-6 transition-transform hover:scale-105 lg:h-fit  ">
+            <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#F2EC5B] p-6 transition-transform hover:scale-105  ">
               <div className="flex ">
-                <Image src={icon4} alt="" className="h-fit w-fit " />
+                <Image src={icon4} alt="" className="h-[12rem] w-[18rem] " />
               </div>
               <div className="flex flex-col space-y-2">
                 <span className="font-[Palanquin Dark] text-lg font-bold text-black">
@@ -89,9 +89,9 @@ const OurCoursesSkill = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#A1A5FA] p-6 transition-transform hover:scale-105 lg:h-fit ">
+            <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#A1A5FA] p-6 transition-transform hover:scale-105 ">
               <div className="flex ">
-                <Image src={icon5} alt="" className="h-fit w-fit " />
+                <Image src={icon5} alt="" className="h-[12rem] w-[18rem]" />
               </div>
               <div className="flex flex-col space-y-2">
                 <span className="font-[Palanquin Dark] text-lg font-bold text-black">
@@ -106,9 +106,9 @@ const OurCoursesSkill = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#EEB764] p-6 transition-transform hover:scale-105 lg:h-fit ">
+            <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#EEB764] p-6 transition-transform hover:scale-105 ">
               <div className="flex ">
-                <Image src={icon6} alt="" className="h-fit w-fit " />
+                <Image src={icon6} alt="" className="h-[12rem] w-[18rem] " />
               </div>
               <div className="flex flex-col space-y-2">
                 <span className="font-[Palanquin Dark] text-lg font-bold text-black">
@@ -130,16 +130,16 @@ const OurCoursesSkill = () => {
         <span>Other Courses</span>
       </h1>
       <div className=" flex h-fit w-full items-center justify-center gap-6   sm:flex-col   md:flex-col  lg:flex-row ">
-        <div className="flex w-[20rem] scale-100 transform flex-col items-center  justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#06965D] p-6 transition-transform hover:scale-105  lg:h-fit  ">
+        <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col  items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#06965D] p-6 transition-transform  hover:scale-105 ">
           <div className="flex ">
-            <Image src={icon7} alt="" className="h-fit w-fit " />
+            <Image src={icon7} alt="" className="h-[12rem] w-[18rem] " />
           </div>
           <div className="flex flex-col space-y-2">
             <span className="font-[Palanquin Dark] text-lg font-bold text-black">
-              Spoken English
+              Spoken English Courses
             </span>
 
-            <Link href={"/Abacus"}>
+            <Link href={"/spoken-english"}>
               <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                 READ MORE
                 <BsArrowRight className="ml-3 mt-1" />
@@ -147,16 +147,16 @@ const OurCoursesSkill = () => {
             </Link>
           </div>
         </div>
-        <div className="flex w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF6E65] p-6 transition-transform hover:scale-105 lg:h-fit ">
+        <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF6E65] p-6 transition-transform hover:scale-105 ">
           <div className="flex ">
-            <Image src={icon8} alt="" className="h-fit w-fit " />
+            <Image src={icon8} alt="" className="h-[12rem] w-[18rem] " />
           </div>
           <div className="flex flex-col space-y-2">
             <span className="font-[Palanquin Dark] text-lg font-bold text-black">
-              Handwriting Improvement
+              Handwriting Improvement Courses
             </span>
 
-            <Link href={"/Abacus"}>
+            <Link href={"/Handwriting"}>
               <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                 READ MORE
                 <BsArrowRight className="ml-3 mt-1" />

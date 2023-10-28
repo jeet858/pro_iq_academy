@@ -26,43 +26,38 @@ const GallerySection = () => {
         color="white"
       />
       <div className="h-fit w-full py-24">
-        <div className="flex w-full flex-col space-y-4 sm:h-[35rem] md:px-32 lg:h-[60rem] xl:h-[100rem]">
+        <div className="flex w-full flex-col space-y-4 sm:h-[35rem] md:px-16 lg:h-[60rem] xl:h-[100rem]">
           <div className="flex basis-2/3 flex-row space-x-4">
             <div
-              className="basis-1/3 bg-[length:100%_100%] bg-center bg-no-repeat"
+              className="basis-1/2 bg-[length:100%_100%] bg-center bg-no-repeat"
               style={{
-                backgroundImage: 'url("./images/IMG20221112083744 3.png")',
+                backgroundImage: 'url("./images/8.jpg")',
               }}
-              onClick={() => openCarousel("./images/IMG20221112083744 3.png")}
+              onClick={() => openCarousel("./images/8.jpg")}
             ></div>
             <div className="flex basis-2/3 flex-col space-y-4">
               <div className="flex basis-1/2 flex-row space-x-4">
                 <div
                   className="basis-1/2 bg-[length:100%_100%] bg-center bg-no-repeat"
                   style={{
-                    backgroundImage:
-                      'url("./images/IMG-20230605-WA0004 2.png")',
+                    backgroundImage: 'url("./images/DSC_2386(1).jpg")',
                   }}
-                  onClick={() =>
-                    openCarousel("./images/IMG-20230605-WA0004 2.png")
-                  }
+                  onClick={() => openCarousel("./images/a (10).jpg")}
                 ></div>
                 <div
                   className="basis-1/2 bg-[length:100%_100%] bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: 'url("./images/20230906_175553 1.png")',
+                    backgroundImage: 'url("./images/a (2).jpg")',
                   }}
-                  onClick={() => openCarousel("./images/20230906_175553 1.png")}
+                  onClick={() => openCarousel("./images/a (2).jpg")}
                 ></div>
               </div>
               <div
                 className="basis-1/2 bg-[length:100%_100%] bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: 'url("./images/IMG-20230907-WA0008 2.png")',
+                  backgroundImage: 'url("./images/DSC_2306(1).jpg")',
                 }}
-                onClick={() =>
-                  openCarousel("./images/IMG-20230907-WA0008 2.png")
-                }
+                onClick={() => openCarousel("./images/DSC_2386(1).jpg")}
               ></div>
             </div>
           </div>
@@ -70,23 +65,23 @@ const GallerySection = () => {
             <div
               className="basis-2/3 bg-[length:100%_100%] bg-center bg-no-repeat"
               style={{
-                backgroundImage: 'url("./images/IMG_20221220_192721 1.png")',
+                backgroundImage: 'url("./images/a (15)(1).jpg")',
               }}
-              onClick={() => openCarousel("./images/IMG_20221220_192721 1.png")}
+              onClick={() => openCarousel("./images/a (15)(1).jpg")}
             ></div>
             <div
               className="basis-1/3 bg-[length:100%_100%] bg-center bg-no-repeat"
               style={{
-                backgroundImage: 'url("./images/IMG-20230605-WA0001 1.png")',
+                backgroundImage: 'url("./images/3 (1).jpg")',
               }}
-              onClick={() => openCarousel("./images/IMG-20230605-WA0001 1.png")}
+              onClick={() => openCarousel("./images/3 (1).jpg")}
             ></div>
           </div>
         </div>
       </div>
 
       {isCarouselOpen && (
-        <div className="fixed left-0  top-0 z-50 flex h-full w-full items-center justify-center overflow-scroll bg-white">
+        <div className="fixed left-0  top-0 z-50 flex h-full w-full items-center justify-center overflow-scroll bg-[#d9d9d9c3]">
           <ImageCarousel onClose={closeCarousel} />
         </div>
       )}

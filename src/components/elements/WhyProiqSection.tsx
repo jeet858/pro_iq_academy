@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "./Carousel";
 import img1 from "../../../public/images/Banner3_why.jpg";
 import img2 from "../../../public/images/Banner3_why.png";
-import img3 from "../../../public/images/about_thumb_2.png";
+import img3 from "../../../public/images/a (15)(1).jpg";
 
 import Strength from "./Strength";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const WhyProiqSection = () => {
   const slides = [
     {
       imageSrc: img1,
-      title: "Master the Skills to Drive your Career",
+      title: "Master the Skills to Drive your Education",
       buttonText: "Know More",
     },
   ];

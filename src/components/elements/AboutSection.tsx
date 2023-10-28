@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img1 from "../../../public/images/About Us _thumbnail.png";
+import img1 from "../../../public/images/DSC_2306(1).jpg";
 import img2 from "../../../public/images/about_thumb_2.png";
 import { GoCheckCircle } from "react-icons/go";
 import Instructor from "./Instructor";
@@ -73,14 +73,14 @@ const AboutSection = () => {
           <Image
             src={img1}
             alt=""
-            className=" relative z-10 sm:h-fit sm:w-[290px] lg:ml-16 lg:h-[402px] lg:w-[464px]"
+            className=" relative z-10 sm:h-fit sm:w-[290px] lg:ml-16 lg:h-[380px] lg:w-[500px]"
           />
         </div>
       </div>
       <div
         className=" relative inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: 'url("./images/8.jpg")',
+          backgroundImage: 'url("./images/45.jpg")',
         }}
       >
         <div className="flex h-fit bg-[#d9d9d9c3]  sm:flex-col sm:gap-y-8 sm:p-8 md:gap-8 md:p-12  lg:flex-row lg:gap-32">

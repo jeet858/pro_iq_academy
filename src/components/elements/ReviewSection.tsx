@@ -49,7 +49,7 @@ const ReviewSection = () => {
           <span className="text-6xl text-[#FF6E65]">WE NEED YOUR FEEDBACK</span>
         </div>
         <div className="pt-12 text-start">
-          Thank you for choosing pro iq academy, where knowledge meets
+          Thank you for choosing Pro IQ Academy, where knowledge meets
           opportunity. Your feedback is invaluable in helping us enhance your
           learning experience. Please share your thoughts and suggestions with
           us, so we can continue to provide top-notch courses and services
