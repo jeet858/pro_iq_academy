@@ -4,15 +4,13 @@ import BannerSection from "./BannerSection";
 import ImageCarousel from "./ImageCarousel";
 import ContactSection from "./ContectSection";
 import Image, { StaticImageData } from "next/image";
-
-// Import statements for the images
 import img1 from "../../../public/images/8.jpg";
 import img2 from "../../../public/images/a (10).jpg";
 import img3 from "../../../public/images/a (2).jpg";
 import img4 from "../../../public/images/DSC_2386(1).jpg";
 import img5 from "../../../public/images/a (15)(1).jpg";
 import img6 from "../../../public/images/3 (1).jpg";
-import img7 from "../../../public/images/1 (1).jpg";
+import img7 from "../../../public/images/a (1).jpg";
 import img8 from "../../../public/images/2 (1).jpg";
 import img9 from "../../../public/images/5 (1).jpg";
 import img10 from "../../../public/images/ready-back-school (1).jpg";
@@ -43,17 +41,17 @@ const GallerySection = () => {
         imageSrc="/images/banner_gallery.png"
         color="white"
       />
-      <div className="flex h-fit w-full flex-col items-center justify-center sm:gap-y-3 sm:p-10 lg:gap-y-10 xl:p-24">
-        <div className="flex flex-row sm:gap-3 lg:gap-8">
+      <div className="flex h-fit w-full flex-col items-center justify-center sm:gap-y-1 sm:p-4 lg:gap-y-4 xl:p-16">
+        <div className="flex flex-row sm:gap-1 lg:gap-2">
           <div
-            className="relative w-[40%]"
+            className="relative w-[35%]"
             onMouseEnter={() => setHoveredImage(img1)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img1}
               alt=""
-              className="w-full sm:h-[8rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full bg-cover bg-center bg-no-repeat sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img1 && (
@@ -63,14 +61,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[20%]"
+            className="relative w-[30%]"
             onMouseEnter={() => setHoveredImage(img6)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img6}
               alt=""
-              className="w-full sm:h-[8rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img6 && (
@@ -80,14 +78,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[40%]"
+            className="relative w-[35%]"
             onMouseEnter={() => setHoveredImage(img7)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img7}
               alt=""
-              className="w-full sm:h-[8rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img7 && (
@@ -97,16 +95,16 @@ const GallerySection = () => {
             )}
           </div>
         </div>
-        <div className="flex  flex-row  sm:gap-3 lg:gap-8">
+        <div className="flex  flex-row  sm:gap-1 lg:gap-2">
           <div
-            className="relative w-[20%]"
+            className="relative w-[25%]"
             onMouseEnter={() => setHoveredImage(img12)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
-              src={img12}
+              src={img3}
               alt=""
-              className="w-full sm:h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img12 && (
@@ -116,14 +114,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[60%]"
+            className="relative w-[50%]"
             onMouseEnter={() => setHoveredImage(img3)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
-              src={img3}
+              src={img12}
               alt=""
-              className="w-full sm:h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img3 && (
@@ -133,14 +131,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[20%]"
+            className="relative w-[25%]"
             onMouseEnter={() => setHoveredImage(img11)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img11}
               alt=""
-              className=" w-full sm:h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className=" xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img11 && (
@@ -150,16 +148,16 @@ const GallerySection = () => {
             )}
           </div>
         </div>
-        <div className="flex flex-row gap-8 sm:gap-3 lg:gap-8">
+        <div className="flex flex-row  sm:gap-1 lg:gap-2">
           <div
-            className="relative w-[40%]"
+            className="relative w-[35%]"
             onMouseEnter={() => setHoveredImage(img8)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img8}
               alt=""
-              className="w-fulll sm:h-[8rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img8 && (
@@ -169,14 +167,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[20%]"
+            className="relative w-[30%]"
             onMouseEnter={() => setHoveredImage(img9)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img9}
               alt=""
-              className="w-full sm:h-[8rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img9 && (
@@ -186,14 +184,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[40%]"
+            className="relative w-[35%]"
             onMouseEnter={() => setHoveredImage(img10)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img10}
               alt=""
-              className="w-full sm:h-[8rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img10 && (
@@ -203,16 +201,16 @@ const GallerySection = () => {
             )}
           </div>
         </div>
-        <div className="flex  flex-row gap-8 sm:gap-3 lg:gap-8">
+        <div className="flex  flex-row  sm:gap-1 lg:gap-2">
           <div
-            className="relative w-[20%]"
+            className="relative w-[25%]"
             onMouseEnter={() => setHoveredImage(img2)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img2}
               alt=""
-              className="w-full sm:h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img2 && (
@@ -222,14 +220,14 @@ const GallerySection = () => {
             )}
           </div>
           <div
-            className="relative w-[60%]"
+            className="relative w-[50%]"
             onMouseEnter={() => setHoveredImage(img5)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img5}
               alt=""
-              className="w-full sm:h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img5 && (
@@ -240,14 +238,14 @@ const GallerySection = () => {
           </div>
 
           <div
-            className="relative w-[20%]"
+            className="relative w-[25%]"
             onMouseEnter={() => setHoveredImage(img4)}
             onMouseLeave={() => setHoveredImage(null)}
           >
             <Image
               src={img4}
               alt=""
-              className="w-full sm:h-[10rem] md:h-[15rem] lg:h-[20rem] xl:h-[30rem]"
+              className="xxl:h-[50rem] w-full sm:h-[8rem] md:h-[15rem] lg:h-[21rem] xl:h-[25rem]"
               onClick={() => openCarousel("./images/a (10).jpg")}
             />
             {hoveredImage === img4 && (

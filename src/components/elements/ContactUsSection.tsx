@@ -57,7 +57,7 @@ const ContactUsSection = () => {
           </span>
         </div>
       </div>
-      <div className="flex h-fit w-full flex-col gap-4 p-16 sm:flex-col sm:space-y-4 md:flex-col md:space-y-4 lg:space-x-4">
+      <div className="flex h-fit w-full flex-col gap-4 p-6 sm:flex-col sm:space-y-4 md:flex-col md:space-y-4 lg:space-x-4">
         <div className="h-24 w-full basis-1/3 flex-col gap-4 space-y-6">
           <div className="text-xl text-[#4D5FE3]">Send a message</div>
           <div className="font-bold text-black sm:text-3xl lg:text-6xl">

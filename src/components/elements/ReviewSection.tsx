@@ -42,7 +42,7 @@ const ReviewSection = () => {
   return (
     <div
       id="review-section"
-      className="flex w-full p-16 sm:flex-col md:flex-row"
+      className="flex w-full p-16 sm:flex-col xl:flex-row"
     >
       <div className=" flex w-full flex-col md:basis-1/2">
         <div className="w-full">

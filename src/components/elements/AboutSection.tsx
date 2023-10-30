@@ -53,9 +53,9 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-8 flex items-center sm:h-[452px] sm:w-[514px] md:h-[552px] md:w-[614px] lg:h-[552px] lg:w-[614px]">
+        <div className="relative flex items-center sm:h-[352px] sm:w-[514px] md:h-[552px] md:w-[614px] lg:h-[552px] lg:w-[614px]">
           <div
-            className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[45px] sm:h-32 sm:w-32 md:-right-[25px] md:top-[95px] md:h-32 md:w-32 lg:right-0 lg:top-0 lg:h-64 lg:w-64"
+            className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[40px] sm:h-28 sm:w-32 md:-right-[25px] md:top-[95px] md:h-32 md:w-32 lg:right-0 lg:top-0 lg:h-64 lg:w-64"
             style={{
               animation:
                 "moveOutward 4s linear infinite, moveInward 4s linear infinite alternate ",
@@ -63,7 +63,7 @@ const AboutSection = () => {
           ></div>
 
           <div
-            className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[45px] sm:h-32 sm:w-32 md:-left-[25px] md:bottom-[95px] lg:bottom-0 lg:left-0 lg:h-64 lg:w-64"
+            className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[40px] sm:h-28 sm:w-32 md:-left-[25px] md:bottom-[95px] lg:bottom-0 lg:left-0 lg:h-64 lg:w-64"
             style={{
               animation:
                 "moveInward 24s linear infinite , moveOutward 4s linear infinite alternate ",
@@ -73,7 +73,7 @@ const AboutSection = () => {
           <Image
             src={img1}
             alt=""
-            className=" relative z-10 sm:h-fit sm:w-[290px] lg:ml-16 lg:h-[380px] lg:w-[500px]"
+            className=" relative z-0 sm:h-fit sm:w-[290px] lg:ml-16 lg:h-[380px] lg:w-[500px]"
           />
         </div>
       </div>
