@@ -1,73 +1,125 @@
 import React from "react";
-import Image from "next/image";
-import v from "public/images/medium-shot-graduate-student.jpg";
-import BannerSection from "./BannerSection";
+import Carousel from "./Carousel";
+import img1 from "../../../public/images/Banner3_why.jpg";
+import img2 from "../../../public/images/Banner3_why.png";
+import img3 from "../../../public/images/a (15)(1).jpg";
 
+import Strength from "./Strength";
+import Image from "next/image";
+import { GoCheckCircle } from "react-icons/go";
+import BackgroundSection from "./BackgroundSection";
+import Instructor from "./Instructor";
+import ContactSection from "./ContectSection";
 const WhyProiqSection = () => {
+  const slides = [
+    {
+      imageSrc: img1,
+      title: "Master the Skills to Drive your Education",
+      buttonText: "Know More",
+    },
+  ];
   return (
     <div className="h-fit">
-      <BannerSection paragraphText="Why ProIQ" />
-      <div className="flex flex-row px-24 space-x-10 justify-between">
-        <div>
-          <div className="text-[140px] font-['Prompt']">4.6</div>
-          <div className="text-[40px] font-['Prompt'] w-96 font-bold">3,360 Rateings institution Apporoved</div>
-        </div>
-        <div>
-          <div className="text-[140px] font-['Prompt']">A+</div>
-          <div className="text-[40px] font-['Prompt'] w-96 font-bold">85 teachers reviews BBB Rating</div>
-        </div>
-        <div className="text-[45px] font-['Prompt'] w-96 font-bold pt-14"> Trusted by over 35,000 students worldwide since 2002</div>
-      </div>
-      <div className="font-['Prata'] justify-center items-center flex pt-11 text-7xl">Why Choose Us</div>
-      <div className="flex h-fit w-full flex-col space-y-32 py-10">
-        <div className="flex basis-1/2 flex-row ">
-          <div className="flex basis-1/2 flex-col space-y-32">
-            <div className="basis-1/2 bg-cover bg-center items-center justify-center bg-no-repeat flex flex-col space-y-10">
-              <Image src={v} alt="" className="basis-1/2 w-[500px]"/>
-              <span className="basis-1/2 w-[500px] font-['Gilroy-Medium']">
-              Pro IQ Academy offers Skill Based Educational Programme that can ease the development of your child in various aspect of life
-              </span>
+      <Carousel slides={slides} />
+      <div className="mt-16">
+        <Strength />
+        <div className="flex sm:flex-col sm:p-4 md:gap-12  md:p-8 lg:flex-row lg:gap-28 lg:p-16">
+          <div className="relative mt-8 flex items-center sm:h-[452px] sm:w-[514px] md:h-[552px] md:w-full md:justify-center lg:w-[814px]">
+            <div
+              className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[45px] sm:h-32 sm:w-32 md:bottom-[25px] md:left-[50px] md:h-48 md:w-48 lg:bottom-0 lg:left-0 lg:h-56 lg:w-56"
+              style={{
+                animation:
+                  "moveInward 24s linear infinite , moveOutward 4s linear infinite alternate ",
+              }}
+            ></div>
+            <div
+              className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[45px] sm:h-32 sm:w-32 md:right-[70px] md:top-[20px] md:h-48 md:w-48 lg:-right-[90px] lg:top-0 lg:h-56 lg:w-56"
+              style={{
+                animation:
+                  "moveOutward 4s linear infinite, moveInward 4s linear infinite alternate ",
+              }}
+            ></div>
+
+            <Image
+              src={img3}
+              alt=""
+              className=" relative z-10 sm:h-fit sm:w-[314px] md:h-[372px] md:w-[454px] lg:ml-16"
+            />
+          </div>
+
+          <div className="flex flex-col gap-y-4">
+            <h1 className="font-[Montserrat] text-4xl font-semibold">
+              Why Choose Us
+            </h1>
+            <div className="flex gap-2">
+              <div className="">
+                <GoCheckCircle className="text-2xl text-[#FF6E65F7]" />
+              </div>
+              <p className="flex font-[Montserrat] text-lg font-semibold">
+                Pro IQ Academy offers Skill Based Educational Programme that can
+                ease the development of your child in various aspect of life
+              </p>
             </div>
-            <div className="basis-1/2 bg-cover items-center justify-center bg-center bg-no-repeat flex flex-col space-y-10">
-              <Image src={v} alt="" className="basis-1/2 w-[500px]"/>
-              <span className="basis-1/2 w-[500px] font-['Gilroy-Medium']">
-                Latest Advanced Scientific Skill Based ProIQ Abacus ( Mental Math and Advanced Skill Development Programme ) helps your children to learn with pleasure not under pressure
-              </span>
+            <div className="flex gap-2">
+              <div className="">
+                <GoCheckCircle className="text-2xl text-[#FF6E65F7]" />
+              </div>
+              <p className="flex font-[Montserrat] text-lg font-semibold">
+                Latest Advanced Scientific Skill Based ProIQ Abacus (Mental Math
+                and Advanced Skill Development Programme ) helps your children
+                to learn with pleasure not under pressure
+              </p>
             </div>
-            <div className="basis-1/2 bg-cover items-center justify-center bg-center bg-no-repeat flex flex-col space-y-10">
-              <Image src={v} alt="" className="basis-1/2 w-[500px]"/>
-              <span className="basis-1/2d w-[500px] font-['Gilroy-Medium']">
-              Develops Your Child’s Reading & Writing Skills, Numerical Ability, Observation Power , Memory Retention and overall Intelligence
-              </span>
+            <div className="flex gap-2">
+              <div className="">
+                <GoCheckCircle className="text-2xl text-[#FF6E65F7]" />
+              </div>
+              <p className="flex font-[Montserrat] text-lg font-semibold">
+                Develops Your Child’s Reading & Writing Skills, Numerical
+                Ability, Observation Power , Memory Retention and overall
+                Intelligence
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <div className="">
+                <GoCheckCircle className="text-2xl text-[#FF6E65F7]" />
+              </div>
+              <p className="flex font-[Montserrat] text-lg font-semibold">
+                Trained, competed, experienced course instructors. Small batch
+                with a teacher student ration 1:10 for Individual Attention
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <div className="">
+                <GoCheckCircle className="text-2xl text-[#FF6E65F7]" />
+              </div>
+              <p className="flex font-[Montserrat] text-lg font-semibold">
+                Organizes fun activities and various kid’s friendly competitions
+                for evaluation of pupils
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <div className="">
+                <GoCheckCircle className="text-2xl text-[#FF6E65F7]" />
+              </div>
+              <p className="flex font-[Montserrat] text-lg font-semibold">
+                Offers Low Course Fees structure. Online and Offline classes are
+                available.
+              </p>
             </div>
           </div>
-          <div className="flex basis-1/2 flex-col space-y-32">
-            <div className="basis-1/2 bg-cover bg-center items-center justify-center bg-no-repeat flex flex-col space-y-10">
-              <Image src={v} alt="" className="basis-1/2 w-[500px]"/>
-              <span className="basis-1/2 w-[500px] font-['Gilroy-Medium']">
-              Trained, competed, experienced course instructors. Small batch with a teacher student ration 1:10 for Individual Attention
-              </span>
-            </div>
-            <div className="basis-1/2 bg-cover bg-center items-center justify-center bg-no-repeat flex flex-col space-y-10">
-              <Image src={v} alt="" className="basis-1/2 w-[500px]"/>
-              <span className="basis-1/2 w-[500px] font-['Gilroy-Medium']">
-              Trained, competed, experienced course instructors. Small batch with a teacher student ration 1:10 for Individual Attention
-              </span>
-            </div>
-            <div className="basis-1/2 bg-cover bg-center items-center justify-center bg-no-repeat flex flex-col space-y-10">
-              <Image src={v} alt="" className="basis-1/2 w-[500px]"/>
-              <span className="basis-1/2 w-[500px] font-['Gilroy-Medium']">
-              Offers Low Course Fees structure. Online and Offline classes are available.
-              </span>
-            </div>
-          </div>
         </div>
-        <div className="flex basis-1/2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat space-y-10">
-          <Image src={v} alt="" className="basis-1/2 w-[500px]" />
-          <span className="basis-1/2 w-[500px] font-['Gilroy-Medium']">
-          ProIQ Abacus improves your child's performance 5times better*
+        <div className="mb-4 flex flex-col items-center justify-center gap-y-4 text-[#06965D]">
+          <span className="text-3xl font-semibold">
+            ProIQ Abacus improves your child's performance 5times better*
+          </span>
+          <span className="text-lg text-gray-400">
+            * Terms & Conditions Applied
           </span>
         </div>
+        <BackgroundSection title="" />
+        <Instructor />
+        <ContactSection />
       </div>
     </div>
   );

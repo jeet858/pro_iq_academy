@@ -15,16 +15,18 @@ const BoxComponent: React.FC<BoxProps> = ({
 }) => {
   return (
     <div
-      className={`m-4 flex h-[200px] w-[404px] flex-row items-center rounded-2xl bg-white p-10 shadow-[0px_4px_4px_0px_#00000040]`}
+      className={`m-4 flex  flex-row items-center   rounded-2xl  p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
     >
       <div
-        className="mr-4 flex h-20 w-36 items-center justify-center rounded-full"
+        className="mr-4 flex items-center justify-center  rounded-full sm:h-16 sm:w-32 lg:h-20 lg:w-36"
         style={{ backgroundColor }}
       >
         {icon}
       </div>
-      <div className="text-center">
-        <h2 className="mb-8 text-3xl font-semibold text-black">{title}</h2>
+      <div className="flex flex-col text-center">
+        <h2 className="font-semibold text-black sm:mb-2 sm:text-xl lg:mb-8 lg:text-3xl">
+          {title}
+        </h2>
         <p>{description}</p>
       </div>
     </div>

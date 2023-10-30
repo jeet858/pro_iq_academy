@@ -1,145 +1,167 @@
 import React from "react";
-import icon1 from "../../../public/images/busy-female-teenager-reads-book-uses-table-lamp.jpg";
-import icon2 from "../../../public/images/brain-study-background-mental-health-care-medical-technology.jpg";
-import icon3 from "../../../public/images/reload-reset-technology-update-digital.jpg";
-import icon4 from "../../../public/images/person-pressing-power-button.jpg";
-import icon5 from "../../../public/images/student-online-cute-girl-glasses-sweater-studying-computer-writing-down-notes.jpg";
-import icon6 from "../../../public/images/low-angle-businesswoman-posing-with-arms-crossed-outdoors.jpg";
+import icon1 from "../../../public/images/DSC_2386(1).jpg";
+import icon2 from "../../../public/images/a (10).jpg";
+import icon3 from "../../../public/images/a (6).jpg";
+import icon4 from "../../../public/images/a (2).jpg";
+import icon5 from "../../../public/images/ready-back-school (1).jpg";
+import icon6 from "../../../public/images/a (1).jpg";
+import icon7 from "../../../public/images/a (12).jpg";
+import icon8 from "../../../public/images/high-angle-girl-playing-home.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 const OurCoursesSkill = () => {
   return (
     <div className="h-fit w-full p-8">
-      <h1 className=" mb-16 flex w-full flex-col items-center justify-center font-[Prata] text-2xl font-semibold text-[#233D63]">
-        <span>Skills</span>
+      <h1 className=" mb-16 flex w-full flex-col items-center justify-center font-[Prata] text-2xl font-semibold text-black">
+        <span>Skills Developed By Learning Abacus</span>
       </h1>
       <div className="flex flex-col space-y-16">
-        <div className=" flex h-fit w-full items-center justify-evenly   sm:flex-col   md:flex-col  lg:flex-row ">
-          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+        <div className=" flex h-fit w-full items-center justify-center gap-6   sm:flex-col   md:flex-col  lg:flex-row ">
+          <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col  items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF72C6] p-6 transition-transform  hover:scale-105  ">
             <div className="flex ">
-              <Image src={icon1} alt="" className="h-fit w-fit " />
+              <Image src={icon1} alt="" className="h-[12rem] w-[18rem] " />
             </div>
             <div className="flex flex-col space-y-2">
-              <span className="font-[Palanquin Dark] text-lg font-bold text-[#233D63]">
+              <span className="font-[Palanquin Dark] text-lg font-bold text-black">
                 Concentration
               </span>
-              <span className="font-[Palanquin] text-sm text-[#485261] ">
-                Learn in- demand skills that prepare you for an entry level job.
-              </span>
-              <div className="flex justify-between">
-                <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+
+              <Link href={"/Abacus"}>
+                <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                   READ MORE
-                  <BsArrowRight />
+                  <BsArrowRight className="ml-3 mt-1" />
                 </button>
-                <p>$60</p>
-              </div>
+              </Link>
             </div>
           </div>
-          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]   ">
+          <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#C9F175] p-6 transition-transform hover:scale-105 ">
             <div className="flex ">
-              <Image src={icon2} alt="" className="h-fit w-fit " />
+              <Image src={icon2} alt="" className="h-[12rem] w-[18rem]" />
             </div>
             <div className="flex flex-col space-y-2">
-              <span className="font-[Palanquin Dark] text-lg font-bold text-[#233D63]">
+              <span className="font-[Palanquin Dark] text-lg font-bold text-black">
                 Memory Retention
               </span>
-              <span className="font-[Palanquin] text-sm text-[#485261] ">
-                It is the best way to make progress towards human-level AI.
-              </span>
-              <div className="flex justify-between">
-                <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+
+              <Link href={"/Abacus"}>
+                <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                   READ MORE
-                  <BsArrowRight />
+                  <BsArrowRight className="ml-3 mt-1" />
                 </button>
-                <p>$60</p>
-              </div>
+              </Link>
             </div>
           </div>
-          <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+          <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#8EE9F5] p-6 transition-transform hover:scale-105 ">
             <div className="flex ">
-              <Image src={icon3} alt="" className="h-fit w-fit " />
+              <Image src={icon3} alt="" className="h-[12rem] w-[18rem] " />
             </div>
             <div className="flex flex-col space-y-2">
-              <span className="font-[Palanquin Dark] text-lg font-bold text-[#233D63]">
+              <span className="font-[Palanquin Dark] text-lg font-bold text-black">
                 Recalling Ability
               </span>
-              <span className="font-[Palanquin] text-sm text-[#485261] ">
-                Learn Python programming online with courses like Python for
-                everybody.
-              </span>
-              <div className="flex justify-between">
-                <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+
+              <Link href={"/Abacus"}>
+                <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                   READ MORE
-                  <BsArrowRight />
+                  <BsArrowRight className="ml-3 mt-1" />
                 </button>
-                <p>$60</p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
         <div>
-          <div className=" flex h-fit w-full items-center justify-evenly  sm:flex-col  md:flex-col  lg:flex-row ">
-            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+          <div className=" flex h-fit w-full items-center justify-center gap-6  sm:flex-col  md:flex-col  lg:flex-row ">
+            <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#F2EC5B] p-6 transition-transform hover:scale-105  ">
               <div className="flex ">
-                <Image src={icon4} alt="" className="h-fit w-fit " />
+                <Image src={icon4} alt="" className="h-[12rem] w-[18rem] " />
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="font-[Palanquin Dark] text-lg font-bold text-[#233D63]">
+                <span className="font-[Palanquin Dark] text-lg font-bold text-black">
                   Observation Power
                 </span>
-                <span className="font-[Palanquin] text-sm text-[#485261] ">
-                  Gain the job ready skills for an entry-level data analyst.
-                </span>
-                <div className="flex justify-between">
-                  <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+
+                <Link href={"/Abacus"}>
+                  <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                     READ MORE
-                    <BsArrowRight />
+                    <BsArrowRight className="ml-3 mt-1" />
                   </button>
-                  <p>$60</p>
-                </div>
+                </Link>
               </div>
             </div>
-            <div className="flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+            <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#A1A5FA] p-6 transition-transform hover:scale-105 ">
               <div className="flex ">
-                <Image src={icon5} alt="" className="h-fit w-fit " />
+                <Image src={icon5} alt="" className="h-[12rem] w-[18rem]" />
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="font-[Palanquin Dark] text-lg font-bold text-[#233D63]">
+                <span className="font-[Palanquin Dark] text-lg font-bold text-black">
                   Listening Skill
                 </span>
-                <span className="font-[Palanquin] text-sm text-[#485261] ">
-                  The Deep learning Specialization provides a pathway.
-                </span>
-                <div className="flex justify-between">
-                  <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+
+                <Link href={"/Abacus"}>
+                  <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                     READ MORE
-                    <BsArrowRight />
+                    <BsArrowRight className="ml-3 mt-1" />
                   </button>
-                  <p>$60</p>
-                </div>
+                </Link>
               </div>
             </div>
-            <div className="mt-8 flex w-[20rem] flex-col items-center justify-center space-y-16 sm:h-[30rem] lg:h-[20rem]  ">
+            <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#EEB764] p-6 transition-transform hover:scale-105 ">
               <div className="flex ">
-                <Image src={icon6} alt="" className="h-fit w-fit " />
+                <Image src={icon6} alt="" className="h-[12rem] w-[18rem] " />
               </div>
               <div className="flex flex-col space-y-2">
-                <span className="font-[Palanquin Dark] text-lg font-bold text-[#233D63]">
+                <span className="font-[Palanquin Dark] text-lg font-bold text-black">
                   Confidence
                 </span>
-                <span className="font-[Palanquin] text-sm text-[#485261] ">
-                  Data Science courses or pay to earn a course or Specialization
-                  Certificate.
-                </span>
-                <div className="flex justify-between">
-                  <button className="text-md flex flex-row font-semibold text-[#233D63] hover:text-sm hover:font-bold hover:text-[#94C025]">
+
+                <Link href={"/Abacus"}>
+                  <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                     READ MORE
-                    <BsArrowRight />
+                    <BsArrowRight className="ml-3 mt-1" />
                   </button>
-                  <p>$60</p>
-                </div>
+                </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <h1 className=" mb-16 mt-16 flex w-full flex-col items-center justify-center font-[Prata] text-2xl font-semibold text-black">
+        <span>Other Courses</span>
+      </h1>
+      <div className=" flex h-fit w-full items-center justify-center gap-6   sm:flex-col   md:flex-col  lg:flex-row ">
+        <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col  items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#06965D] p-6 transition-transform  hover:scale-105 ">
+          <div className="flex ">
+            <Image src={icon7} alt="" className="h-[12rem] w-[18rem] " />
+          </div>
+          <div className="flex flex-col space-y-2">
+            <span className="font-[Palanquin Dark] text-lg font-bold text-black">
+              Spoken English Courses
+            </span>
+
+            <Link href={"/spoken-english"}>
+              <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
+                READ MORE
+                <BsArrowRight className="ml-3 mt-1" />
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex h-[23rem] w-[20rem] scale-100 transform flex-col items-center justify-center space-y-16 rounded-br-[27px] rounded-tl-[27px] bg-[#FF6E65] p-6 transition-transform hover:scale-105 ">
+          <div className="flex ">
+            <Image src={icon8} alt="" className="h-[12rem] w-[18rem] " />
+          </div>
+          <div className="flex flex-col space-y-2">
+            <span className="font-[Palanquin Dark] text-lg font-bold text-black">
+              Handwriting Improvement Courses
+            </span>
+
+            <Link href={"/Handwriting"}>
+              <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
+                READ MORE
+                <BsArrowRight className="ml-3 mt-1" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

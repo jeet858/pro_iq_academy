@@ -15,7 +15,8 @@ const config = {
     // Feel free to reconfigure them to your own preference.
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
-
+    "react/no-unescaped-entities": 0,
+    "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/consistent-type-imports": [
       "warn",
       {
@@ -23,7 +24,7 @@ const config = {
         fixStyle: "inline-type-imports",
       },
     ],
-    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": ["off", { argsIgnorePattern: "^_" }],
   },
 };
 

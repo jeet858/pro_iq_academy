@@ -49,11 +49,26 @@ const Header = () => {
       closeMenu();
     }
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 820);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const isActiveLink = (href: string) => router.pathname === href;
 
   const navigationLinks = [
-    { text: "HOME", to: "/#" },
+    { text: "HOME", to: "/" },
     { text: "ABOUT US", to: "/About" },
     { text: "WHY PROIQ", to: "/why-proiq" },
     { text: "OUR COURSES", to: "/our-courses" },
@@ -62,20 +77,53 @@ const Header = () => {
     { text: "CONTACT US", to: "/Contact" },
   ];
 
+  if (isMobile) {
+    return (
+      <div className="flex flex-col">
+        <div className="fixed z-10 flex h-14 w-full items-center justify-between bg-white px-2">
+          <Link href="/">
+            <span>
+              <img
+                src="/images/logo.jpg"
+                alt="Your Logo"
+                className="h-12 w-auto self-center"
+              />
+            </span>
+          </Link>
+          <FiMenu className="h-6 w-6" onClick={toggleMenu} />
+        </div>
+        <div className="flex w-full justify-end">
+          {menuOpen ? (
+            <div className="fixed top-[3.5rem] z-10 h-fit w-[80%] self-end bg-blue-600">
+              {navigationLinks.map((link, index) => (
+                <ul key={index} className="w-full border-b-2 px-2 py-4">
+                  <Link href={link.to}>
+                    <span className="" onClick={closeMenu}>
+                      {link.text}
+                    </span>
+                  </Link>
+                </ul>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    );
+  }
   return (
     <div
       className={`flex flex-col justify-between ${darkMode ? "dark-mode" : ""}`}
     >
       <div className="flex flex-col">
-        <div className="hidden md:flex md:space-x-4">
+        <div className="hidden lg:flex lg:space-x-4">
           <TopNav />
         </div>
       </div>
       <div>
         <header
-          className={`fixed left-0 right-0 z-10 w-full transition-all duration-300 ${
+          className={`fixed z-10 w-full duration-300 lg:left-0 lg:right-0 lg:transition-all ${
             scrolled ? "top-0" : ""
-          } ${menuOpen ? "h-fit" : "h-[100px]"}`}
+          } ${menuOpen ? "h-[300px]" : "h-[100px]"}`}
         >
           <div
             className={`flex items-center justify-between px-4 py-2 md:px-10 ${
@@ -89,7 +137,7 @@ const Header = () => {
                 <Link href="/">
                   <span>
                     <img
-                      src="/images/logo.jpg"
+                      src="/images/logo.png"
                       alt="Your Logo"
                       className={` ${scrolled ? "h-16 w-auto" : "h-20 w-auto"}`}
                     />
@@ -99,19 +147,21 @@ const Header = () => {
             </div>
             <div className="mr-4 flex items-center justify-end">
               <nav
-                className={`md:flex md:space-x-8 md:font-semibold`}
+                className={`lg:flex lg:space-x-8 lg:font-semibold`}
                 ref={menuRef}
               >
                 <button
                   onClick={toggleMenu}
-                  className={`ml-4 text-gray-600 dark:text-gray-300 md:hidden`}
+                  className={`ml-4 text-gray-600 dark:text-gray-300 lg:hidden`}
                 >
                   <FiMenu size={22} />
                 </button>
                 <ul
-                  className={`md:flex md:space-x-8 ${
-                    menuOpen ? "block" : "hidden"
-                  } md:items-center md:space-y-0`}
+                  className={`lg:flex lg:space-x-8 ${
+                    menuOpen
+                      ? " flex  flex-col items-center justify-center "
+                      : "hidden"
+                  } lg:items-center lg:space-y-0`}
                 >
                   {navigationLinks.map((link, index) => (
                     <li key={index}>

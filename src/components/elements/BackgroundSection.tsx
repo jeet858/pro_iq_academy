@@ -1,53 +1,91 @@
 import React from "react";
+
+import { BsDownload } from "react-icons/bs";
 import {
   FaAmericanSignLanguageInterpreting,
-  FaDownload,
   FaHeadphones,
-  FaPlayCircle,
 } from "react-icons/fa";
+import { FiPlayCircle } from "react-icons/fi";
 
-import BoxComponent from "./BoxComponent";
-
-const BackgroundSection: React.FC = () => {
+interface BackgroundSectionProps {
+  title: string;
+}
+const BackgroundSection: React.FC<BackgroundSectionProps> = ({ title }) => {
   return (
     <section
-      className="relative flex h-fit flex-col items-center justify-center bg-center bg-no-repeat sm:h-fit xl:h-[600px] "
-      style={{ backgroundImage: 'url("./images/8.jpg")' }}
+      className=" bg-cover bg-center bg-no-repeat  "
+      style={{ backgroundImage: 'url("./images/45.jpg")' }}
     >
-      <div className="relative flex flex-col justify-around p-12 text-center">
-        <div className="flex flex-wrap justify-center">
-          <BoxComponent
-            icon={
-              <FaAmericanSignLanguageInterpreting className="text-4xl text-[#0D369F]" />
-            }
-            title="Flexible Classes"
-            description="Personalize your learning schedule for maximum convenience."
-            backgroundColor="#037EF321"
-          />
-
-          <BoxComponent
-            icon={<FaDownload className="text-3xl text-[#0D369F]" />}
-            title="Offline Mode"
-            description="Study without internet access with offline course materials."
-            backgroundColor="#037EF321"
-          />
+      <div className="relative flex h-fit flex-col items-center justify-center bg-[#D9D9D9BD] sm:h-fit xl:h-[600px]">
+        <div className="mt-8 flex h-16 items-center justify-center text-3xl font-semibold text-black">
+          {title}
         </div>
+        <div className="relative flex flex-col justify-around p-12 text-center">
+          <div className="flex flex-wrap  justify-center">
+            <div
+              className={`m-4 flex flex-row items-center  rounded-2xl bg-[#037EF3] p-10   shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+            >
+              <div className="mr-4 flex items-center justify-center rounded-full bg-[#DEEEFE]  shadow-xl shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-40">
+                <FaAmericanSignLanguageInterpreting className="text-4xl text-[#037EF3]" />
+              </div>
+              <div className="flex flex-col text-center">
+                <h2 className="font-semibold text-black sm:mb-2 sm:text-xl lg:mb-8 lg:text-3xl">
+                  Flexible Classes
+                </h2>
+                <p>
+                  Personalize your learning schedule for maximum convenience.
+                </p>
+              </div>
+            </div>
+            <div
+              className={`m-4 flex  flex-row items-center rounded-2xl bg-[#FF8A00]   p-10 shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+            >
+              <div className="mr-4 flex items-center justify-center rounded-full  bg-[#DEEEFE] shadow-xl  shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-36">
+                <BsDownload className="text-4xl text-[#FF8A00]" />
+              </div>
+              <div className="flex flex-col text-center">
+                <h2 className="font-semibold text-black sm:mb-2 sm:text-xl lg:mb-8 lg:text-3xl">
+                  Offline Mode
+                </h2>
+                <p>
+                  Study without internet access with offline course materials.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div className="relative text-center">
-          <div className="flex flex-wrap justify-center">
-            <BoxComponent
-              icon={<FaHeadphones className="text-4xl text-[#0D369F]" />}
-              title="Educator Help"
-              description="Expert guidance and support from experienced educators."
-              backgroundColor="#037EF321"
-            />
+          <div className="relative text-center">
+            <div className="flex flex-wrap justify-center">
+              <div
+                className={`m-4 flex  flex-row items-center rounded-2xl bg-[#FF4F81]   p-10 shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+              >
+                <div className="mr-4 flex items-center justify-center  rounded-full bg-[#DEEEFE]  shadow-xl shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-36">
+                  <FaHeadphones className="text-4xl text-[#FF4F81]" />
+                </div>
+                <div className="flex flex-col text-center">
+                  <h2 className="font-semibold text-black sm:mb-2 sm:text-xl lg:mb-8 lg:text-3xl">
+                    Educator Help
+                  </h2>
+                  <p>Expert guidance and support from experienced educators.</p>
+                </div>
+              </div>
 
-            <BoxComponent
-              icon={<FaPlayCircle className="text-4xl text-[#0D369F]" />}
-              title="Online Classes"
-              description="Engage in interactive virtual learning from any location."
-              backgroundColor="#037EF321"
-            />
+              <div
+                className={`m-4 flex  flex-row items-center rounded-2xl bg-[#06965D] p-10  shadow-[0px_4px_4px_0px_#00000040]  transition-transform hover:scale-105 sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+              >
+                <div className="mr-4 flex items-center justify-center  rounded-full  bg-[#DEEEFE] shadow-xl shadow-[#00000040] sm:h-16 sm:w-32 lg:h-20 lg:w-36">
+                  <FiPlayCircle className="text-4xl text-[#06965D]" />
+                </div>
+                <div className="flex flex-col text-center">
+                  <h2 className="font-semibold text-black sm:mb-2 sm:text-xl lg:mb-8 lg:text-3xl">
+                    Online Classes
+                  </h2>
+                  <p>
+                    Engage in interactive virtual learning from any location.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

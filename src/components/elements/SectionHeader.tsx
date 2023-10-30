@@ -8,7 +8,7 @@ interface SectionHeaderProps {
 function SectionHeader({ title, subtitle }: SectionHeaderProps) {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center text-5xl font-bold md:flex-row md:space-x-2">
+      <div className="flex w-full flex-col items-center justify-center font-bold sm:text-3xl md:space-x-2 md:text-5xl lg:flex-row">
         <span className="text-black md:flex-shrink-0">{title}</span>
         <span className="text-[#FF6E65] md:ml-2 md:inline-block">
           {subtitle}

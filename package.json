@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "prisma generate",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
@@ -12,6 +13,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@prisma/client": "^5.4.1",
+    "@react-google-maps/api": "^2.19.2",
     "@t3-oss/env-nextjs": "^0.6.0",
     "@tanstack/react-query": "^4.29.25",
     "@trpc/client": "^10.34.0",
@@ -22,16 +25,19 @@
     "embla-carousel-react": "^8.0.0-rc12",
     "next": "^13.4.13",
     "next-auth": "^4.22.4",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-countup": "^6.4.2",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.10.1",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-media": "^1.10.0",
+    "react-modal": "^3.16.1",
     "react-responsive-carousel": "^3.2.23",
+    "react-responsive-modal": "^6.4.2",
     "react-slick": "^0.29.0",
+    "sharp": "^0.32.6",
     "slick-carousel": "^1.8.1",
     "superjson": "^1.13.1",
-    "zod": "^3.21.4"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/eslint": "^8.44.2",
@@ -47,6 +53,7 @@
     "postcss": "^8.4.27",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.1",
+    "prisma": "^5.4.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   },
