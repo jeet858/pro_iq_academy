@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 700px) {
   .custom-text-stroke {
-    -webkit-text-stroke: 0.4px #faf8ffe3;
+    -webkit-text-stroke: 0px #faf8ffe3;
   }
 }
 .carousel-slide {
