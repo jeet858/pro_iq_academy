@@ -14,7 +14,7 @@ function SectionHeader({ title, subtitle }: SectionHeaderProps) {
           {subtitle}
         </span>
       </div>
-      <div className="flex justify-center pb-[4.25rem]">
+      <div className="flex justify-center sm:pb-[2rem] lg:pb-[4.25rem]">
         <div className="mt-2">
           <svg
             width="85"

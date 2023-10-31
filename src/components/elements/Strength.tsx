@@ -12,7 +12,7 @@ const Strength: React.FC = () => {
   return (
     <div className=" h-fit max-w-full items-center justify-center p-12">
       <SectionHeader title="Strength in" subtitle="Numbers" />
-      <div className="mt-8 flex  justify-center">
+      <div className="flex justify-center  md:mt-8">
         <div className="flex w-full flex-col gap-3  border-r-2 p-4 text-center sm:w-1/2  md:w-1/4 md:border-b-0 lg:border-r-2">
           <CountUp
             className="font-bold sm:text-2xl md:text-5xl"
