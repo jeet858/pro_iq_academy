@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/nodeapp/node-express-typescript
+    destination: /home/nodeapp/proiqacademy
 hooks:
   BeforeInstall:
     - location: stop_server.sh
       timeout: 300
-  AfterInstall: 
+  AfterInstall:
     - location: start_server.sh
       timeout: 300
