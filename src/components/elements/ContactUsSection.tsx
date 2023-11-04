@@ -19,7 +19,7 @@ const ContactUsSection = () => {
             <PiWechatLogoLight className="text-5xl text-[#06965D]" />
           </div>
           <a
-            href="https://api.whatsapp.com/send?phone=8617741681"
+            href="https://api.whatsapp.com/send?phone=7477879008"
             target="_blank"
           >
             <div className="flex flex-col ">
