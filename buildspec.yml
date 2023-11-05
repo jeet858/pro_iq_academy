@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-      - echo npx prisma generate
+      - npx prisma generate
   build:
     commands:
       - echo Build started on `date`
