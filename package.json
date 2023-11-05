@@ -1,9 +1,9 @@
 {
-  "name": "pro_id_academy",
+  "name": "pro_iq_academy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npm install --save-dev && prisma generate npm install",
+    "prebuild": "prisma generate npm install",
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
