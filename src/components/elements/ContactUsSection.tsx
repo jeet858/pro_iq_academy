@@ -52,8 +52,7 @@ const ContactUsSection = () => {
           </div>
 
           <span className="text-md font-semibold text-black">
-            Raghubati ,Brahmanpara , Haripal , Hooghly -712405 Nearest location
-            : 19 no. Rail Gate ,Haripal
+            Near 19no. Rail Gate , Khamarchandi , Haripal , Hooghly - 712405
           </span>
         </div>
       </div>

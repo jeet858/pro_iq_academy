@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import img1 from "../../../public/images/Untitled-1 (1).jpg";
-import img2 from "../../../public/images/team_1.png";
+import img2 from "../../../public/images/18.jpg";
 
 import OurCoursesSkill from "./OurCoursesSkill";
 import { BiSolidCircle } from "react-icons/bi";
@@ -129,7 +129,7 @@ const OurCoursesSection = () => {
             Learning is highly enjoyable with Pro IQ Abacus and removes fear of
             math in kids. Pro IQ Abacus is a great support to help kids
             instilling Love for Learning. Pro IQ Abacus also improves academic
-            performance with other skills such as:
+            performance with other skills.
           </p>
         </div>
       </div>

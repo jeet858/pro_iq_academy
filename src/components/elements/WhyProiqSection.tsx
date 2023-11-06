@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "./Carousel";
 import img1 from "../../../public/images/Banner3_why.jpg";
-import img2 from "../../../public/images/Banner3_why.png";
-import img3 from "../../../public/images/a (15)(1).jpg";
+
+import img3 from "../../../public/images/13.jpg";
 
 import Strength from "./Strength";
 import Image from "next/image";
@@ -10,6 +10,7 @@ import { GoCheckCircle } from "react-icons/go";
 import BackgroundSection from "./BackgroundSection";
 import Instructor from "./Instructor";
 import ContactSection from "./ContectSection";
+import BannerSection from "./BannerSection";
 const WhyProiqSection = () => {
   const slides = [
     {
@@ -20,20 +21,24 @@ const WhyProiqSection = () => {
   ];
   return (
     <div className="h-fit">
-      <Carousel slides={slides} />
-      <div className="mt-16">
+      <BannerSection
+        paragraphText="WHY PROIQ"
+        imageSrc="/images/Banner3_why.jpg"
+        color="#012360"
+      />
+      <div className="mt-8">
         <Strength />
         <div className="flex sm:flex-col sm:p-4 md:gap-12  md:p-8 lg:flex-row lg:gap-28 lg:p-16">
-          <div className="relative flex items-center  sm:h-[320px] sm:w-[514px] md:h-[552px] md:w-full md:justify-center lg:w-[814px]">
+          <div className="relative flex items-center  sm:h-[350px] sm:w-[514px] md:h-[552px] md:w-full md:justify-center lg:w-[814px]">
             <div
-              className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[0px] sm:h-32 sm:w-32 md:bottom-[25px] md:left-[-27px] md:h-48 md:w-48 lg:bottom-0 lg:left-0 lg:h-56 lg:w-56"
+              className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[0px] sm:h-32 sm:w-32 md:bottom-[0px] md:left-[-27px] md:h-60 md:w-60 lg:bottom-0 lg:left-0 lg:h-56 lg:w-56"
               style={{
                 animation:
                   "moveInward 24s linear infinite , moveOutward 4s linear infinite alternate ",
               }}
             ></div>
             <div
-              className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[0px] sm:h-32 sm:w-32 md:right-[-27px] md:top-[20px] md:h-48 md:w-48 lg:-right-[90px] lg:top-0 lg:h-56 lg:w-56"
+              className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[0px] sm:h-32 sm:w-32 md:right-[-27px] md:top-[0px] md:h-60 md:w-60 lg:-right-[90px] lg:top-0 lg:h-56 lg:w-56"
               style={{
                 animation:
                   "moveOutward 4s linear infinite, moveInward 4s linear infinite alternate ",
@@ -43,7 +48,7 @@ const WhyProiqSection = () => {
             <Image
               src={img3}
               alt=""
-              className=" relative z-0 sm:h-fit sm:w-[314px] md:h-[372px] md:w-[634px] lg:ml-16"
+              className=" relative z-0 sm:h-fit sm:w-[314px] md:h-[450px] md:w-[515px] lg:ml-16 lg:h-[450px] lg:w-[634px]  "
             />
           </div>
 
@@ -104,7 +109,7 @@ const WhyProiqSection = () => {
               </div>
               <p className="flex font-[Montserrat] text-lg font-semibold">
                 Offers Low Course Fees structure. Online and Offline classes are
-                available.
+                available,
               </p>
             </div>
           </div>

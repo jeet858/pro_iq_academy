@@ -1,11 +1,11 @@
 import React from "react";
-import icon1 from "../../../public/images/DSC_2386(1).jpg";
-import icon2 from "../../../public/images/a (10).jpg";
-import icon3 from "../../../public/images/a (6).jpg";
-import icon4 from "../../../public/images/a (2).jpg";
-import icon5 from "../../../public/images/ready-back-school (1).jpg";
-import icon6 from "../../../public/images/a (1).jpg";
-import icon7 from "../../../public/images/a (12).jpg";
+import icon1 from "../../../public/images/concentration.jpg";
+import icon2 from "../../../public/images/memory.jpg";
+import icon3 from "../../../public/images/recalling.jpg";
+import icon4 from "../../../public/images/observation.png";
+import icon5 from "../../../public/images/listening skill.jpg";
+import icon6 from "../../../public/images/confidence.jpg";
+import icon7 from "../../../public/images/17(1).jpg";
 import icon8 from "../../../public/images/high-angle-girl-playing-home.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
@@ -135,8 +135,8 @@ const OurCoursesSkill = () => {
             <Image src={icon7} alt="" className="h-[12rem] w-[18rem] " />
           </div>
           <div className="flex flex-col space-y-2">
-            <span className="font-[Palanquin Dark] text-lg font-bold text-black">
-              Spoken English Courses
+            <span className="font-[Palanquin Dark] text-md font-bold text-black">
+              Spoken English
             </span>
 
             <Link href={"/spoken-english"}>
@@ -151,13 +151,13 @@ const OurCoursesSkill = () => {
           <div className="flex ">
             <Image src={icon8} alt="" className="h-[12rem] w-[18rem] " />
           </div>
-          <div className="flex flex-col space-y-2">
-            <span className="font-[Palanquin Dark] text-lg font-bold text-black">
+          <div className="flex flex-col space-y-2 text-justify">
+            <span className="font-[Palanquin Dark] text-md font-bold text-black">
               Handwriting Improvement Courses
             </span>
 
             <Link href={"/Handwriting"}>
-              <button className="text-md flex flex-row font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
+              <button className="text-md flex w-full flex-row items-center justify-center font-semibold text-black hover:text-sm hover:font-bold hover:text-orange-800">
                 READ MORE
                 <BsArrowRight className="ml-3 mt-1" />
               </button>

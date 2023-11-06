@@ -1,21 +1,21 @@
 import Image from "next/image";
 import React from "react";
 import img1 from "../../../public/images/DSC_2306(1).jpg";
-import img2 from "../../../public/images/about_thumb_2.png";
+import img2 from "../../../public/images/a (6).jpg";
 import { GoCheckCircle } from "react-icons/go";
 import Instructor from "./Instructor";
 import ContactSection from "./ContectSection";
 const AboutSection = () => {
   return (
     <div className="">
-      <div className=" custom-font mt-36 flex items-center justify-center font-semibold sm:gap-1 sm:text-sm md:gap-4 md:text-2xl xl:text-5xl">
+      <div className=" custom-font flex items-center justify-center font-semibold sm:mt-8 sm:gap-1 sm:text-sm md:mt-16 md:gap-4 md:text-2xl xl:text-5xl">
         <span className=" text-[#037EF3]">Our Endeavour</span>
         <span className="text-[#FF8A00]">is -To Combine</span>
-        <span className="text-[#FF4F81]">skills with</span>
-        <span className="text-[#06965D]">education.</span>
+        <span className="text-[#FF4F81]">Skills with</span>
+        <span className="text-[#06965D]">Education.</span>
       </div>
-      <div className=" flex h-fit w-full justify-between  sm:flex-col sm:p-12 md:flex-row lg:p-16">
-        <div className="flex flex-col gap-y-4 sm:w-full lg:w-1/2">
+      <div className=" flex h-fit w-full   sm:flex-col sm:p-12 lg:flex-row lg:p-16">
+        <div className="flex flex-col gap-y-4 sm:w-full lg:w-[50%]">
           <p className="font-[Montserrat] font-semibold text-[#FF8A00]">
             About Us
           </p>
@@ -53,9 +53,9 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex items-center sm:h-[352px] sm:w-[514px] md:h-[552px] md:w-[614px] lg:h-[552px] lg:w-[614px]">
+        <div className="relative flex items-center sm:h-[352px] sm:w-[514px] md:h-[552px] md:w-full md:justify-center lg:h-[552px] lg:w-[650px]">
           <div
-            className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[40px] sm:h-28 sm:w-32 md:-right-[25px] md:top-[95px] md:h-32 md:w-32 lg:right-0 lg:top-0 lg:h-64 lg:w-64"
+            className="animate-box absolute bg-[#FF6E65F7] sm:right-[145px] sm:top-[40px] sm:h-28 sm:w-32 md:-right-[25px] md:top-[7px] md:h-48 md:w-48 lg:right-[-115px] lg:top-0 lg:h-64 lg:w-64"
             style={{
               animation:
                 "moveOutward 4s linear infinite, moveInward 4s linear infinite alternate ",
@@ -63,7 +63,7 @@ const AboutSection = () => {
           ></div>
 
           <div
-            className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[40px] sm:h-28 sm:w-32 md:-left-[25px] md:bottom-[95px] lg:bottom-0 lg:left-0 lg:h-64 lg:w-64"
+            className="animate-box absolute bg-[#FF4F8185] sm:-left-[50px] sm:bottom-[40px] sm:h-28 sm:w-32 md:-left-[25px] md:bottom-[7px] md:h-48 md:w-48 lg:bottom-0 lg:left-0 lg:h-64 lg:w-64"
             style={{
               animation:
                 "moveInward 24s linear infinite , moveOutward 4s linear infinite alternate ",
@@ -73,7 +73,7 @@ const AboutSection = () => {
           <Image
             src={img1}
             alt=""
-            className=" relative z-0 sm:h-fit sm:w-[290px] lg:ml-16 lg:h-[380px] lg:w-[500px]"
+            className=" relative z-0 sm:h-fit sm:w-[290px] md:h-[380px] md:w-[700px] lg:ml-16 lg:w-[650px]"
           />
         </div>
       </div>
@@ -84,11 +84,11 @@ const AboutSection = () => {
         }}
       >
         <div className="flex h-fit bg-[#d9d9d9c3]  sm:flex-col sm:gap-y-8 sm:p-8 md:gap-8 md:p-12  lg:flex-row lg:gap-32">
-          <div className="  outline-dashed outline-offset-[12px] outline-[#06965D] sm:h-[260px] sm:w-[300px] md:h-[383px] md:w-[453px]">
+          <div className="  outline-dashed outline-offset-[12px] outline-[#06965D] sm:h-[260px] sm:w-[300px] md:h-[383px] md:w-[453px] lg:h-[400px] lg:w-[400px]">
             <Image
               src={img2}
               alt=""
-              className="sm:h-[260px] sm:w-[300px] md:h-[383px] md:w-[453px] "
+              className="sm:h-[260px] sm:w-[300px] md:h-[383px] md:w-[453px] lg:h-[400px] lg:w-[400px]"
             />
           </div>
           <div className="flex basis-1/2 flex-col gap-y-6">

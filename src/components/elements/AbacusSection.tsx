@@ -16,16 +16,16 @@ const AbacusSection = () => {
     <div className="h-fit">
       <BannerSection
         paragraphText="Abacus"
-        imageSrc="/images/banner_test.jpg"
-        color="#012360"
+        imageSrc="/images/ready-back-school (1).jpg"
+        color="white"
       />
       <div className="h-fit w-full ">
         <div className="flex w-full justify-between sm:flex-col sm:p-8 md:flex-row md:gap-5 lg:gap-10 lg:p-16">
           <div className="flex flex-col gap-y-5">
             <p className="font-[Montserrat] text-xl">
               Pro IQ Abacus improves your child’s Concentration, Memory
-              Retention , Recalling Ability , Observation Power , Listening
-              Skill , Writing Skills with Speed & Accuracy and  Confidence
+              Retention , Recalling Ability , Observation Power Listening Skill
+              , Writing Skills with Speed & Accuracy and  Confidence
             </p>
             <div>
               <Image src={img} alt="" className="h-fit w-full" />
@@ -37,6 +37,30 @@ const AbacusSection = () => {
                 <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
                   <BiSolidCircle />
                   Payel Das
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Sunipa Das
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Mousumi Chakraborty
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Sayantika Halder
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Sathi Das
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Mousumi dutta
+                </h1>
+                <h1 className="flex items-center justify-start gap-2 font-[Montserrat] text-xl">
+                  <BiSolidCircle />
+                  Susmita Dey
                 </h1>
               </div>
             </div>
@@ -112,7 +136,7 @@ const AbacusSection = () => {
               completion of each level
             </span>
             <span className="font-[Montserrat] text-4xl">
-              100% Achievers are awarded with special prize
+              Students scoring 100% marks are awarded with special prizes
             </span>
           </div>
         </div>

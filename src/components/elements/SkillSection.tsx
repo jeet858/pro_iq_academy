@@ -32,7 +32,7 @@ const SkillSection: React.FC = () => {
             </svg>
 
             <h2 className="text-center text-2xl font-semibold text-white md:text-lg lg:text-2xl ">
-              Improves Child Reading & Writing Skills
+              Improves Reading , Writing & Communication Skills
             </h2>
           </div>
 
@@ -71,7 +71,7 @@ const SkillSection: React.FC = () => {
             </svg>
 
             <h2 className="text-center text-2xl font-semibold text-white md:text-lg lg:text-2xl">
-              Latest Skill-based and Kid-Friendly Syllabus
+              Latest Skill-based and Kids-Friendly Syllabus
             </h2>
           </div>
 
@@ -91,7 +91,7 @@ const SkillSection: React.FC = () => {
             </svg>
 
             <h2 className="text-center text-2xl font-semibold text-white md:text-lg lg:text-2xl">
-              Offer Low Course Fees Structure
+              Offers Low Course Fees Structure
             </h2>
           </div>
         </div>

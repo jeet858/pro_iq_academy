@@ -2,19 +2,13 @@ import React from "react";
 import Head from "next/head";
 import MainPageTemplate from "~/components/MainPageTemplate";
 import AboutSection from "~/components/elements/AboutSection";
-import Carousel from "~/components/elements/Carousel";
+
 import img1 from "../../public/images/Banner-about us.jpg";
 
 import Footer from "~/components/elements/footer";
+import BannerSection from "~/components/elements/BannerSection";
 
 const About = () => {
-  const slides = [
-    {
-      imageSrc: img1,
-      title: "Master the Skills to Drive your Education",
-      buttonText: "Know More",
-    },
-  ];
   return (
     <div>
       <Head>
@@ -24,7 +18,11 @@ const About = () => {
       </Head>
       <MainPageTemplate>
         <div className="">
-          <Carousel slides={slides} />
+          <BannerSection
+            paragraphText="About Us"
+            imageSrc="/images/Banner-about us.jpg"
+            color="#012360"
+          />
           <AboutSection />
         </div>
         <Footer />

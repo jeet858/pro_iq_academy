@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          <div className="mb-8 w-full items-baseline border-r-[1px] border-[#17365866]  lg:w-1/2  xl:w-1/4">
+          <div className="mb-8 w-full items-baseline  border-[#17365866]  lg:w-1/2  xl:w-1/4">
             <h2 className="mb-2 border-b-[1px] border-[#17365866] text-lg font-semibold">
               CONTACT
             </h2>
@@ -80,8 +80,8 @@ const Footer: React.FC = () => {
                 </span>
                 <span>
                   {" "}
-                  Raghubati ,Brahmanpara , Haripal , Hooghly -712405 Nearest
-                  location : 19 no. Rail Gate ,Haripal
+                  Near 19no. Rail Gate , Khamarchandi , Haripal ,
+                  Hooghly - 712405
                 </span>
               </div>
             </div>

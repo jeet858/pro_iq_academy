@@ -118,7 +118,7 @@ const SpokenEnglish = () => {
                 completion of each level
               </span>
               <span className="font-[Montserrat] text-4xl">
-                100% Achievers are awarded with special prize
+                Students scoring 100% marks are awarded with special prizes
               </span>
             </div>
           </div>
