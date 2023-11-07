@@ -35,7 +35,7 @@ const GallerySection = () => {
   };
 
   return (
-    <div className="h-fit w-full">
+    <div className="h-fit w-full sm:pt-[55px] lg:pt-[100px]">
       <BannerSection
         paragraphText="Gallery"
         imageSrc="/images/banner_gallery.png"

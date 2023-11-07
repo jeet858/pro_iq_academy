@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ContactUsSection = () => {
   return (
-    <div className="h-fit">
+    <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
       <BannerSection
         paragraphText="Contact Us"
         imageSrc="/images/32.jpg"

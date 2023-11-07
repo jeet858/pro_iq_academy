@@ -13,7 +13,7 @@ const Franchising = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainPageTemplate>
-        <div className="pt-[100px]">
+        <div className="sm:pt-[55px] lg:pt-[100px]">
           <FranchisingSection />
         </div>
         <Footer />

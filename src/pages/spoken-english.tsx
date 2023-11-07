@@ -18,7 +18,7 @@ const SpokenEnglish = () => {
   };
   return (
     <MainPageTemplate>
-      <div className="h-fit pt-[100px]">
+      <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
         <BannerSection
           paragraphText="Spoken English "
           imageSrc="/images/6667014(2).jpg"

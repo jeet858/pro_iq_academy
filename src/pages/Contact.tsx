@@ -14,7 +14,7 @@ const Contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainPageTemplate>
-        <div className="pt-[100px]">
+        <div className="">
           <ContactSection />
         </div>
         <Footer />

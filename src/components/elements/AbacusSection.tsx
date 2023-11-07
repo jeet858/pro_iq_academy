@@ -13,7 +13,7 @@ const AbacusSection = () => {
     await router.push("/HomePage#review-section");
   };
   return (
-    <div className="h-fit">
+    <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
       <BannerSection
         paragraphText="Abacus"
         imageSrc="/images/ready-back-school (1).jpg"

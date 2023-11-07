@@ -20,7 +20,7 @@ const WhyProiqSection = () => {
     },
   ];
   return (
-    <div className="h-fit">
+    <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
       <BannerSection
         paragraphText="WHY PROIQ"
         imageSrc="/images/Banner3_why.jpg"

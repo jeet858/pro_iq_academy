@@ -17,7 +17,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainPageTemplate>
-        <div className="">
+        <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
           <BannerSection
             paragraphText="About Us"
             imageSrc="/images/Banner-about us.jpg"

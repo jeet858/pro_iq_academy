@@ -14,7 +14,7 @@ const Abacus = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainPageTemplate>
-        <div className="pt-[100px]">
+        <div className="">
           <AbacusSection />
         </div>
         <Footer />
