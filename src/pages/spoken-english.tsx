@@ -20,7 +20,7 @@ const SpokenEnglish = () => {
     <MainPageTemplate>
       <div className="h-fit pt-[100px]">
         <BannerSection
-          paragraphText=" "
+          paragraphText="Spoken English "
           imageSrc="/images/6667014(2).jpg"
           color="#012360"
         />

@@ -5,7 +5,7 @@ import icon3 from "../../../public/images/recalling.jpg";
 import icon4 from "../../../public/images/observation.png";
 import icon5 from "../../../public/images/listening skill.jpg";
 import icon6 from "../../../public/images/confidence.jpg";
-import icon7 from "../../../public/images/17(1).jpg";
+import icon7 from "../../../public/images/serious-child-with-microphone.jpg";
 import icon8 from "../../../public/images/high-angle-girl-playing-home.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
@@ -153,7 +153,7 @@ const OurCoursesSkill = () => {
           </div>
           <div className="flex flex-col space-y-2 text-justify">
             <span className="font-[Palanquin Dark] text-md font-bold text-black">
-              Handwriting Improvement Courses
+              Handwriting Improvement Course
             </span>
 
             <Link href={"/Handwriting"}>

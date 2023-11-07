@@ -32,7 +32,7 @@ const SkillSection: React.FC = () => {
             </svg>
 
             <h2 className="text-center text-2xl font-semibold text-white md:text-lg lg:text-2xl ">
-              Improves Reading , Writing & Communication Skills
+              Improves Reading, Writing & Communication
             </h2>
           </div>
 

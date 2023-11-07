@@ -18,11 +18,11 @@ const Handwriting = () => {
   };
   return (
     <MainPageTemplate>
-      <div className="h-fit pt-[100px]">
+      <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
         <BannerSection
           paragraphText="Handwriting Improvement"
-          imageSrc="/images/a (13).jpg"
-          color="#012360"
+          imageSrc="/images/20.jpg"
+          color="white"
         />
         <div className="h-fit w-full ">
           <div className="flex w-full justify-between sm:flex-col sm:p-8 md:flex-row md:gap-5 lg:gap-10 lg:p-16">
@@ -98,7 +98,7 @@ const Handwriting = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-col gap-y-10 p-16">
+          <div className="flex flex-col gap-y-10 sm:p-8 lg:p-16">
             <div className="flex flex-col gap-y-3">
               <span className="font-[Montserrat] text-4xl font-semibold">
                 Course Description

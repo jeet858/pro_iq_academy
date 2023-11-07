@@ -17,7 +17,7 @@ const TopNav = () => {
           </div>
           <div className="flex flex-row items-center justify-around text-sm text-white hover:text-[#FF6E65]">
             <MdEmail className="text-lg" />
-            <span>info@proiqacademy.com</span>
+            <span>proiqacademy@gmail.com</span>
           </div>
         </div>
         <div className="space-x-4 text-xl">

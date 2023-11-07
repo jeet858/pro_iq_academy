@@ -16,9 +16,6 @@ const AboutSection = () => {
       </div>
       <div className=" flex h-fit w-full   sm:flex-col sm:p-12 lg:flex-row lg:p-16">
         <div className="flex flex-col gap-y-4 sm:w-full lg:w-[50%]">
-          <p className="font-[Montserrat] font-semibold text-[#FF8A00]">
-            About Us
-          </p>
           <h1 className="font-[Montserrat] font-semibold sm:text-3xl lg:text-5xl">
             Who We Are
           </h1>

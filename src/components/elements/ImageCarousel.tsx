@@ -3,18 +3,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import img1 from "../../../public/images/17(1).jpg";
+import img12 from "../../../public/images/16.jpg";
 import img2 from "../../../public/images/a (10).jpg";
 import img3 from "../../../public/images/a (2).jpg";
 import img4 from "../../../public/images/DSC_2386(1).jpg";
 import img5 from "../../../public/images/a (15)(1).jpg";
-import img6 from "../../../public/images/a (6).jpg";
-import img7 from "../../../public/images/1 (1).jpg";
-import img8 from "../../../public/images/13.jpg";
-import img9 from "../../../public/images/Untitled-1 (1).jpg";
+import img6 from "../../../public/images/14.jpg";
+import img7 from "../../../public/images/a (1).jpg";
+import img8 from "../../../public/images/19.jpg";
+import img9 from "../../../public/images/15.jpg";
 import img10 from "../../../public/images/ready-back-school (1).jpg";
 import img11 from "../../../public/images/a (12).jpg";
-import img12 from "../../../public/images/DSC_2306(1).jpg";
+import img1 from "../../../public/images/DSC_2306(1).jpg";
 
 function ImageCarousel({ onClose }: { onClose: () => void }) {
   const settings = {
