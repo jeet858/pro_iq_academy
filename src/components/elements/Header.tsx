@@ -21,10 +21,6 @@ const Header = () => {
     };
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -184,10 +180,6 @@ const Header = () => {
                     </li>
                   ))}
                 </ul>{" "}
-                <DarkModeToggle
-                  darkMode={darkMode}
-                  toggleDarkMode={toggleDarkMode}
-                />
               </nav>
             </div>
           </div>
