@@ -20,7 +20,7 @@ const Handwriting = () => {
     <MainPageTemplate>
       <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
         <BannerSection
-          paragraphText="Handwriting Improvement"
+          paragraphText="Handwriting Improvement Course"
           imageSrc="/images/20.jpg"
           color="white"
         />

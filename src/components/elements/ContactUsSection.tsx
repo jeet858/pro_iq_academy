@@ -37,12 +37,16 @@ const ContactUsSection = () => {
           <div className="flex h-[5rem] w-[5rem] items-center justify-center rounded-full bg-[#DEEEFE] shadow-xl shadow-[#00000040]">
             <BiMailSend className="text-5xl text-[#FF6E65F7]" />
           </div>
-          <div className="flex flex-col ">
-            <span className="text-xl font-semibold text-black">
-              proiqacademy@gmail.com
-            </span>
-            <span className="text-md font-semibold text-black">Send Email</span>
-          </div>
+          <Link href="mailto:proiqacademy@gmail.com">
+            <div className="flex flex-col ">
+              <span className="text-xl font-semibold text-black">
+                proiqacademy@gmail.com
+              </span>
+              <span className="text-md font-semibold text-black">
+                Send Email
+              </span>
+            </div>
+          </Link>
         </div>
         <div className="flex h-fit basis-1/3 scale-100 transform justify-evenly gap-8 rounded-lg bg-[#FF8A00] shadow-2xl transition-transform hover:scale-105 hover:border-[1px] hover:border-blue-900 sm:w-full sm:flex-col sm:items-center sm:p-8 md:w-full md:flex-col md:p-8 lg:w-fit lg:flex-row">
           <div className="flex  justify-between">
@@ -58,14 +62,13 @@ const ContactUsSection = () => {
       </div>
       <div className="flex h-fit w-full flex-col gap-4 p-6 sm:flex-col sm:space-y-4 md:flex-col md:space-y-4 lg:space-x-4">
         <div className="h-24 w-full basis-1/3 flex-col gap-4 space-y-6">
-          <div className="text-xl text-[#4D5FE3]">Send a message</div>
           <div className="font-bold text-black sm:text-3xl lg:text-6xl">
             We Always Ready to Hear From You
           </div>
         </div>
         <div className="flex w-full md:p-8">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.2258537661837!2d88.1142337!3d22.8311321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f86313d94e4245%3A0x574c238edda0851b!2s(ANANDAM)%20prop%3B%20Dinabandhu%20Rakshit!5e0!3m2!1sen!2sin!4v1697174905219!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7354.451831188469!2d88.11278791202544!3d22.8311298117421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8636efd3e5a11%3A0xe775c36a280f5731!2sPRO%20IQ%20ACADEMY%20(Abacus%20%2C%20Spoken%20English)!5e0!3m2!1sen!2sin!4v1699365252764!5m2!1sen!2sin"
             width="1000"
             height="340"
             className="w-full "

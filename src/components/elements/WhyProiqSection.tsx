@@ -22,7 +22,7 @@ const WhyProiqSection = () => {
   return (
     <div className="h-fit sm:pt-[55px] lg:pt-[100px]">
       <BannerSection
-        paragraphText="WHY PROIQ"
+        paragraphText="Why ProIQ"
         imageSrc="/images/Banner3_why.jpg"
         color="#012360"
       />
@@ -81,7 +81,7 @@ const WhyProiqSection = () => {
               </div>
               <p className="flex font-[Montserrat] text-lg font-semibold">
                 Develops Your Child’s Reading & Writing Skills, Numerical
-                Ability, Observation Power , Memory Retention and overall
+                Ability, Observation Power Memory Retention and overall
                 Intelligence
               </p>
             </div>
@@ -109,7 +109,7 @@ const WhyProiqSection = () => {
               </div>
               <p className="flex font-[Montserrat] text-lg font-semibold">
                 Offers Low Course Fees structure. Online and Offline classes are
-                available,
+                available
               </p>
             </div>
           </div>

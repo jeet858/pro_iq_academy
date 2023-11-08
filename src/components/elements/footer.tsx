@@ -1,15 +1,15 @@
 import Link from "next/link";
 import React from "react";
+import { BiLogoGmail } from "react-icons/bi";
+import { BsWhatsapp } from "react-icons/bs";
 import {
   FaAngleDoubleRight,
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaFacebookF,
-  FaLinkedin,
-  FaTwitter,
   FaGooglePlus,
-  FaGithub,
+  FaInstagram,
 } from "react-icons/fa";
 
 const Footer: React.FC = () => {
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <ul>
               <li className="mb-2 flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
-                <Link href={"/#"}>Home</Link>
+                <Link href={"/"}>Home</Link>
               </li>
               <li className="mb-2 flex items-center">
                 <FaAngleDoubleRight className="mr-2" />
@@ -66,14 +66,21 @@ const Footer: React.FC = () => {
               CONTACT
             </h2>
             <div className="flex flex-col gap-y-4">
-              <div className="flex items-center">
-                <FaEnvelope className="mr-2" />
-                proiqacademy@gmail.com
-              </div>
-              <div className="flex items-center">
-                <FaPhoneAlt className="mr-2" />
-                +91 7477879008
-              </div>
+              <Link href="mailto:proiqacademy@gmail.com">
+                <div className="flex items-center">
+                  <FaEnvelope className="mr-2" />
+                  proiqacademy@gmail.com
+                </div>
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/send?phone=7477879008"
+                target="_blank"
+              >
+                <div className="flex items-center">
+                  <FaPhoneAlt className="mr-2" />
+                  +91 7477879008
+                </div>
+              </Link>
               <div className="flex ">
                 <span>
                   <FaMapMarkerAlt className="mr-2" />
@@ -99,10 +106,21 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-4 p-4  text-xl">
               <FaFacebookF />
-              <FaLinkedin />
-              <FaTwitter />
+              <FaInstagram />
+              <Link
+                href="mailto:proiqacademy@gmail.com"
+                className="text-white hover:text-[#FF6E65]"
+              >
+                <BiLogoGmail title="Click here" />
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/send?phone=7477879008"
+                target="_blank"
+                className="text-white hover:text-[#FF6E65]"
+              >
+                <BsWhatsapp title="Click here" />
+              </Link>
               <FaGooglePlus />
-              <FaGithub />
             </div>
           </div>
         </div>
