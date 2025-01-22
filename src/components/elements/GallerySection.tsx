@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import React, { useState } from "react";
 
 import BannerSection from "./BannerSection";
 import ContactSection from "./ContectSection";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import img1 from "../../../public/images/newpics/img1.jpg";
 import img2 from "../../../public/images/newpics/img2.jpg";
 import img3 from "../../../public/images/newpics/img3.jpg";
@@ -32,21 +31,6 @@ import img25 from "../../../public/images/newpics/img25.jpg";
 import img26 from "../../../public/images/newpics/img26.jpg";
 
 const GallerySection = () => {
-  const [isCarouselOpen, setIsCarouselOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [hoveredImage, setHoveredImage] = useState<StaticImageData | null>(
-    null,
-  );
-
-  const openCarousel = (imageSrc: string) => {
-    setSelectedImage(imageSrc);
-    setIsCarouselOpen(true);
-  };
-
-  const closeCarousel = () => {
-    setIsCarouselOpen(false);
-    setSelectedImage(null);
-  };
   const images = [
     img1,
     img2,
@@ -111,13 +95,11 @@ const GallerySection = () => {
         <Image src={img19} alt="" className="col-span-1 h-full" />
         <Image src={img2} alt="" className="col-span-1 h-full" />
       </div>
-      <div className="flex md:hidden"></div>
-
-      {isCarouselOpen && (
-        <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center overflow-scroll bg-[#d9d9d9c3]">
-          <ImageCarousel onClose={closeCarousel} />
-        </div>
-      )}
+      <div className="grid md:hidden">
+        {images.map((img, index) => {
+          return <Image src={img} key={index} alt="" className="h-60 w-full" />;
+        })}
+      </div>
       <ContactSection />
     </div>
   );
