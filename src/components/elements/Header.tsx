@@ -21,10 +21,6 @@ const Header = () => {
     };
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -52,18 +48,14 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check window.innerWidth when the component mounts
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 820);
     };
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Initial check
     handleResize();
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -72,7 +64,7 @@ const Header = () => {
   const isActiveLink = (href: string) => router.pathname === href;
 
   const navigationLinks = [
-    { text: "HOME", to: "/#" },
+    { text: "HOME", to: "/" },
     { text: "ABOUT US", to: "/About" },
     { text: "WHY PROIQ", to: "/why-proiq" },
     { text: "OUR COURSES", to: "/our-courses" },
@@ -188,10 +180,6 @@ const Header = () => {
                     </li>
                   ))}
                 </ul>{" "}
-                <DarkModeToggle
-                  darkMode={darkMode}
-                  toggleDarkMode={toggleDarkMode}
-                />
               </nav>
             </div>
           </div>

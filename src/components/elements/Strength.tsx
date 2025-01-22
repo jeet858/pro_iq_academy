@@ -10,48 +10,42 @@ const Strength: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-[60rem] max-w-full items-center justify-center p-12 sm:h-fit md:h-fit lg:h-[20rem]">
+    <div className=" h-fit max-w-full items-center justify-center p-12">
       <SectionHeader title="Strength in" subtitle="Numbers" />
-      <div className="mt-8 flex flex-wrap justify-center">
-        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
+      <div className="flex justify-center  md:mt-8">
+        <div className="flex w-full flex-col gap-3  border-r-2 p-4 text-center sm:w-1/2  md:w-1/4 md:border-b-0 lg:border-r-2">
           <CountUp
-            className="text-5xl font-bold"
+            className="font-bold sm:text-2xl md:text-5xl"
             start={0}
             end={6300}
             duration={10}
             enableScrollSpy
           />
-          <div className="text-xl font-semibold">LEARNERS & COUNTING</div>
+          <div className="font-semibold sm:text-base md:text-xl">
+            LEARNERS & COUNTING
+          </div>
         </div>
-        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
+        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2  md:w-1/4 md:border-b-0 lg:border-r-2">
           <CountUp
-            className="text-5xl font-bold"
+            className="font-bold sm:text-2xl md:text-5xl"
             start={0}
-            end={638}
+            end={10}
             duration={10}
             enableScrollSpy
           />
-          <div className="text-xl font-semibold">TOTAL COURSES</div>
+          <div className="font-semibold sm:text-base md:text-xl">YEARS</div>
         </div>
-        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
+        <div className="flex w-full flex-col gap-3  p-4 text-center sm:w-1/2  md:w-1/4  md:border-b-0 ">
           <CountUp
-            className="text-5xl font-bold"
+            className="font-bold sm:text-2xl md:text-5xl"
             start={0}
             end={7600}
             duration={10}
             enableScrollSpy
           />
-          <div className="text-xl font-semibold">SUCCESSFUL STUDENTS</div>
-        </div>
-        <div className="flex w-full flex-col gap-3 border-r-2 p-4 text-center sm:w-1/2 sm:border-b-2 md:w-1/4 md:border-b-0 lg:border-r-2">
-          <CountUp
-            className="text-5xl font-bold"
-            start={0}
-            end={36}
-            duration={10}
-            enableScrollSpy
-          />
-          <div className="text-xl font-semibold">LANGUAGES</div>
+          <div className="font-semibold sm:text-base md:text-xl">
+            SUCCESSFUL STUDENTS
+          </div>
         </div>
       </div>
     </div>

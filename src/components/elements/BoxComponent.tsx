@@ -15,7 +15,7 @@ const BoxComponent: React.FC<BoxProps> = ({
 }) => {
   return (
     <div
-      className={`m-4 flex  flex-row items-center   rounded-2xl bg-white p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
+      className={`m-4 flex  flex-row items-center   rounded-2xl  p-10 shadow-[0px_4px_4px_0px_#00000040] sm:h-[150px] sm:w-[360px] lg:h-[200px] lg:w-[404px]`}
     >
       <div
         className="mr-4 flex items-center justify-center  rounded-full sm:h-16 sm:w-32 lg:h-20 lg:w-36"
